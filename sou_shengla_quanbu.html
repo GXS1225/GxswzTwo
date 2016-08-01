@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)#/tg/more.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页-商品-全部界面</title>
+<meta name="keywords" content="info">
+<meta name="description" content="info">
+<link rel="stylesheet" rev="stylesheet" href="./css/tg-mb.css">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+<body>
+<div class="top_gg po_re" id="top_gg" style="display:none;">{首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="javascript:void(0);" onclick="return window.history.go(-1);" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">商品</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+
+	<div class="content tg_page">
+		<div class="select_01">
+			<ul>
+				<li><a href="sou_shengla.html">最新</a></li><li class="current"><a href="sou_shengla_quanbu.html">全部</a></li><li><a href="sou_shengla_miaosha.html">秒杀</a></li><li><a href="sou_shengla_dingdan.html">订单</a></li>
+			</ul>
+		</div>
+		<div class="searchbar po_re">
+			<form name="searchform1" method="get" action="#/tg/more.html?">
+				<input type="text" name="_key" id="keyword" class="s_ipt" value="">
+				<input type="submit" class="s_btn po_ab" value="搜索">
+			</form>
+		</div>
+		<div class="filter">
+			<ul class="clearfix">
+				<li><a href="javascript:void(0);" id="show_categories">选择类别<em></em></a></li>
+				<li><a href="javascript:void(0);" id="show_district">选择区域<em></em></a></li>
+			</ul>
+		</div>
+		<div class="float-navbox" id="navbox_categories" style="display: none; height: 2640px;">
+			<div class="inner" style="height: 2640px;">
+				
+				<a href="#/tg/more_a0_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" class="current">全部</a><a href="#/tg/more_a681_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" class="">美食<em>(33)</em></a><a href="#/tg/more_a682_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" class="">休闲娱乐<em>(55)</em></a><a href="#/tg/more_a683_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" class="">旅游酒店<em>(11)</em></a><a href="#/tg/more_a684_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" class="">生活服务<em>(44)</em></a><a href="#/tg/more_a685_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" class="">丽人<em>(22)</em></a><a href="#/tg/more_a686_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" class="">网购精品<em>(77)</em></a>
+			</div>
+		</div>
+		<div class="float-navbox" id="navbox_district" style="display: none; height: 2640px;">
+			<div class="inner" style="height: 2640px; right: -250px;">
+				<a href="#/tg/more_a0_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" class="current">全部</a><a href="#/tg/more_a0_b0_c1_d0_e0_f0_g0_h0_i0_p1.html" class="">朝阳区<em>(110)</em></a><a href="#/tg/more_a0_b0_c2_d0_e0_f0_g0_h0_i0_p1.html" class="">海淀区<em>(11)</em></a><a href="#/tg/more_a0_b0_c11_d0_e0_f0_g0_h0_i0_p1.html" class="">丰台区<em>(23)</em></a><a href="#/tg/more_a0_b0_c12_d0_e0_f0_g0_h0_i0_p1.html" class="">西城区<em>(11)</em></a><a href="#/tg/more_a0_b0_c13_d0_e0_f0_g0_h0_i0_p1.html" class="">通州区<em>(11)</em></a><a href="#/tg/more_a0_b0_c77_d0_e0_f0_g0_h0_i0_p1.html" class="">东城区<em>(43)</em></a><a href="#/tg/more_a0_b0_c78_d0_e0_f0_g0_h0_i0_p1.html" class="">昌平区<em>(22)</em></a><a href="#/tg/more_a0_b0_c79_d0_e0_f0_g0_h0_i0_p1.html" class="">宣武区<em>(11)</em></a><a href="#/tg/more_a0_b0_c80_d0_e0_f0_g0_h0_i0_p1.html" class="">崇文区<em>(11)</em></a><a href="#/tg/more_a0_b0_c82_d0_e0_f0_g0_h0_i0_p1.html" class="">其他区县<em>(0)</em></a>
+			</div>
+		</div>
+		<div class="fullbg" id="fullbg1" style="display: none; height: 2640px;"><i class="pull"></i></div>
+		<div class="fullbg" id="fullbg2" style="display: none; height: 2640px; opacity: 0;"><i class="pull"></i></div>
+		<div class="mod_02">
+			
+			<div class="bd">
+				<ul class="list_normal list_tg">
+										<li>
+						<a href="#/tg/tg_26.html" class="link">
+						<p class="img"><img src="./images/201432622184452886292.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display1">[多店通用]</span>美乐多便利店</p>
+						<p class="txt">黄山2晚别墅行，安徽省内唯一的高端奢华别墅型酒店！</p>
+						<p class="txt price"><span class="now">¥8800</span>　<span class="old">¥13800</span></p>
+						<p class="hot po_ab">13</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_25.html" class="link">
+						<p class="img"><img src="./images/201432622214864226452.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>石锅香辣蛙</p>
+						<p class="txt">星星许愿亲子儿童摄影，内外景自由组合4组！</p>
+						<p class="txt price"><span class="now">¥198</span>　<span class="old">¥298</span></p>
+						<p class="hot po_ab">32</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_21.html" class="link">
+						<p class="img"><img src="./images/201432622283132438452.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>土大力</p>
+						<p class="txt">洲际品牌皇冠假日酒店豪华房2天1晚奢华行</p>
+						<p class="txt price"><span class="now">¥880</span>　<span class="old">¥1680</span></p>
+						<p class="hot po_ab">7</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_22.html" class="link">
+						<p class="img"><img src="./images/201432622281080869972.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>徐记海鲜</p>
+						<p class="txt">千岛湖1晚家庭自由行，避暑纳凉不二之选！</p>
+						<p class="txt price"><span class="now">¥1599</span>　<span class="old">¥3280</span></p>
+						<p class="hot po_ab">8</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_24.html" class="link">
+						<p class="img"><img src="./images/201432622221368920992.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>春天百货店</p>
+						<p class="txt">香港修身堂塑形套餐：经络疏通、肩周舒缓</p>
+						<p class="txt price"><span class="now">¥88</span>　<span class="old">¥176</span></p>
+						<p class="hot po_ab">79</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_14.html" class="link">
+						<p class="img"><img src="./images/20138818383664625142.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>土大力</p>
+						<p class="txt">杭州1晚豪华自助晚餐自由行，免费游西湖、观曲院风荷</p>
+						<p class="txt price"><span class="now">¥688</span>　<span class="old">¥2142</span></p>
+						<p class="hot po_ab">43</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_4.html" class="link">
+						<p class="img"><img src="./images/20138818154769897162.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>春天百货店</p>
+						<p class="txt">市场价320元乐发造型美甲套系 仅售58元!!</p>
+						<p class="txt price"><span class="now">¥58</span>　<span class="old">¥320</span></p>
+						<p class="hot po_ab">83</p>
+						<span class="xindan_ico display1">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_16.html" class="link">
+						<p class="img"><img src="./images/201432622301249866262.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>上岛咖啡</p>
+						<p class="txt">虞文萱保加利亚玫瑰精华水200ml ，细致毛孔美白</p>
+						<p class="txt price"><span class="now">¥39</span>　<span class="old">¥107</span></p>
+						<p class="hot po_ab">87</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_19.html" class="link">
+						<p class="img"><img src="./images/20143262229177520572.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>徐记海鲜</p>
+						<p class="txt">缔梵石 天然3A石榴石手链进口泰银象 活血养颜美容</p>
+						<p class="txt price"><span class="now">¥138</span>　<span class="old">¥568</span></p>
+						<p class="hot po_ab">0</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_18.html" class="link">
+						<p class="img"><img src="./images/201432622293496628542.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>百合便利</p>
+						<p class="txt">mo+沫加 天然牛奶丝图案艺术打底裤 高弹凉爽透气</p>
+						<p class="txt price"><span class="now">¥49</span>　<span class="old">¥110</span></p>
+						<p class="hot po_ab">174</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_17.html" class="link">
+						<p class="img"><img src="./images/201432622295563920202.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>天秀汇稻香蛙</p>
+						<p class="txt">银斯妮S925纯银情侣对戒三款选一，浪漫七夕礼物！</p>
+						<p class="txt price"><span class="now">¥70</span>　<span class="old">¥139</span></p>
+						<p class="hot po_ab">0</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_20.html" class="link">
+						<p class="img"><img src="./images/201432622285510662952.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>上岛咖啡</p>
+						<p class="txt">2天1晚亲水之旅，水世界、温泉、湿地任你选！</p>
+						<p class="txt price"><span class="now">¥680</span>　<span class="old">¥1180</span></p>
+						<p class="hot po_ab">16</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_15.html" class="link">
+						<p class="img"><img src="./images/201432622303376514862.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>春天百货店</p>
+						<p class="txt">天堂伞黑胶防晒遮阳伞</p>
+						<p class="txt price"><span class="now">¥29</span>　<span class="old">¥89</span></p>
+						<p class="hot po_ab">134</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_7.html" class="link">
+						<p class="img"><img src="./images/2013881855235643352.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>土大力</p>
+						<p class="txt">仅88元，即可尊享门市价198元的【马凯】蝶酷商务酒店标间</p>
+						<p class="txt price"><span class="now">¥88</span>　<span class="old">¥168</span></p>
+						<p class="hot po_ab">67</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_23.html" class="link">
+						<p class="img"><img src="./images/201432622272246366102.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>天秀汇稻香蛙</p>
+						<p class="txt">杭州东方水世界休闲避暑之旅，周末不加价！</p>
+						<p class="txt price"><span class="now">¥539</span>　<span class="old">¥1288</span></p>
+						<p class="hot po_ab">87</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_6.html" class="link">
+						<p class="img"><img src="./images/20138818503598836442.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>尚沃汤多多</p>
+						<p class="txt">仅45元，尊享价值50元的至尊肥牛自助一位，午餐、晚餐通用</p>
+						<p class="txt price"><span class="now">¥45</span>　<span class="old">¥70</span></p>
+						<p class="hot po_ab">39</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_5.html" class="link">
+						<p class="img"><img src="./images/20138818232981687782.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>上岛咖啡</p>
+						<p class="txt">奥斯卡电影城2D电影票仅售29元！可凭票优惠购买套餐</p>
+						<p class="txt price"><span class="now">¥29</span>　<span class="old">¥69</span></p>
+						<p class="hot po_ab">41</p>
+						<span class="xindan_ico display1">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_10.html" class="link">
+						<p class="img"><img src="./images/20138818434663673692.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>百合便利</p>
+						<p class="txt">南美风情烤肉 仅43.8元 享价值58元自助餐一人次！</p>
+						<p class="txt price"><span class="now">¥43.8</span>　<span class="old">¥59</span></p>
+						<p class="hot po_ab">74</p>
+						<span class="xindan_ico display1">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_12.html" class="link">
+						<p class="img"><img src="./images/20138818341245347462.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>OK便利店</p>
+						<p class="txt">新农哥碧根果236gx2包 集山地灵气，无污染天然绿色</p>
+						<p class="txt price"><span class="now">¥39.8</span>　<span class="old">¥110</span></p>
+						<p class="hot po_ab">723</p>
+						<span class="xindan_ico display1">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_11.html" class="link">
+						<p class="img"><img src="./images/20138715595785889742.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>土大力</p>
+						<p class="txt">最高价值60元的太平洋影城电影票 仅售23元！</p>
+						<p class="txt price"><span class="now">¥23</span>　<span class="old">¥60</span></p>
+						<p class="hot po_ab">16</p>
+						<span class="xindan_ico display1">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_9.html" class="link">
+						<p class="img"><img src="./images/20138818302674621622.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>土大力</p>
+						<p class="txt">田园烤吧涮吧 仅28.8元，享价值39元自助餐一人次！</p>
+						<p class="txt price"><span class="now">¥28.8</span>　<span class="old">¥39</span></p>
+						<p class="hot po_ab">16</p>
+						<span class="xindan_ico display1">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_8.html" class="link">
+						<p class="img"><img src="./images/20138818271213386622.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>春天百货店</p>
+						<p class="txt">【全国包邮】仅79元！新款修身气质显瘦短袖包臀裙</p>
+						<p class="txt price"><span class="now">¥79</span>　<span class="old">¥199</span></p>
+						<p class="hot po_ab">28</p>
+						<span class="xindan_ico display1">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_13.html" class="link">
+						<p class="img"><img src="./images/20138818362283198262.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>天秀汇稻香蛙</p>
+						<p class="txt">苏泊尔50YC6B,5L,智能电压力锅,全网热销</p>
+						<p class="txt price"><span class="now">¥298</span>　<span class="old">¥598</span></p>
+						<p class="hot po_ab">66</p>
+						<span class="xindan_ico display1">新单</span>
+						</a>
+					</li>					<li>
+						<a href="#/tg/tg_1.html" class="link">
+						<p class="img"><img src="./images/201012151784261378762.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/tg_nofindPic.gif&#39;" alt=""></p>
+						<p class="tit"><span class="display0">[多店通用]</span>石锅香辣蛙</p>
+						<p class="txt">iPhone 4 16G 最热门最抢手的手机登陆了，数量不到，抢完为止哦，全部现货！(…</p>
+						<p class="txt price"><span class="now">¥2999</span>　<span class="old">¥3999</span></p>
+						<p class="hot po_ab">29</p>
+						<span class="xindan_ico display0">新单</span>
+						</a>
+					</li>
+				</ul>
+				<div class="pageNav"><div class="FirstPage"><a class="kill" href="javascript:;">&lt;</a> </div><div class="EndPage"><a href="#/tg/more_a0_b0_c0_d0_e0_f0_g0_h0_i0_p2.html" title="下一页">&gt; </a></div>1/13</div>
+			</div>
+		</div>
+	</div>
+	<div class="foot_link" id="foot_link">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="javascript:;" class="back close">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#/';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','3010');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<script>
+(function($){
+	IDC.showMore($('#show_categories'),$('#navbox_categories'),$('#fullbg1'));
+	IDC.showMore($('#show_district'),$('#navbox_district'),$('#fullbg2'));
+})(jQuery);
+</script>
+
+
+ </body></html>

@@ -1,0 +1,2766 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)#/k40.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页-外卖-详情</title>
+<!-- UC默认竖屏 ，UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<meta name="browsermode" content="application">
+<!-- QQ强制竖屏 QQ强制全屏 -->
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="x5-page-mode" content="app">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" rev="stylesheet" href="./css/kd-mb.css">
+<style type="text/css">
+html{ height:100%;}
+body { position:relative;min-height:100%; height:100%; overflow:hidden;}
+</style>
+<script>
+window['ipageTitleTxt'] = '外卖详情';
+</script>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+<body>
+<div class="top_gg po_re" id="top_gg" style="display:none;">{$Mh163k_wap_首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="javascript:void(0);" onclick="return window.history.go(-1);" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">外卖详情</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+
+<form method="get" action="#/member/myorder.aspx" id="shopCartForm">
+<input type="hidden" name="action" value="myshoppay">
+<input type="hidden" name="shopid" value="40">
+<div class="shop_cart clearfix" id="myShopCart" data-shipmoney1="50">
+ <div class="amount"><s id="numAll">3</s></div>
+ <div class="price">¥<span id="chrmoneyAll">268.00</span></div>
+ <div class="other">(配送费<span id="chrmoneyYunfei">0</span>元)</div>
+ <div class="meal_btn"><button type="submit" id="myShopCartSubmit" class="">立即下单</button></div>
+</div>
+</form>
+<div class="p_main">
+ <div class="p_tabs clearfix" id="p_tabs">
+   <ul>
+    <li class="item current" data-id="1">菜单</li>
+    <li><a href="sou_dianpings.html">点评</a></li>
+    <li class="item" data-id="2">介绍</li>
+   </ul>
+ </div>
+ <div class="tips" id="kdtips"><div class="wrap"><span id="textMarquee" class="inner">本店招聘聘外卖员</span></div><div class="close"></div></div>
+ <div class="price_sends clearfix">
+  <ul>
+   <li>
+     起送价
+     <p><span class="price">50</span>元</p>
+   </li>  
+   <li>
+     送达时间
+     <p><span class="time">30</span>分钟</p>
+   </li>
+   <li>
+     配送费
+     <p><span class="psf">5</span>元</p>
+   </li>
+  </ul>
+ </div>
+ <div class="pro_list clearfix" id="mainPage">
+	 <div class="cateName" id="cateName">
+		<div class="innercontent" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);"><ul><li class="cur"><a href="javascript:void(0);" data-scrolld="plist_00">招牌美食</a><span id="cat_num_00" data-id="00"></span><s class="s" id="scrolld_plist_00">3</s></li><li><a href="javascript:void(0);" data-scrolld="plist_932">一次性餐具</a><span id="cat_num_932" data-id="932">(8)</span><s class="s display10" id="scrolld_plist_932">0</s></li><li><a href="javascript:void(0);" data-scrolld="plist_934">酒水</a><span id="cat_num_934" data-id="934">(8)</span><s class="s display10" id="scrolld_plist_934">0</s></li><li><a href="javascript:void(0);" data-scrolld="plist_930">商务套餐</a><span id="cat_num_930" data-id="930">(8)</span><s class="s display10" id="scrolld_plist_930">0</s></li><li><a href="javascript:void(0);" data-scrolld="plist_928">主食</a><span id="cat_num_928" data-id="928">(7)</span><s class="s display10" id="scrolld_plist_928">0</s></li><li><a href="javascript:void(0);" data-scrolld="plist_926">甜品</a><span id="cat_num_926" data-id="926">(8)</span><s class="s display10" id="scrolld_plist_926">0</s></li><li><a href="javascript:void(0);" data-scrolld="plist_924">特色小吃</a><span id="cat_num_924" data-id="924">(7)</span><s class="s display10" id="scrolld_plist_924">0</s></li><li><a href="javascript:void(0);" data-scrolld="plist_922">健康蔬食</a><span id="cat_num_922" data-id="922">(6)</span><s class="s display10" id="scrolld_plist_922">0</s></li><li><a href="javascript:void(0);" data-scrolld="plist_920">家常味儿</a><span id="cat_num_920" data-id="920">(6)</span><s class="s display10" id="scrolld_plist_920">0</s></li><li><a href="javascript:void(0);" data-scrolld="plist_918">汤</a><span id="cat_num_918" data-id="918">(8)</span><s class="s display10" id="scrolld_plist_918">0</s></li><li><a href="javascript:void(0);" data-scrolld="plist_916">海河鲜</a><span id="cat_num_916" data-id="916">(6)</span><s class="s display10" id="scrolld_plist_916">0</s></li><li><a href="javascript:void(0);" data-scrolld="plist_914">凉菜</a><span id="cat_num_914" data-id="914">(8)</span><s class="s display10" id="scrolld_plist_914">0</s></li></ul><div style="height:50px;"></div></div>
+	 </div>
+	 <div class="prolist" id="prolist">
+		<div class="innercontent" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+			<div class="pro_item" id="plist_00" data-num="" data-id="00" style="display: block;">
+				<ul class="img clearfix">
+					<li class="item" id="pro_item_316" data-id="316" data-styleid="0" data-kcnum="121" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g316.html"><img data-src="../uploadfile/good/2015/05_10/2015051010160850196081.jpg" data-ifshow="1" src="./images/2015051010160850196081.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g316.html">经典川菜醋椒鲫鱼青笋</a></h3>
+       <p><span class="price">20</span>元/份</p>
+       <div class="fen">
+        <div class="dec" style="display: block;">-</div>
+        <div class="amount" style="display: block;">1</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_317" data-id="317" data-styleid="0" data-kcnum="94" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g317.html"><img data-src="../uploadfile/good/2015/05_13/2015051318110367379951.jpg" data-ifshow="1" src="./images/2015051318110367379951.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g317.html">冰糖湘莲</a></h3>
+       <p><span class="price">60</span>元/份</p>
+       <div class="fen">
+        <div class="dec" style="display: block;">-</div>
+        <div class="amount" style="display: block;">1</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_318" data-id="318" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g318.html"><img data-src="../uploadfile/good/2015/05_13/2015051317255590723031.jpg" data-ifshow="1" src="./images/2015051317255590723031.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g318.html">奇异果巧克力吉士杯</a></h3>
+       <p><span class="price">15</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_319" data-id="319" data-styleid="0" data-kcnum="108" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g319.html"><img data-src="../uploadfile/good/2015/05_10/2015051012075129868121.jpg" data-ifshow="1" src="./images/2015051012075129868121.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g319.html">浓咖啡朱古力忌廉饼</a></h3>
+       <p><span class="price">54</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_320" data-id="320" data-styleid="0" data-kcnum="68" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g320.html"><img data-src="../uploadfile/good/2015/05_13/2015051317482059438611.jpg" data-ifshow="1" src="./images/2015051317482059438611.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g320.html">蓝莓杏仁饼Blueberry</a></h3>
+       <p><span class="price">36</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_321" data-id="321" data-styleid="0" data-kcnum="35" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g321.html"><img data-src="../uploadfile/good/2015/05_10/2015051012082257922661.jpg" data-ifshow="1" src="./images/2015051012082257922661.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g321.html">椰汁西米布甸Coconut</a></h3>
+       <p><span class="price">18</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_322" data-id="322" data-styleid="0" data-kcnum="687" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g322.html"><img data-src="../uploadfile/good/2015/05_09/2015050923023873536081.jpg" data-ifshow="1" src="./images/2015050923023873536081.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g322.html">意式奶冻杯Panna</a></h3>
+       <p><span class="price">9</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_323" data-id="323" data-styleid="0" data-kcnum="54" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g323.html"><img data-src="../uploadfile/good/2015/05_10/2015051012083725156531.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g323.html">什果鲜忌廉蛋糕</a></h3>
+       <p><span class="price">25</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_324" data-id="324" data-styleid="0" data-kcnum="233" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g324.html"><img data-src="../uploadfile/good/2015/05_10/2015051012203837661531.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g324.html">捷克黄杏沙拉Czech</a></h3>
+       <p><span class="price">38</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_325" data-id="325" data-styleid="0" data-kcnum="128" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g325.html"><img data-src="../uploadfile/good/2015/05_10/2015051009554718828891.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g325.html">韩日番莳栗子毛士</a></h3>
+       <p><span class="price">22</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_326" data-id="326" data-styleid="0" data-kcnum="200" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g326.html"><img data-src="../uploadfile/good/2015/05_13/2015051318170828219711.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g326.html">英式火腿肉披萨</a></h3>
+       <p><span class="price">80</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_327" data-id="327" data-styleid="0" data-kcnum="66" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g327.html"><img data-src="../uploadfile/good/2015/05_13/2015051317472236077461.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g327.html">鸡绒海参</a></h3>
+       <p><span class="price">35</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_328" data-id="328" data-styleid="0" data-kcnum="97" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g328.html"><img data-src="../uploadfile/good/2015/05_13/2015051316001076668441.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g328.html">粉红香芋杯lemongrass</a></h3>
+       <p><span class="price">12</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_329" data-id="329" data-styleid="0" data-kcnum="50" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g329.html"><img data-src="../uploadfile/good/2015/05_13/2015051317292764139011.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g329.html">双人甜品套  可单点</a></h3>
+       <p><span class="price">95</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_330" data-id="330" data-styleid="0" data-kcnum="59" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g330.html"><img data-src="../uploadfile/good/2015/05_13/2015051318084629830431.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g330.html">招牌鲜漫天</a></h3>
+       <p><span class="price">188</span>元/份</p>
+       <div class="fen">
+        <div class="dec" style="display: block;">-</div>
+        <div class="amount" style="display: block;">1</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_331" data-id="331" data-styleid="0" data-kcnum="186" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g331.html"><img data-src="../uploadfile/good/2015/05_13/2015051317392309497881.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g331.html">鲁系河鲜干炸赤鳞鱼</a></h3>
+       <p><span class="price">188</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_332" data-id="332" data-styleid="0" data-kcnum="38" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g332.html"><img data-src="../uploadfile/good/2015/05_10/2015051010404756324011.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g332.html">蟹肉粟米奠</a></h3>
+       <p><span class="price">30</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_333" data-id="333" data-styleid="0" data-kcnum="116" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g333.html"><img data-src="../uploadfile/good/2015/05_10/2015051013135617339271.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g333.html">热辣海鲜薄脆披萨</a></h3>
+       <p><span class="price">120</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_334" data-id="334" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g334.html"><img data-src="../uploadfile/good/2015/05_13/2015051317585654885671.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g334.html">珍珠鸳鸯汤</a></h3>
+       <p><span class="price">12</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_335" data-id="335" data-styleid="0" data-kcnum="8" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g335.html"><img data-src="../uploadfile/good/2015/05_13/2015051318062962629701.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g335.html">石斛灵芝炖鸡汤</a></h3>
+       <p><span class="price">238</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_336" data-id="336" data-styleid="0" data-kcnum="118" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g336.html"><img data-src="../uploadfile/good/2015/05_10/2015051010341736072171.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g336.html">莲子油桃番茄羹</a></h3>
+       <p><span class="price">116</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_337" data-id="337" data-styleid="0" data-kcnum="266" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g337.html"><img data-src="../uploadfile/good/2015/05_13/2015051316500201615771.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g337.html">山药枸杞排骨汤</a></h3>
+       <p><span class="price">40</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_338" data-id="338" data-styleid="0" data-kcnum="66" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g338.html"><img data-src="../uploadfile/good/2015/05_13/2015051318030796941741.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g338.html">银耳莲子羹</a></h3>
+       <p><span class="price">80</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_339" data-id="339" data-styleid="0" data-kcnum="163" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g339.html"><img data-src="../uploadfile/good/2015/05_10/2015051010460240722311.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g339.html">榨菜排骨蒸宽粉</a></h3>
+       <p><span class="price">60</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_340" data-id="340" data-styleid="0" data-kcnum="101" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g340.html"><img data-src="../uploadfile/good/2015/05_10/2015051012063450142211.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g340.html">胡萝卜炖包菜</a></h3>
+       <p><span class="price">40</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_341" data-id="341" data-styleid="0" data-kcnum="68" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g341.html"><img data-src="../uploadfile/good/2015/05_10/2015051012064600113561.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g341.html">五花肉烧百叶结</a></h3>
+       <p><span class="price">30</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_342" data-id="342" data-styleid="0" data-kcnum="109" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g342.html"><img data-src="../uploadfile/good/2015/05_10/2015051012065750171171.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g342.html">沙拉芸豆蛋糕快</a></h3>
+       <p><span class="price">29</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_343" data-id="343" data-styleid="0" data-kcnum="113" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g343.html"><img data-src="../uploadfile/good/2015/05_13/2015051317525554837141.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g343.html">佛手瓜沙拉</a></h3>
+       <p><span class="price">30</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_344" data-id="344" data-styleid="0" data-kcnum="74" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g344.html"><img data-src="../uploadfile/good/2015/05_13/2015051316212957984791.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g344.html">冬菇鸡粥</a></h3>
+       <p><span class="price">20</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_345" data-id="345" data-styleid="0" data-kcnum="122" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g345.html"><img data-src="../uploadfile/good/2015/05_13/2015051316032332997331.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g345.html">百合炖雪梨</a></h3>
+       <p><span class="price">80</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_346" data-id="346" data-styleid="0" data-kcnum="32" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g346.html"><img data-src="../uploadfile/good/2015/05_10/2015051011345206335781.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g346.html">北芪当归炖乌鸡</a></h3>
+       <p><span class="price">88</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_347" data-id="347" data-styleid="0" data-kcnum="100" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g347.html"><img data-src="../uploadfile/good/2015/05_10/2015051012061520490751.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g347.html">红枣淮山炖羊肉</a></h3>
+       <p><span class="price">118</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_348" data-id="348" data-styleid="0" data-kcnum="28" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g348.html"><img data-src="../uploadfile/good/2015/05_10/2015051011403984490391.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g348.html">鲍鱼焗百合叶</a></h3>
+       <p><span class="price">328</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_349" data-id="349" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g349.html"><img data-src="../uploadfile/good/2015/05_10/2015051011405211091361.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g349.html">瑞纳伯爵 法国原瓶进口 干红葡萄酒</a></h3>
+       <p><span class="price">380</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_350" data-id="350" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g350.html"><img data-src="../uploadfile/good/2015/05_10/2015051011582875179381.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g350.html">施美格 威士忌 白兰地 威士忌白兰地组合装</a></h3>
+       <p><span class="price">99</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_351" data-id="351" data-styleid="0" data-kcnum="73" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g351.html"><img data-src="../uploadfile/good/2015/05_10/2015051011452490717171.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g351.html">重庆香山蜜饼</a></h3>
+       <p><span class="price">16</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_352" data-id="352" data-styleid="0" data-kcnum="121" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g352.html"><img data-src="../uploadfile/good/2015/05_13/2015051315565525126281.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g352.html">云南寻甸风味小土豆</a></h3>
+       <p><span class="price">12</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_353" data-id="353" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g353.html"><img data-src="../uploadfile/good/2015/05_10/2015051011500257915401.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g353.html">燕京 10度啤酒 330ML*24瓶/箱</a></h3>
+       <p><span class="price">86</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_354" data-id="354" data-styleid="0" data-kcnum="329" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g354.html"><img data-src="../uploadfile/good/2015/05_13/2015051311385465722291.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g354.html">青岛特色风味辣炒蛤喇</a></h3>
+       <p><span class="price">36</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_355" data-id="355" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g355.html"><img data-src="../uploadfile/good/2015/05_10/2015051011532915775041.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g355.html">屈臣氏 苏打汽水四罐装 330ml*4</a></h3>
+       <p><span class="price">16</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_356" data-id="356" data-styleid="0" data-kcnum="206" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g356.html"><img data-src="../uploadfile/good/2015/05_13/2015051311453150135081.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g356.html">彩椒虾仁炒饭</a></h3>
+       <p><span class="price">9</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_357" data-id="357" data-styleid="0" data-kcnum="998" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g357.html"><img data-src="../uploadfile/good/2015/05_10/2015051011572442324271.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g357.html">雀巢 丝滑拿铁咖啡 268ml*3</a></h3>
+       <p><span class="price">18</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_358" data-id="358" data-styleid="0" data-kcnum="106" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g358.html"><img data-src="../uploadfile/good/2015/05_13/2015051317241329869671.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g358.html">香脆芝麻馅饼</a></h3>
+       <p><span class="price">1.5</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_359" data-id="359" data-styleid="0" data-kcnum="994" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g359.html"><img data-src="../uploadfile/good/2015/05_10/2015051012045187623841.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g359.html">香菇鲜肉生煎包</a></h3>
+       <p><span class="price">25</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_360" data-id="360" data-styleid="0" data-kcnum="998" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g360.html"><img data-src="../uploadfile/good/2015/05_10/2015051012074223540551.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g360.html">稼家谷 淀粉基一次性直碗 800ml 10只</a></h3>
+       <p><span class="price">8</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_361" data-id="361" data-styleid="0" data-kcnum="995" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g361.html"><img data-src="../uploadfile/good/2015/05_10/2015051012101007950861.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g361.html">天竹 带纸套卫生筷TZ15292（50双装）</a></h3>
+       <p><span class="price">12</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_362" data-id="362" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g362.html"><img data-src="../uploadfile/good/2015/05_10/2015051012131692367501.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g362.html">热炸灌汤蒸饺</a></h3>
+       <p><span class="price">0.6</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_363" data-id="363" data-styleid="0" data-kcnum="995" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g363.html"><img data-src="../uploadfile/good/2015/05_10/2015051012140770474701.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g363.html">饮思洁 纸杯 100%全木浆9盎司20只装</a></h3>
+       <p><span class="price">4</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_364" data-id="364" data-styleid="0" data-kcnum="998" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g364.html"><img data-src="../uploadfile/good/2015/05_10/2015051012154317311661.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g364.html">稼家谷 淀粉基一次性叉勺 142mm 10支</a></h3>
+       <p><span class="price">4</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_365" data-id="365" data-styleid="0" data-kcnum="226" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g365.html"><img data-src="../uploadfile/good/2015/05_13/2015051318250398535661.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g365.html">山西罐罐面</a></h3>
+       <p><span class="price">24</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_366" data-id="366" data-styleid="0" data-kcnum="998" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g366.html"><img data-src="../uploadfile/good/2015/05_10/2015051012175457976271.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g366.html">妤太太 一次性塑碟L(20只)</a></h3>
+       <p><span class="price">8</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_367" data-id="367" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g367.html"><img data-src="../uploadfile/good/2015/05_13/2015051316352362615411.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g367.html">办公套餐6~8人 400元标准</a></h3>
+       <p><span class="price">400</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_368" data-id="368" data-styleid="0" data-kcnum="8" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g368.html"><img data-src="../uploadfile/good/2015/05_10/2015051012291900151641.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g368.html">2人套餐 200元标准 酒水免单</a></h3>
+       <p><span class="price">200</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_369" data-id="369" data-styleid="0" data-kcnum="98" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g369.html"><img data-src="../uploadfile/good/2015/05_10/2015051013024876650801.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g369.html">多人大型套餐聚会party首选</a></h3>
+       <p><span class="price">6888</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_370" data-id="370" data-styleid="0" data-kcnum="7" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g370.html"><img data-src="../uploadfile/good/2015/05_13/2015051318212056356691.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g370.html">甜蜜爱久久情侣套餐299元</a></h3>
+       <p><span class="price">299</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_371" data-id="371" data-styleid="0" data-kcnum="50" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g371.html"><img data-src="../uploadfile/good/2015/05_13/2015051310013640758501.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g371.html">烟熏三文鱼</a></h3>
+       <p><span class="price">60</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_372" data-id="372" data-styleid="0" data-kcnum="99" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g372.html"><img data-src="../uploadfile/good/2015/05_13/2015051310060075110041.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g372.html">日式醋拌海蛎子</a></h3>
+       <p><span class="price">68</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_373" data-id="373" data-styleid="0" data-kcnum="136" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g373.html"><img data-src="../uploadfile/good/2015/05_13/2015051311111681333131.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g373.html">骨汤煨豆腐</a></h3>
+       <p><span class="price">36</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_374" data-id="374" data-styleid="0" data-kcnum="55" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g374.html"><img data-src="../uploadfile/good/2015/05_13/2015051311150131317741.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g374.html">浙菜西湖醋鱼</a></h3>
+       <p><span class="price">95</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_375" data-id="375" data-styleid="0" data-kcnum="416" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g375.html"><img data-src="../uploadfile/good/2015/05_13/2015051318204368894531.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g375.html">蒜蓉葱油开胃虾</a></h3>
+       <p><span class="price">68</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_376" data-id="376" data-styleid="0" data-kcnum="555" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g376.html"><img data-src="../uploadfile/good/2015/05_13/2015051311341226611671.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g376.html">吴江手抓饼</a></h3>
+       <p><span class="price">5</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_377" data-id="377" data-styleid="0" data-kcnum="264" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g377.html"><img data-src="../uploadfile/good/2015/05_13/2015051317380579832761.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g377.html">法式马卡龙</a></h3>
+       <p><span class="price">26</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_378" data-id="378" data-styleid="0" data-kcnum="1012" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g378.html"><img data-src="../uploadfile/good/2015/05_13/2015051318073550176951.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g378.html">罗氏香酥鱼煲饭</a></h3>
+       <p><span class="price">28</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_379" data-id="379" data-styleid="0" data-kcnum="106" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g379.html"><img data-src="../uploadfile/good/2015/05_13/2015051311430161042851.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g379.html">香辣鸡腿堡</a></h3>
+       <p><span class="price">16</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_380" data-id="380" data-styleid="0" data-kcnum="98" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g380.html"><img data-src="../uploadfile/good/2015/05_13/2015051312040686040021.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g380.html">西冷牛排</a></h3>
+       <p><span class="price">168</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_381" data-id="381" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g381.html"><img data-src="../uploadfile/good/2015/05_13/2015051314531667337321.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g381.html">熊津 萃米源糙米味饮料</a></h3>
+       <p><span class="price">66</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_382" data-id="382" data-styleid="0" data-kcnum="998" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g382.html"><img data-src="../uploadfile/good/2015/05_13/2015051315003779811171.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g382.html">艾思沛果汁气泡水</a></h3>
+       <p><span class="price">68</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_383" data-id="383" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g383.html"><img data-src="../uploadfile/good/2015/05_13/2015051315053629874111.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g383.html">海太 葡萄汁饮料238ml(听)</a></h3>
+       <p><span class="price">4</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_384" data-id="384" data-styleid="0" data-kcnum="666" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g384.html"><img data-src="../uploadfile/good/2015/05_13/2015051315342503272111.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g384.html">卡布奇诺</a></h3>
+       <p><span class="price">20</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_385" data-id="385" data-styleid="0" data-kcnum="99" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g385.html"><img data-src="../uploadfile/good/2015/05_13/2015051315412756344491.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g385.html">港式芙蓉果甜点</a></h3>
+       <p><span class="price">0</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_386" data-id="386" data-styleid="0" data-kcnum="998" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g386.html"><img data-src="../uploadfile/good/2015/05_13/2015051315470168882181.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g386.html">商吉 51cup 750ml方形塑料盒</a></h3>
+       <p><span class="price">32</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_387" data-id="387" data-styleid="0" data-kcnum="38" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g387.html"><img data-src="../uploadfile/good/2015/05_13/2015051315491981392821.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g387.html">南京小吃什锦豆腐涝</a></h3>
+       <p><span class="price">15</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_388" data-id="388" data-styleid="0" data-kcnum="64" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g388.html"><img data-src="../uploadfile/good/2015/05_13/2015051318211131342461.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g388.html">江南风味三丝春卷</a></h3>
+       <p><span class="price">28</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_389" data-id="389" data-styleid="0" data-kcnum="996" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g389.html"><img data-src="../uploadfile/good/2015/05_13/2015051315551837619841.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g389.html">e洁 一次性台布 180*180cm 10张/包</a></h3>
+       <p><span class="price">10</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_390" data-id="390" data-styleid="0" data-kcnum="998" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g390.html"><img data-src="../uploadfile/good/2015/05_13/2015051316021745461921.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g390.html">喇叭花 一次性深三格环保饭盒</a></h3>
+       <p><span class="price">1</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_391" data-id="391" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g391.html"><img data-src="../uploadfile/good/2015/05_13/2015051316153525113861.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g391.html">鯟沢面酒屋双人美食套餐</a></h3>
+       <p><span class="price">136</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_392" data-id="392" data-styleid="0" data-kcnum="58" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g392.html"><img data-src="../uploadfile/good/2015/05_13/2015051318191653258321.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g392.html">补气翡翠山药丝</a></h3>
+       <p><span class="price">45</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_393" data-id="393" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g393.html"><img data-src="../uploadfile/good/2015/05_13/2015051316244411090631.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g393.html">刘家锅酒楼 10人商务套餐</a></h3>
+       <p><span class="price">980</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_394" data-id="394" data-styleid="0" data-kcnum="29" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g394.html"><img data-src="../uploadfile/good/2015/05_13/2015051316283004813491.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g394.html">党参炖乌鸡</a></h3>
+       <p><span class="price">100</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_395" data-id="395" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g395.html"><img data-src="../uploadfile/good/2015/05_13/2015051316321526690771.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g395.html">56号院北京菜10人套餐</a></h3>
+       <p><span class="price">328</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_396" data-id="396" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g396.html"><img data-src="../uploadfile/good/2015/05_13/2015051317035886048361.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g396.html">素拼凉菜</a></h3>
+       <p><span class="price">28</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_397" data-id="397" data-styleid="0" data-kcnum="87" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g397.html"><img data-src="../uploadfile/good/2015/05_13/2015051317390534493341.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g397.html">一品麻婆豆腐</a></h3>
+       <p><span class="price">18</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_398" data-id="398" data-styleid="0" data-kcnum="968" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g398.html"><img data-src="../uploadfile/good/2015/05_13/2015051318245437684541.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g398.html">家常茄子豆角</a></h3>
+       <p><span class="price">20</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_399" data-id="399" data-styleid="0" data-kcnum="12" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g399.html"><img data-src="../uploadfile/good/2015/05_13/2015051317071093893791.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g399.html">鲍鱼海珍煲</a></h3>
+       <p><span class="price">380</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_400" data-id="400" data-styleid="0" data-kcnum="0" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g400.html"><img data-src="../uploadfile/good/2015/05_13/2015051318225393857341.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g400.html">鲍汁烧辽参</a></h3>
+       <p><span class="price">160</span>元/份</p>
+       <div class="fen" style="display: none;">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display: block;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_401" data-id="401" data-styleid="0" data-kcnum="62" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g401.html"><img data-src="../uploadfile/good/2015/05_13/2015051317151293874661.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g401.html">蛋蓉海鲜煲</a></h3>
+       <p><span class="price">48</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_402" data-id="402" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g402.html"><img data-src="../uploadfile/good/2015/05_13/2015051317173879898331.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g402.html">花式冷菜 样式任选其一</a></h3>
+       <p><span class="price">68</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li><li class="item" id="pro_item_403" data-id="403" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g403.html"><img data-src="../uploadfile/good/2015/05_13/2015051317291200135391.jpg" data-ifshow="0" src="./images/kuaison_nofind_food.gif" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g403.html">冬瓜丸子汤</a></h3>
+       <p><span class="price">30</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>
+				</ul>
+			</div>
+						<div class="pro_item" id="plist_932" data-num="(8)" data-id="932">
+					<ul class="img clearfix">
+								<li class="item" id="pro_item_390" data-id="390" data-styleid="0" data-kcnum="998" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g390.html"><img src="./images/2015051316021742311221.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051316021742311221.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g390.html">喇叭花 一次性深三格环保饭盒</a></h3>
+       <p><span class="price">1.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_389" data-id="389" data-styleid="0" data-kcnum="996" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g389.html"><img src="./images/2015051315551832923921.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051315551832923921.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g389.html">e洁 一次性台布 180*180cm 10张/包</a></h3>
+       <p><span class="price">10.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_386" data-id="386" data-styleid="0" data-kcnum="998" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g386.html"><img src="./images/2015051315470164192571.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051315470164192571.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g386.html">商吉 51cup 750ml方形塑料盒</a></h3>
+       <p><span class="price">32.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_366" data-id="366" data-styleid="0" data-kcnum="998" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g366.html"><img src="./images/2015051012175451610951.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051012175451610951.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g366.html">妤太太 一次性塑碟L(20只)</a></h3>
+       <p><span class="price">8.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_364" data-id="364" data-styleid="0" data-kcnum="998" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g364.html"><img src="./images/2015051012154311097771.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051012154311097771.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g364.html">稼家谷 淀粉基一次性叉勺 142mm 10支</a></h3>
+       <p><span class="price">4.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_363" data-id="363" data-styleid="0" data-kcnum="995" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g363.html"><img src="./images/2015051012140762682121.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051012140762682121.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g363.html">饮思洁 纸杯 100%全木浆9盎司20只装</a></h3>
+       <p><span class="price">4.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_361" data-id="361" data-styleid="0" data-kcnum="995" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g361.html"><img src="./images/2015051012101001639901.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051012101001639901.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g361.html">天竹 带纸套卫生筷TZ15292（50双装）</a></h3>
+       <p><span class="price">12.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_360" data-id="360" data-styleid="0" data-kcnum="998" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g360.html"><img src="./images/2015051012074218811071.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051012074218811071.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g360.html">稼家谷 淀粉基一次性直碗 800ml 10只</a></h3>
+       <p><span class="price">8.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>
+					</ul>
+				</div>
+				<div class="pro_item" id="plist_934" data-num="(8)" data-id="934">
+					<ul class="img clearfix">
+								<li class="item" id="pro_item_383" data-id="383" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g383.html"><img src="./images/2015051315053623533721.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051315053623533721.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g383.html">海太 葡萄汁饮料238ml(听)</a></h3>
+       <p><span class="price">4.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_382" data-id="382" data-styleid="0" data-kcnum="998" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g382.html"><img src="./images/2015051315003776629171.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051315003776629171.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g382.html">艾思沛果汁气泡水</a></h3>
+       <p><span class="price">68.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_381" data-id="381" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g381.html"><img src="./images/2015051314531664184111.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051314531664184111.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g381.html">熊津 萃米源糙米味饮料</a></h3>
+       <p><span class="price">66.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_350" data-id="350" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g350.html"><img src="./images/2015051011582870491251.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051011582870491251.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g350.html">施美格 威士忌 白兰地 威士忌白兰地组合装</a></h3>
+       <p><span class="price">99.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_357" data-id="357" data-styleid="0" data-kcnum="998" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g357.html"><img src="./images/2015051011572434474221.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051011572434474221.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g357.html">雀巢 丝滑拿铁咖啡 268ml*3</a></h3>
+       <p><span class="price">18.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_355" data-id="355" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g355.html"><img src="./images/2015051011532911088051.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051011532911088051.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g355.html">屈臣氏 苏打汽水四罐装 330ml*4</a></h3>
+       <p><span class="price">16.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_353" data-id="353" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g353.html"><img src="./images/2015051011500254868551.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051011500254868551.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g353.html">燕京 10度啤酒 330ML*24瓶/箱</a></h3>
+       <p><span class="price">86.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_349" data-id="349" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g349.html"><img src="./images/2015051011405209437431.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051011405209437431.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g349.html">瑞纳伯爵 法国原瓶进口 干红葡萄酒</a></h3>
+       <p><span class="price">380.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>
+					</ul>
+				</div>
+				<div class="pro_item" id="plist_930" data-num="(8)" data-id="930">
+					<ul class="img clearfix">
+								<li class="item" id="pro_item_370" data-id="370" data-styleid="0" data-kcnum="7" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g370.html"><img src="./images/2015051317361465738741.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051317361465738741.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g370.html">甜蜜爱久久情侣套餐299元</a></h3>
+       <p><span class="price">299.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_329" data-id="329" data-styleid="0" data-kcnum="50" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g329.html"><img src="./images/2015051317292761053861.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051317292761053861.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g329.html">双人甜品套  可单点</a></h3>
+       <p><span class="price">95.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_367" data-id="367" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g367.html"><img src="./images/2015051316352359421911.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051316352359421911.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g367.html">办公套餐6~8人 400元标准</a></h3>
+       <p><span class="price">400.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_395" data-id="395" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g395.html"><img src="./images/2015051316321523523211.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051316321523523211.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g395.html">56号院北京菜10人套餐</a></h3>
+       <p><span class="price">328.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_393" data-id="393" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g393.html"><img src="./images/2015051316244407956911.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051316244407956911.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g393.html">刘家锅酒楼 10人商务套餐</a></h3>
+       <p><span class="price">980.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_391" data-id="391" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g391.html"><img src="./images/2015051316153521929171.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051316153521929171.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g391.html">鯟沢面酒屋双人美食套餐</a></h3>
+       <p><span class="price">136.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_369" data-id="369" data-styleid="0" data-kcnum="98" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g369.html"><img src="./images/2015051012342462648271.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051012342462648271.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g369.html">多人大型套餐聚会party首选</a></h3>
+       <p><span class="price">6888.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_368" data-id="368" data-styleid="0" data-kcnum="8" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g368.html"><img src="./images/2015051012291890756251.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051012291890756251.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g368.html">2人套餐 200元标准 酒水免单</a></h3>
+       <p><span class="price">200.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>
+					</ul>
+				</div>
+				<div class="pro_item" id="plist_928" data-num="(7)" data-id="928">
+					<ul class="img clearfix">
+								<li class="item" id="pro_item_365" data-id="365" data-styleid="0" data-kcnum="226" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g365.html"><img src="./images/2015051311471284484711.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051311471284484711.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g365.html">山西罐罐面</a></h3>
+       <p><span class="price">24.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_358" data-id="358" data-styleid="0" data-kcnum="106" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g358.html"><img src="./images/2015051012002471980191.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051012002471980191.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g358.html">香脆芝麻馅饼</a></h3>
+       <p><span class="price">1.50</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_380" data-id="380" data-styleid="0" data-kcnum="98" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g380.html"><img src="./images/2015051312040682936411.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051312040682936411.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g380.html">西冷牛排</a></h3>
+       <p><span class="price">168.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_356" data-id="356" data-styleid="0" data-kcnum="206" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g356.html"><img src="./images/2015051311453146996641.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051311453146996641.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g356.html">彩椒虾仁炒饭</a></h3>
+       <p><span class="price">9.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_379" data-id="379" data-styleid="0" data-kcnum="106" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g379.html"><img src="./images/2015051311430156356771.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051311430156356771.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g379.html">香辣鸡腿堡</a></h3>
+       <p><span class="price">16.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_362" data-id="362" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g362.html"><img src="./images/2015051012131684442101.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051012131684442101.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g362.html">热炸灌汤蒸饺</a></h3>
+       <p><span class="price">0.60</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_359" data-id="359" data-styleid="0" data-kcnum="994" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g359.html"><img src="./images/2015051012045178229561.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051012045178229561.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g359.html">香菇鲜肉生煎包</a></h3>
+       <p><span class="price">25.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>
+					</ul>
+				</div>
+				<div class="pro_item" id="plist_926" data-num="(8)" data-id="926">
+					<ul class="img clearfix">
+								<li class="item" id="pro_item_377" data-id="377" data-styleid="0" data-kcnum="264" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g377.html"><img src="./images/2015051317380570432871.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051317380570432871.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g377.html">法式马卡龙</a></h3>
+       <p><span class="price">26.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_320" data-id="320" data-styleid="0" data-kcnum="68" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g320.html"><img src="./images/2015051315364012611071.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051315364012611071.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g320.html">蓝莓杏仁饼Blueberry</a></h3>
+       <p><span class="price">36.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_318" data-id="318" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g318.html"><img src="./images/2015051316391484432461.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051316391484432461.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g318.html">奇异果巧克力吉士杯</a></h3>
+       <p><span class="price">15.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_385" data-id="385" data-styleid="0" data-kcnum="99" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g385.html"><img src="./images/2015051315412753265321.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051315412753265321.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g385.html">港式芙蓉果甜点</a></h3>
+       <p><span class="price">面议</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_384" data-id="384" data-styleid="0" data-kcnum="666" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g384.html"><img src="./images/2015051315342501649091.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051315342501649091.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g384.html">卡布奇诺</a></h3>
+       <p><span class="price">20.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_321" data-id="321" data-styleid="0" data-kcnum="35" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g321.html"><img src="./images/2015050922591114137611.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_09/2015050922591114137611.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g321.html">椰汁西米布甸Coconut</a></h3>
+       <p><span class="price">18.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_319" data-id="319" data-styleid="0" data-kcnum="108" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g319.html"><img src="./images/2015050922511665710211.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_09/2015050922511665710211.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g319.html">浓咖啡朱古力忌廉饼</a></h3>
+       <p><span class="price">54.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_322" data-id="322" data-styleid="0" data-kcnum="687" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g322.html"><img src="./images/2015050923023864120441.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_09/2015050923023864120441.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g322.html">意式奶冻杯Panna</a></h3>
+       <p><span class="price">9.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>
+					</ul>
+				</div>
+				<div class="pro_item" id="plist_924" data-num="(7)" data-id="924">
+					<ul class="img clearfix">
+								<li class="item" id="pro_item_388" data-id="388" data-styleid="0" data-kcnum="64" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g388.html"><img src="./images/2015051315542034427301.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051315542034427301.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g388.html">江南风味三丝春卷</a></h3>
+       <p><span class="price">28.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_352" data-id="352" data-styleid="0" data-kcnum="121" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g352.html"><img src="./images/2015051315565520468701.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051315565520468701.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g352.html">云南寻甸风味小土豆</a></h3>
+       <p><span class="price">12.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_328" data-id="328" data-styleid="0" data-kcnum="97" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g328.html"><img src="./images/2015051316001071999151.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051316001071999151.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g328.html">粉红香芋杯lemongrass</a></h3>
+       <p><span class="price">12.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_387" data-id="387" data-styleid="0" data-kcnum="38" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g387.html"><img src="./images/2015051315491978277831.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051315491978277831.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g387.html">南京小吃什锦豆腐涝</a></h3>
+       <p><span class="price">15.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_376" data-id="376" data-styleid="0" data-kcnum="555" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g376.html"><img src="./images/2015051311341223566831.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051311341223566831.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g376.html">吴江手抓饼</a></h3>
+       <p><span class="price">5.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_323" data-id="323" data-styleid="0" data-kcnum="54" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g323.html"><img src="./images/2015050923050237676951.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_09/2015050923050237676951.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g323.html">什果鲜忌廉蛋糕</a></h3>
+       <p><span class="price">25.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_351" data-id="351" data-styleid="0" data-kcnum="73" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g351.html"><img src="./images/2015051011452484477101.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051011452484477101.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g351.html">重庆香山蜜饼</a></h3>
+       <p><span class="price">16.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>
+					</ul>
+				</div>
+				<div class="pro_item" id="plist_922" data-num="(6)" data-id="922">
+					<ul class="img clearfix">
+								<li class="item" id="pro_item_394" data-id="394" data-styleid="0" data-kcnum="29" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g394.html"><img src="./images/2015051316283000113951.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051316283000113951.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g394.html">党参炖乌鸡</a></h3>
+       <p><span class="price">100.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_344" data-id="344" data-styleid="0" data-kcnum="74" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g344.html"><img src="./images/2015051316212954886171.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051316212954886171.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g344.html">冬菇鸡粥</a></h3>
+       <p><span class="price">20.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_345" data-id="345" data-styleid="0" data-kcnum="122" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g345.html"><img src="./images/2015051316032329864231.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051316032329864231.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g345.html">百合炖雪梨</a></h3>
+       <p><span class="price">80.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_347" data-id="347" data-styleid="0" data-kcnum="100" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g347.html"><img src="./images/2015051011374521956401.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051011374521956401.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g347.html">红枣淮山炖羊肉</a></h3>
+       <p><span class="price">118.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_348" data-id="348" data-styleid="0" data-kcnum="28" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g348.html"><img src="./images/2015051011403973583351.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051011403973583351.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g348.html">鲍鱼焗百合叶</a></h3>
+       <p><span class="price">328.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_346" data-id="346" data-styleid="0" data-kcnum="32" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g346.html"><img src="./images/2015051011345195430981.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051011345195430981.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g346.html">北芪当归炖乌鸡</a></h3>
+       <p><span class="price">88.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>
+					</ul>
+				</div>
+				<div class="pro_item" id="plist_920" data-num="(6)" data-id="920">
+					<ul class="img clearfix">
+								<li class="item" id="pro_item_343" data-id="343" data-styleid="0" data-kcnum="113" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g343.html"><img src="./images/2015051317525550112111.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051317525550112111.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g343.html">佛手瓜沙拉</a></h3>
+       <p><span class="price">30.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_374" data-id="374" data-styleid="0" data-kcnum="55" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g374.html"><img src="./images/2015051311150126690821.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051311150126690821.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g374.html">浙菜西湖醋鱼</a></h3>
+       <p><span class="price">95.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_342" data-id="342" data-styleid="0" data-kcnum="109" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g342.html"><img src="./images/2015051011161456393061.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051011161456393061.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g342.html">沙拉芸豆蛋糕快</a></h3>
+       <p><span class="price">29.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_341" data-id="341" data-styleid="0" data-kcnum="68" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g341.html"><img src="./images/2015051010580836086591.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051010580836086591.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g341.html">五花肉烧百叶结</a></h3>
+       <p><span class="price">30.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_340" data-id="340" data-styleid="0" data-kcnum="101" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g340.html"><img src="./images/2015051010544407918551.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051010544407918551.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g340.html">胡萝卜炖包菜</a></h3>
+       <p><span class="price">40.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_339" data-id="339" data-styleid="0" data-kcnum="163" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g339.html"><img src="./images/2015051010460231310751.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051010460231310751.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g339.html">榨菜排骨蒸宽粉</a></h3>
+       <p><span class="price">60.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>
+					</ul>
+				</div>
+				<div class="pro_item" id="plist_918" data-num="(8)" data-id="918">
+					<ul class="img clearfix">
+								<li class="item" id="pro_item_338" data-id="338" data-styleid="0" data-kcnum="66" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g338.html"><img src="./images/2015051318030793895901.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051318030793895901.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g338.html">银耳莲子羹</a></h3>
+       <p><span class="price">80.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_335" data-id="335" data-styleid="0" data-kcnum="8" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g335.html"><img src="./images/2015051318062961059821.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051318062961059821.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g335.html">石斛灵芝炖鸡汤</a></h3>
+       <p><span class="price">238.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_334" data-id="334" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g334.html"><img src="./images/2015051317585651663681.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051317585651663681.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g334.html">珍珠鸳鸯汤</a></h3>
+       <p><span class="price">12.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_403" data-id="403" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g403.html"><img src="./images/2015051317291196943621.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051317291196943621.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g403.html">冬瓜丸子汤</a></h3>
+       <p><span class="price">30.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_401" data-id="401" data-styleid="0" data-kcnum="62" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g401.html"><img src="./images/2015051317151284450211.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051317151284450211.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g401.html">蛋蓉海鲜煲</a></h3>
+       <p><span class="price">48.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_337" data-id="337" data-styleid="0" data-kcnum="266" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g337.html"><img src="./images/2015051316500198532441.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051316500198532441.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g337.html">山药枸杞排骨汤</a></h3>
+       <p><span class="price">40.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_373" data-id="373" data-styleid="0" data-kcnum="136" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g373.html"><img src="./images/2015051311111678293291.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051311111678293291.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g373.html">骨汤煨豆腐</a></h3>
+       <p><span class="price">36.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_336" data-id="336" data-styleid="0" data-kcnum="118" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g336.html"><img src="./images/2015051010341728273211.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051010341728273211.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g336.html">莲子油桃番茄羹</a></h3>
+       <p><span class="price">116.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>
+					</ul>
+				</div>
+				<div class="pro_item" id="plist_916" data-num="(6)" data-id="916">
+					<ul class="img clearfix">
+								<li class="item" id="pro_item_331" data-id="331" data-styleid="0" data-kcnum="186" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g331.html"><img src="./images/2015051010132267311701.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051010132267311701.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g331.html">鲁系河鲜干炸赤鳞鱼</a></h3>
+       <p><span class="price">188.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_327" data-id="327" data-styleid="0" data-kcnum="66" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g327.html"><img src="./images/2015051317472223577221.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051317472223577221.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g327.html">鸡绒海参</a></h3>
+       <p><span class="price">35.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_399" data-id="399" data-styleid="0" data-kcnum="12" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g399.html"><img src="./images/2015051317071084428841.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051317071084428841.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g399.html">鲍鱼海珍煲</a></h3>
+       <p><span class="price">380.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_372" data-id="372" data-styleid="0" data-kcnum="99" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g372.html"><img src="./images/2015051310060065750871.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051310060065750871.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g372.html">日式醋拌海蛎子</a></h3>
+       <p><span class="price">68.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_333" data-id="333" data-styleid="0" data-kcnum="116" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g333.html"><img src="./images/2015051010410667358211.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051010410667358211.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g333.html">热辣海鲜薄脆披萨</a></h3>
+       <p><span class="price">120.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_332" data-id="332" data-styleid="0" data-kcnum="38" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g332.html"><img src="./images/2015051010404746953621.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051010404746953621.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g332.html">蟹肉粟米奠</a></h3>
+       <p><span class="price">30.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>
+					</ul>
+				</div>
+				<div class="pro_item" id="plist_914" data-num="(8)" data-id="914">
+					<ul class="img clearfix">
+								<li class="item" id="pro_item_326" data-id="326" data-styleid="0" data-kcnum="200" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g326.html"><img src="./images/2015051009583653233391.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051009583653233391.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g326.html">英式火腿肉披萨</a></h3>
+       <p><span class="price">80.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_317" data-id="317" data-styleid="0" data-kcnum="94" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g317.html"><img src="./images/2015051316472664194021.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051316472664194021.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g317.html">冰糖湘莲</a></h3>
+       <p><span class="price">60.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_402" data-id="402" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g402.html"><img src="./images/2015051317173878256171.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051317173878256171.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g402.html">花式冷菜 样式任选其一</a></h3>
+       <p><span class="price">68.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_396" data-id="396" data-styleid="0" data-kcnum="999" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g396.html"><img src="./images/2015051317035881362121.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051317035881362121.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g396.html">素拼凉菜</a></h3>
+       <p><span class="price">28.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_371" data-id="371" data-styleid="0" data-kcnum="50" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g371.html"><img src="./images/2015051310013629854541.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_13/2015051310013629854541.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g371.html">烟熏三文鱼</a></h3>
+       <p><span class="price">60.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_324" data-id="324" data-styleid="0" data-kcnum="233" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g324.html"><img src="./images/2015051009535939135661.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051009535939135661.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g324.html">捷克黄杏沙拉Czech</a></h3>
+       <p><span class="price">38.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_316" data-id="316" data-styleid="0" data-kcnum="121" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g316.html"><img src="./images/2015051010160840726331.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051010160840726331.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g316.html">经典川菜醋椒鲫鱼青笋</a></h3>
+       <p><span class="price">20.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>	<li class="item" id="pro_item_325" data-id="325" data-styleid="0" data-kcnum="128" data-showbuy="1">
+     <dl>
+      <dt><a href="#/k40_g325.html"><img src="./images/2015051009554709458511.jpg" data-ifshow="1" data-src="../uploadfile/good/2015/05_10/2015051009554709458511.jpg" alt="" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind_food.gif&#39;;this.onerror=&#39;&#39;;"></a></dt>
+      <dd>
+       <h3><a href="#/k40_g325.html">韩日番莳栗子毛士</a></h3>
+       <p><span class="price">22.00</span>元/份</p>
+       <div class="fen">
+        <div class="dec">-</div>
+        <div class="amount">0</div>
+        <div class="add">+</div>
+       </div>
+	   <span class="maiguang" style="display:none;">卖光了</span>
+      </dd>
+     </dl>
+    </li>
+					</ul>
+				</div>
+
+		<div style="height:50px;"></div>
+		</div>
+	 </div>
+ </div>
+ <div class="pro_list2" id="aboutPage" style="display:none;">
+ 	<div class="aboutPage" id="aboutPageinner">
+		 <div class="innercontent">
+			<div class="shop_info zis0">
+			 <dl class="clearfix">
+			  <dt><img src="./images/2015051517442490718561.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" alt="瑞祥阁美味快送"></dt>
+			  <dd>
+			   <h4>瑞祥阁美味快送</h4>
+			   <s class="s_4"></s>
+			   <div class="clearfix"></div>
+			   <div class="close_door state_3" id="state_node">打烊了，可以预订</div>
+			   <div class="d_time">营业时间：<span class="display11">11:00-14:30 </span><span class="display11">17:00-22:30</span></div>
+			  </dd>
+			 </dl>
+			</div>
+			<div class="price_sends clearfix">
+			  <ul>
+			   <li>
+				 起送价
+				 <p><span class="price">50</span>元</p>
+			   </li>  
+			   <li>
+				 送达时间
+				 <p><span class="time">30</span>分钟</p>
+			   </li>
+			   <li>
+				 配送费
+				 <p><span class="psf">5</span>元</p>
+			   </li>
+			  </ul>
+			 </div>
+			<div class="shop_address">
+			  <dl>
+			   <dt id="mapPoint">
+				快店地址
+				<span class="distance item" data-x="116.602219" data-y="39.915415"><span class="juli">未知</span></span> 
+			   </dt>
+			   <dd>美术馆后街23号</dd>
+			  </dl>
+			 </div>
+			 <!--电话-->
+			 <div class="shop_tel">
+			  <dl>
+			   <dt>快店电话</dt>
+			   <dd>010-12345678<a href="tel:010-12345678" class="tel">010-12345678</a>
+			   </dd>
+			  </dl>
+			 </div>
+			 <div class="shop_support">
+			  <h4>快店支持</h4>
+			   <ul>
+				<li class="display11"><span class="r">赠</span> 送免费送货券1张,总量100张,数量有限,先到先得</li>
+				<li class="display11"><span class="g">减</span> 支持立减优惠，每单满60元减5元</li>
+				<li class="display11"><span class="y">1st</span> 送可口可乐一杯450ml</li>
+			   </ul>
+			 </div>
+			
+			<div style="height:50px;"></div>
+		 </div>
+	 </div>
+	</div>
+	<div class="foot_link" id="foot_link" style="display: none;">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+</div>
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="javascript:;" class="back close">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#/';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','24110');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<script src="./js/jquery.cookie.js"></script>
+<script src="./js/iscroll.js"></script>
+<script src="./js/wap_kuaisonCommon.js"></script>
+<script type="text/javascript" src="./images/api"></script>
+<script type="text/javascript" src="./images/getscript"></script>
+<script type="text/javascript" src="./js/convertor.js"></script>
+<script>
+window['SHOPID'] = '40';
+window['GOODSTYLEID'] = '1';
+window['ISHTML'] = '1';
+window['loadCat'] = 0;
+window['myScroll_main']=null;
+window['myScroll_sub']=null;
+window['myScroll_about']=null;
+document.addEventListener('DOMContentLoaded',function(){
+	setTimeout(function(){lazyImg('#prolist');},50);
+	getShoppingCart(showProductList1);
+	$('#prolist').pagelist1();
+	var catList = $('#cateName').find('li');
+	var proList = $('#prolist').find('.pro_item');
+	catList.eq(0).addClass('cur');
+	proList.eq(0).show();
+	catList.click(function(e){
+		e.preventDefault();
+		proList.filter(':visible').hide();
+		catList.filter('.cur').removeClass('cur');
+		$('#'+$(this).find('a').attr('data-scrolld')).show();
+		$(this).addClass('cur');
+		window['myScroll_main'].refresh();
+		setTimeout(function(){lazyImg('#prolist');},50);
+	});
+	$('#p_tabs').p_tabs();
+	IDC2.textMarquee('#textMarquee');
+	$('#foot_link').hide();
+	$('#prolist').find('.pro_item').each(function(){
+		$('#cat_num_'+$(this).attr('data-id')).html($(this).attr('data-num'));
+	});
+	
+	var kdtips = $('#kdtips');
+	var addheight = false;
+	kdtips.find('.close').click(function(e){
+		e.preventDefault();
+		kdtips.hide();
+		$('#mainPage').css({'top':'146px'});
+		window['myScroll_sub'].refresh();
+		window['myScroll_main'].refresh();
+	});
+	window['myScroll_sub'] = new IScroll('#cateName', {
+		click: true,
+		scrollX: false,
+		scrollY: true,
+		scrollbars: false
+	});
+	window['myScroll_main'] = new IScroll('#prolist', {
+		click: true,
+		scrollX: false,
+		scrollY: true,
+		scrollbars: false
+	});
+	
+	window['myScroll_main'].on('scrollEnd', function () {  
+		setTimeout(function(){lazyImg('#prolist');},50);
+		var mainPage = $('#mainPage'),mh = mainPage.height(),hasHeight=0;
+		if (this.y < -100 && !addheight) {             
+			addheight = true;
+			if(!!kdtips.is(':visible')){
+				hasHeight = 94;
+			}else{
+				hasHeight = 59;
+			}
+			mainPage.css({"-webkit-transform":"translate3d(0,-"+hasHeight+"px,0)",transform:"translate3d(0,-"+hasHeight+"px,0)","-webkit-transition":"-webkit-transform 0.6s",transition:"transform 0.6s",height:(mh+hasHeight)+"px"});
+			setTimeout(function(){
+				window['myScroll_main'].refresh();
+				window['myScroll_sub'].refresh();
+			},620);
+		}
+		if(this.y == 0 && !!addheight){
+			addheight = false;
+			$('#mainPage').css({"-webkit-transform":"translate3d(0,0,0)",transform:"translate3d(0,0,0)","-webkit-transition":"-webkit-transform 0.6s",transition:"transform 0.6s",height:"auto"});
+			window['myScroll_sub'].refresh();
+			window['myScroll_main'].refresh();
+		}
+		
+	});
+	getkill();
+	if($.cookie('myPoint') === undefined){
+		getLocation();
+	}else{
+		var myPoint = decodeURIComponent($.cookie('myPoint')).split(',');
+		showMapBD(myPoint[0],myPoint[1]);
+	}
+},false);
+$.fn.p_tabs = function(){
+	var node = $(this),items = node.find('.item');
+	items.click(function(e){
+		e.preventDefault();
+		items.removeClass('current');
+		$(this).addClass('current');
+		if($(this).attr('data-id') === '1'){
+			$('#aboutPage').hide();
+		}else{
+			$('#aboutPage').show();
+			!window['myScroll_about']&&(window['myScroll_about'] = new IScroll('#aboutPageinner', {
+				click: true,
+				scrollX: false,
+				scrollY: true,
+				scrollbars: false
+			}));
+			!!window['myScroll_about']&&(window['myScroll_about'].refresh(),window['myScroll_about'].scrollTo(0,0));
+		}
+	});
+}
+function getkill(){
+	var isopen = "1",
+		state_node = $('#state_node');
+	if(isopen === '2'){
+		state_node.addClass('state_2').html('暂停营业，');
+		return;
+	}
+	var startkill = "1",
+	startdate = "11:00",
+	enddate = "14:30",
+	start2kill = "1",
+	startdate2 = "17:00",
+	enddate2 = "22:30";
+	
+	var sys_time = Date.parse('07/19/2016 15:16:30');
+	var iDate = new Date();
+	var theYear = iDate.getFullYear();
+	var theMonth = iDate.getMonth()+1;
+	theMonth = theMonth>9?theMonth.toString():'0' + theMonth;
+	var theDay = iDate.getDate();
+	var today = theMonth + '/' + theDay + '/' + theYear + ' ';
+	var thestartdate = Date.parse(today + startdate + ':00');
+	var theenddate = Date.parse(today + enddate + ':00');
+	var thestartdate2 = Date.parse(today + startdate2 + ':00');
+	var theenddate2 = Date.parse(today + enddate2 + ':00');
+	
+	if((startkill === '1' && thestartdate < sys_time && sys_time<theenddate)||(start2kill === '1' && thestartdate2 < sys_time && sys_time<theenddate2)){
+		showkill(!0);
+	}else{
+		showkill(!1);
+	}
+	function showkill(allow){
+		if(!!allow){
+			state_node.addClass('state_1').html('营业中');
+			window['ALLOWBUY'] = !0;
+		}else{
+			var shipkill = "0";
+			shipkill === '0'?(state_node.addClass('state_3').html('打烊了，可以预订'),window['ALLOWBUY'] = !0):(state_node.addClass('state_2').html('打烊了，不可下单'),window['ALLOWBUY'] = !1);
+		}
+	}
+}
+</script>
+
+ <div class="sys_tips" id="sys_tips" style="top: 265px; display: none;"><div class="hd" id="sys_tips_title">提示</div><div class="bd"><p id="sys_tips_info">抱歉，位置服务被拒绝</p><div class="btn"><a href="#/k40.html#" class="btn2" id="sys_tips_submit">确定</a></div></div></div></body></html>

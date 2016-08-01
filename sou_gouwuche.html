@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)#/member/myorder.aspx?action=myshoppay -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页-快店-购物车</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/kd-mb.css">
+</head>
+<body>
+<div class="header">
+	<a href="javascript:window.history.go(-1);" class="back">返回</a>购物车
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+<div class="p_main">
+	<div id="shop_list" class="shop_list"><ul class="clearfix"><li><a href="#/member/myorder.aspx?action=myshoppay&amp;shopid=40" class="cur" data-id="40">瑞祥阁美味快送</a></li></ul></div>
+	<div class="shop_cart_list">
+		<form method="get" action="#/member/myorder.aspx" onsubmit="return chechLogin(this);">
+			<input type="hidden" name="action" value="shoppay">
+			<input type="hidden" name="shopid" value="40">
+			<ul id="pro_list"><li data-goodid="330" data-id="10654">
+	 <h4>招牌鲜漫天</h4>
+	 <div class="amount">x <input style="border:0 none; background:transparent; width:50px;" type="text" id="gouwuche330" class="n_ipt" autocomplete="off" value="1" readonly=""></div>
+	 <div class="price">¥<span class="chrmoney">188.00</span></div>
+	 <del class="del">删除</del>
+	 <div class="dis reduce">-</div>
+	 <div class="add increase">+</div>
+	 
+</li><li data-goodid="316" data-id="10680">
+	 <h4>经典川菜醋椒鲫鱼青笋</h4>
+	 <div class="amount">x <input style="border:0 none; background:transparent; width:50px;" type="text" id="gouwuche316" class="n_ipt" autocomplete="off" value="1" readonly=""></div>
+	 <div class="price">¥<span class="chrmoney">20.00</span></div>
+	 <del class="del">删除</del>
+	 <div class="dis reduce">-</div>
+	 <div class="add increase">+</div>
+	 
+</li><li data-goodid="317" data-id="10681">
+	 <h4>冰糖湘莲</h4>
+	 <div class="amount">x <input style="border:0 none; background:transparent; width:50px;" type="text" id="gouwuche317" class="n_ipt" autocomplete="off" value="1" readonly=""></div>
+	 <div class="price">¥<span class="chrmoney">60.00</span></div>
+	 <del class="del">删除</del>
+	 <div class="dis reduce">-</div>
+	 <div class="add increase">+</div>
+	 
+</li></ul>
+			<div class="total"><span id="numAll">3</span>件商品 总计<span class="price">¥<span id="chrmoneyAll">268.00</span></span></div>
+			<input type="hidden" id="shipmoney1" value="50">
+			<div class="account"><button class="" type="submit" data-numall="3" id="submitGo">去结算</button></div>
+		</form>
+	</div>
+</div>
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<script src="./js/wap_common.js"></script>
+<script>
+window['siteUrl'] = '#/';
+window['SHOPID'] = '40';
+function changeTwoDecimal_f(x){
+    var f_x = parseFloat(x);
+    if (isNaN(f_x)) {
+        alert('function:changeTwoDecimal->parameter error');
+        return false;
+    }
+    var f_x = Math.round(x * 100) / 100;
+    var s_x = f_x.toString();
+    var pos_decimal = s_x.indexOf('.');
+    if (pos_decimal < 0) {
+        pos_decimal = s_x.length;
+        s_x += '.';
+    }
+    while (s_x.length <= pos_decimal + 2) {
+        s_x += '0';
+    }
+    return s_x;
+}
+function showQison(val1,val2){
+	if(val2 === 0){$('#submitGo').addClass('disabled').bind('click',function(e){e.preventDefault();});return false;}
+	if((val1 > 0) && (val1 > val2)){
+		$('#submitGo').addClass('disabled').html('还差' + (val1 - val2) + '元起送').bind('click',function(e){e.preventDefault();});
+	}else{
+		$('#submitGo').html('去结算').removeClass('disabled').unbind('click');
+	}
+}
+function showOther(jsn){
+	var chrmoneyAll = $('#chrmoneyAll'),numAll = $('#numAll');
+	chrmoneyAll.html(jsn.chrmoneyAll);
+	numAll.html(jsn.numAll);
+}
+function setShoppingCart(sid,num,node,typeid){
+	var url=siteUrl+'request.ashx?action=addmyshopping&id='+sid+'&styleid=1&num='+num+'&shopid='+window['SHOPID']+'&ishtml=1&jsoncallback=?&timer='+Math.random();
+	$.getJSON(url,function(data){
+		if(data[0].islogin === '1'){
+			var chrmoney = node.parent().find('.chrmoney');
+			var result =  changeTwoDecimal_f(parseFloat(chrmoney.html())*parseInt(num));
+			showOther(data[0].CHRMONEY);
+			showQison(parseFloat($('#shipmoney1').val()),parseFloat($('#chrmoneyAll').html()));
+		}else{
+			if(typeof typeid !== 'undefined'){
+				if('increase' === typeid){
+					$('#gouwuche'+sid).val(parseInt($('#gouwuche'+sid).val())-1);
+				}
+			}
+			MSGwindowShow('shopping','0',data[0].error,'','');
+		}
+	});
+}
+function getShoppingCart(delid,node){
+	var Delid = delid || '';
+	var url=siteUrl+'request.ashx?action=getmyshopping&shopid='+window['SHOPID']+'&ishtml=1&delid='+Delid+'&jsoncallback=?';
+	$.getJSON(url,function(data){
+		if(data[0].islogin === '1'){
+			showOther(data[0].CHRMONEY);
+			node.parent().remove();
+			showQison(parseFloat($('#shipmoney1').val()),parseFloat($('#chrmoneyAll').html()));
+		}else{
+			MSGwindowShow('shopping','0',data[0].error,'','');
+		}
+	});
+}
+function shoplist(){
+	var node = $('#pro_list');
+	node.find('.reduce').click(function(e){
+		e.preventDefault();
+		var now_node = $(this).parent().find('.n_ipt'),
+			now_val = parseInt(now_node.val());
+		if(now_val===1){return false;}
+		--now_val === 1?($(this).addClass('disabled'),now_val=1):($(this).removeClass('disabled'));
+		now_node.val(now_val);
+		$(this).parent().find('.increase').removeClass('disabled');
+		setShoppingCart($(this).parent().attr('data-goodid'),now_val,$(this),'reduce');
+	}).end().find('.increase').click(function(e){
+		e.preventDefault();
+		var now_node = $(this).parent().find('.n_ipt'),
+			now_val = parseInt(now_node.val());
+		if(now_val===100){return false;}
+		++now_val === 100?($(this).addClass('disabled'),now_val=100):($(this).removeClass('disabled'));
+		now_node.val(now_val);
+		$(this).parent().find('.reduce').removeClass('disabled');
+		setShoppingCart($(this).parent().attr('data-goodid'),now_val,$(this),'increase');
+	}).end().find('.del').click(function(e){
+		e.preventDefault();
+		getShoppingCart($(this).parent().attr('data-id'),$(this));
+	});	
+}
+shoplist();
+function chechLogin(o){
+	if($('#isLogin')[0] && $('#isLogin').val() === '1'){
+		return true;
+	}else{
+		MSGwindowShow('shopping','1','您需要先登录才能进行购物车结算！',siteUrl+'member/login.html?from='+encodeURIComponent(siteUrl+'member/myorder.aspx?action=shoppay&shopid='+window['SHOPID']),'');
+		return false;
+	}
+}
+document.addEventListener('DOMContentLoaded',function(){
+	IDC2.isLogin('#/','163k地方门户网站系统');
+},false);
+(function($){
+	var submitGo = $('#submitGo');
+	if(parseInt(submitGo.attr('data-numAll')) > 0){
+		submitGo.prop('disabled',false).removeClass('disabled');
+		$('#shopLink').show();
+		showQison(parseFloat($('#shipmoney1').val()),parseFloat($('#chrmoneyAll').html()));
+	}
+	$('#shop_list').find('li a').each(function(){
+		$(this).attr('href',siteUrl+'member/myorder.aspx?action=myshoppay&shopid='+$(this).attr('data-id'));
+	});
+})(jQuery);
+</script>
+
+ </body></html>

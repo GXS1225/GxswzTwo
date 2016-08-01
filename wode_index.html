@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)#/member/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>我的-会员</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<style type="text/css">
+body { background-color:#eee;}
+
+.memberNav li a:before,.memberNav li .count:after,.order_count li i {background: url("./images/o_icons_2.png") no-repeat; background-size: 150px auto;}
+.memberNav li a:before,.memberNav li .count:after,.order_count li i { display:inline-block; vertical-align:middle; content:'';}
+
+.amount_info ul,.order_count ul{display:-webkit-box; display:-moz-box; display:box;}
+.amount_info li,.order_count li{ width:100%; -webkit-box-flex:1; -webkit-flex:1; flex:1;text-align:center;}
+/*会员中心*/
+.member_head{position:relative;background:url("./images/user_headbg2s.jpg") no-repeat center 0;background-size:cover;height:100px;font-size:14px;padding:20px 0 0 115px;color:#ffffff;}
+.member_head .user_head{position:absolute;top:50%;height:80px;width:80px;overflow:hidden;margin-top:-40px;left:20px;}
+.member_head .user_head img{border-radius:10px; width:80px; height:80px; vertical-align:top;}
+.member_head .userName{font-size:18px;margin:8px 0 10px;}
+.member_head a{color:#ffffff;margin-right:15px;}
+
+.amount_info{background:#ffffff;border-bottom:1px solid #cccccc;margin-bottom:10px;}
+.amount_info ul{padding:6px 0;}
+.amount_info li{color:#333333;font-size:14px;line-height:20px;}
+.amount_info li:first-child{border-right:1px solid #eeeeee;}
+.amount_info p{font-size:18px;color:#2299ee;}
+.amount_info .pay a{display:block;background:#2299ee;border-radius:6px;height:32px;margin:4px 10px 0;line-height:32px;color:#ffffff;font-size:15px;}
+
+.order_count{background:#ffffff;padding:7px 0;margin-bottom:10px;}
+.order_count li{position:relative;font-size:15px;}
+.order_count li i{width:35px;height:35px;background-position:2px -279px;background-size:120px auto;display:block;margin:auto;}
+.order_count li:after{position:absolute;top:8px;right:0;width:1px;height:40px;background:#eeeeee;content:'';}
+.order_count li:last-child:after{border:none;}
+.order_count li i.tuan{background-position:-47px -303px;background-size:130px auto;}
+.order_count li i.coupon{background-position:-88px -279px;}
+.order_count li s{font-size:12px;color:#ffffff;background:#2299ee;border-radius:50px;min-width:7px;line-height:15px;padding:0px 4px;text-align:center;position:absolute;top:18px;right:34px;text-decoration:none;}
+.order_count a{display:block;color:#333333;}
+
+.memberNav li{background:#ffffff;height:40px;line-height:40px;margin-bottom:2px;font-size:16px;position:relative;padding:0 10px;}
+.memberNav li a:before{width:35px;height:40px;background-position:1px -312px;background-size:120px auto;}
+.memberNav li .count{float:right;color:#999999;font-size:14px;}
+.memberNav li .count:after,.new_active .title a:after,.nearby_business .title a:after,.gongying dt:after,.fangchan dt:after,.zhaopin dt:after{background-position:right -695px;background-size:120px auto;width:12px;height:40px;margin-left:5px;}
+.memberNav li a{display:block;color:#333333;}
+.memberNav li.info a:before{background-position:-47px -312px;}
+.memberNav li.house a:before{background-position:-94px -312px;}
+.memberNav li.job a:before{background-position:1px -347px;}
+.memberNav li.resume a:before{background-position:1px -383px;}
+.memberNav li.resume_jz a:before{background-position:1px -944px;}
+.memberNav li.arc a:before{background-position:-47px -382px;}
+.memberNav li.tie a:before{background-position:-96px -383px;}
+.memberNav li.exc a:before{background-position:1px -418px;}
+.memberNav li.tou a:before{background-position:-95px -489px;}
+.member_exit{margin-top:20px;}
+
+.mt_10{margin-top:10px;}
+.mt_45{margin-top:-45px;}
+.mb_10{margin-bottom:10px!important;}
+
+.exit {color: #ffffff;background:#2299ee; display:block; width:80%; margin: 0 auto 20px; border-radius:50px; height: 40px;border:0 none;	outline:none;}
+</style>
+<script>
+window['ipageTitleTxt'] = '会员中心';
+</script>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+
+<body>
+<div class="top_gg po_re" id="top_gg" style="display:none;">{$Mh163k_wap_首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="javascript:void(0);" onclick="return window.history.go(-1);" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">会员中心</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>	
+<div class="o_main">
+ <div class="member_head">
+  <div class="user_head"><a href="#/member/modify.aspx?action=tou"><img src="./images/nopic.gif" width="96" height="96" alt=""></a></div>
+  <div class="userName">ヤ浮稀依旧美丽</div>
+  <a href="wode_ziliao.html">修改资料</a> <a href="wode_xiugaimima.html">修改密码</a>
+ </div>
+ <!--积分支付币-->
+ <div class="amount_info">
+  <ul>
+   <li>
+     <p>0</p>
+      金币                                   
+   </li>
+   <li>
+     <p>0.00</p>
+     支付币
+   </li>
+   <li class="pay"><a href="wode_chongzhi.html">我要充值</a></li>
+  </ul>
+ </div>
+ <!--订单数量-->
+ <div class="order_count">
+  <ul class="clearfix">
+   <li><a href="sou_dianping.html"><i class="kd"></i>快店订单</a><s>0</s></li>
+   <li><a href="sou_shengla_dingdan.html"><i class="tuan"></i>省啦订单</a><s>1</s></li>
+   <li><a href="#/member/mytgorder.aspx"><i class="coupon"></i>省啦券</a><s>0</s></li>
+  </ul>
+ </div>
+ <!--nav-->
+ <div class="memberNav">
+  <ul>
+   <li class="fav"><a href="wode_shoucang.html">我的收藏<span class="count">&nbsp;</span></a></li>
+   <li class="info"><a href="wode_info.html">我的信息<span class="count">0</span></a></li>
+   <li class="house mb_10"><a href="wode_chushou.html">我的房源<span class="count">0</span></a></li>
+   <li class="job"><a href="wode_qiuzhi.html">我的求职<span class="count">&nbsp;</span></a></li>
+   <li class="resume"><a href="wode_quanzhi.html">全职简历<span class="count">&nbsp;</span></a></li>
+   <li class="resume_jz mb_10"><a href="wode_jianzhi.html">兼职简历<span class="count">&nbsp;</span></a></li>
+   <li class="arc"><a href="#/member/myarticle.aspx">我的文章<span class="count">0</span></a></li>
+   <li class="tie mb_10"><a href="wode_huitie.html">我的帖子<span class="count">&nbsp;</span></a></li>
+   <li class="exc"><a href="wode_duihuan.html">礼品兑换<span class="count">&nbsp;</span></a></li>
+   <li class="tou"><a href="wode_toupiao.html">投票活动<span class="count">&nbsp;</span></a></li>
+  </ul>
+ </div>
+ <div class="member_exit"><button type="button" onclick="IDC2.loginout(&#39;#/&#39;);return false;" class="exit">安全退出</button></div>
+
+	<div class="foot_link" id="foot_link">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+</div>
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="javascript:;" class="back close">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#/';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','20');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+
+ </body></html>

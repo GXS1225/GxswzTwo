@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)#/member/mytgorder.aspx -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页-商品-订单</title>
+<link rel="stylesheet" rev="stylesheet" href="./css/tg-mb.css">
+<style type="text/css">
+body { background-color:#eee;}
+.order_details_title { border-bottom:1px solid #ddd; padding:10px 0; text-align:center; font-weight:bold; font-size:20px;}
+.a_nmq_module { padding:10px; color:#999; font-size:14px;}
+.a_nmq_module #titlestr { color:#333; font-size:18px;}
+.a_nmq_list { padding:10px; text-align:center; font-size:18px; color:#060; font-weight:bold; background-color:#f9f9f9; border-bottom:1px solid #eee; border-top:1px solid #eee;}
+.a_submit { padding:15px; text-align:center;}
+.notes { padding:10px; border-bottom:1px solid #eee; border-top:1px solid #eee; color:#999; font-size:12px;}
+.notes .notessm { padding:5px 10px; color:#333; font-size:14px;}
+.a_refund_list { padding:10px; color:#999; font-size:14px;}
+.a_refund_list .a_refund_money { font-weight:bold; color:#f60; font-size:18px;}
+.tkfs { padding:0 10px 10px; color:#999; font-size:14px;}
+.tkfs .a_refund_content { color:#333; font-size:16px;}
+</style>
+<script>
+window['ipageTitleTxt'] = '商品订单';
+</script>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+<body>
+<div class="top_gg po_re" id="top_gg" style="display:none;">{首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="#/member/index.html" onclick="" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">商品订单</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+
+	<div class="content">
+		<div class="order_head po_re">全部订单<a href="javascript:history.go(-1);" class="po_ab return">返回</a></div>
+		<div class="order_list">
+			<ul id="tgorderList">
+				 <li>
+	<div class="pic"><img src="./images/2015051110381534484842.jpg" onerror="this.src=&#39;#/template/wap/main/default/images/fabu_nopic1.gif&#39;;this.onerror=&#39;&#39;;" width="50" height="50" style="vertical-align:top" alt=""></div>
+	<div class="cont">
+		<p class="tit"><a href="#/member/mytgorder.aspx?action=look&amp;ID=312&amp;k=2016-7-19%208:33:44" class="showall">徐记海鲜</a></p>
+		<p class="txt"><span class="gray_font">订单号：</span>607190833218718392</p>
+		<p class="txt"><span class="gray_font">下单时间：</span>2016-7-19 8:33:21</p>
+		<!--<p class="po">数量：1个<br />合计：<span style="color:#f60">0.01元</span></p>-->
+		<p class="po"><a href="#/member/mytgorder.aspx?action=look&amp;ID=312&amp;k=2016-7-19%208:33:44" class="showall btns">详情</a></p>
+		<ul class="xiaofeiquan"></ul>
+	</div>
+	
+	<!--<p class="txt"><span class="right"><em class="green"><font color=red>未付款</font> <br><a href="?action=del&ID=607190833218718392">删除订单</a></em><br>有效期：<span style="color:#f60;"></span></span></p>-->
+	
+	<p class="t_right"><a href="#/member/mytgorder.aspx?action=pay&amp;ID=312" class="btns yellow display0支付">支付</a><a href="javascript:;" onclick="sendquan(312);" class="btns display0"></a></p>
+</li>
+			</ul>
+			<div class="pageNav"><div class="FirstPage"><a class="kill" href="javascript:;">&lt;</a> </div><div class="EndPage"><a class="kill" href="javascript:;">&gt;</a> </div>1/1</div>
+		</div>
+	</div>
+	<div class="foot_link" id="foot_link">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="#/member/index.html" class="back close" onclick="">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#/';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','20');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<div id="inner_iframe" style="display:none"></div>
+<div class="sq_tuankuan" id="sq_tuankuan" style="display:none">
+   
+ <div class="order_details_title clearfix">
+            <strong>申请退款</strong>
+        </div>
+
+            <div class="a_nmq_module">
+                省啦项目：<span id="titlestr"></span></div>
+                <div class="a_nmq_list">消费券：<span id="chrcodestr"></span>
+                     </div>
+            
+            <div class="a_refund_list">退款金额：
+
+                    <span class="a_refund_money" id="intmoneystr"></span>
+               </div>
+                <div class="tkfs">
+                    退款方式：
+
+                    <div class="a_refund_content a_refund_way">
+                        <label><span id="iskill19" style="display:none; font-weight:bolder"><input type="radio" name="iskill" id="iskill" checked="checked" onclick="javascript:show_val(&#39;iskills&#39;,&#39;19&#39;);" value=""> 退至支付币账户余额<span style="color:#999; margin-left:8px; font-size:12px;">（2个工作日内完成，无手续费） 账户余额可在下次购买商品时直接冲抵现金</span>
+                      </span>
+                        </label><br>
+                        <label>
+                          <span id="iskill9" style="display:none;"><input type="radio" name="iskill" id="iskill" onclick="javascript:show_val(&#39;iskills&#39;,&#39;9&#39;);" value=""> 原路退回<span style="color:#999; margin-left:8px; font-size:12px;">（2-5个工作日内完成，无手续费） 钱款将退回您的原支付账户</span></span>
+                          <span id="noiskill" style="display:none; font-weight:bolder; position:relative; bottom:8px;"> 对不起，本省啦项目不支持退款或已超过退款有效期！ </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="notes">
+                退款说明：
+                	<div class="notessm">
+                    <span>1.申请退款期限：消费券有效期截止后，七日内申请有效，过期作废。<br>
+                    2.购买省啦时使用了"支付币",退款只能退为支付币。<br>
+                    3.消费券有效期内，全额在线支付的消费券，可以申请原路返回，退回至您的付款账号。<br>
+                    4.消费券超过有效期，且省啦项目支持退款的消费券，退款只退为支付币。<br>
+                    5.不支持退款的省啦项目，无法申请退款。</span>
+                    </div>
+                </div>
+			
+            <div class="a_submit">
+            <input type="hidden" name="iskills" id="iskills" value="19">
+            <input type="hidden" name="chrcodes" id="chrcodes" value="">
+                <a href="javascript:tgtuikuan_select();hide(&#39;sq_tuankuan&#39;);hide(&#39;mask&#39;);" class="comn-submit">申请退款</a>　<a href="javascript:hide(&#39;sq_tuankuan&#39;);hide(&#39;mask&#39;);" class="comn-submit gray">取消</a> 
+            </div>
+    </div>
+<div class="mask" id="mask" style="display:none;"></div>
+<script>
+/*var list = $('#tgorderList').find('.showall');
+list.click(function(e){
+	e.preventDefault();
+	showorder($(this).attr('href'));
+});*/
+$(function() {
+	$('.header .back').attr({'href':'index.html','onclick':''});
+});
+function showorder(val){
+	var heightV = 500;
+	var mask = $('#mask');
+	mask.css({'height':$(document).height()+'px'});
+	var inner_iframe = $('#inner_iframe');
+	var martop = Math.ceil(($(window).height()-heightV)/2 + $(document).scrollTop());
+	inner_iframe.css({'top':martop+'px'});
+	
+	mask.show();
+	inner_iframe.show();
+	var myiframe = '<iframe src="'+val+'" scrolling="auto" frameBorder="0" width="100%" height="'+heightV+'px"></iframe>';
+	inner_iframe[0].innerHTML=myiframe;	
+}
+$('#mask').click(function(){LoginHide()});
+function LoginHide(){
+	$('#inner_iframe').hide();
+	$('#sq_tuankuan').hide();
+	$('#mask').hide();
+}
+//重发短信
+function sendquan(aa){
+	var url="../request.aspx?action=sendquan&orderid="+aa ;
+	var  Digital=new  Date();
+	Digital=Digital+40000;
+	url=url+"&k="+(Digital);
+	$.ajax({
+		url: url,
+		success: function(msg){
+			if(msg=="1"){
+				alert("恭喜您,短信发送成功!");
+			}else{
+				alert(msg);	
+			}
+		}
+	});
+	return false;
+}
+//退款
+var daijinname = "支付币";
+function tgtuikuan_get(chrcode,iskill,title,intmoney){
+	if(iskill== 9 || iskill== 19 || iskill== -1 ){
+		
+		var mask = $('#mask');
+		mask.css({'height':$(document).height()+'px'});
+		var inner_iframe = $('#sq_tuankuan');
+		//var heightV = inner_iframe.height();
+		//var martop = Math.ceil(($(window).height()-heightV)/2 + $(document).scrollTop());
+		inner_iframe.css({'position':'absolute','top':'45px'});
+		
+		mask.show();
+		inner_iframe.show();
+		show("sq_tuankuan");
+		show("titlestr",title);
+		echo("intmoneystr",intmoney);
+		echo("chrcodestr",chrcode);
+		if(iskill==9){
+			show("iskill19");hide("noiskill");show("iskill9");
+		}else if(iskill==19){
+			hide("iskill9");hide("noiskill");show("iskill19");
+		}else if(iskill== -1){
+			hide("iskill9");hide("iskill19");show("noiskill");
+		}
+		show_val("chrcodes",chrcode);
+	}else{
+		tgtuikuan(chrcode,iskill);
+	}
+}
+function echo(obj,html){
+	$("#" + obj).innerHTML=html;
+	document.getElementById(obj).innerHTML=html;
+}
+function show(_showobj ,_showt){
+	document.getElementById(_showobj).style.dispaly="";
+	$("#" + _showobj).show();
+	if( _showt != "" && _showt != null ){
+		document.getElementById(_showobj).innerHTML=_showt;$("#" + _showobj).innerHTML=_showt;
+	}
+}
+function show_val(_showobj ,_showt){
+	$("#" + _showobj).value=_showt;
+	document.getElementById(_showobj).value=_showt;
+}
+function hide(_showobj){
+	if( _showobj != "" && _showobj != null ){
+		document.getElementById(_showobj).style.dispaly="none";
+		$("#" + _showobj).hide();
+	}
+}
+function tgtuikuan_select(){
+	var iskill = document.getElementById("iskills").value;
+	var chrcode = document.getElementById("chrcodes").value;
+	tgtuikuan(chrcode,iskill);
+}
+	
+function tgtuikuan(chrcode,xiaokill){ 
+	var url="mytgorder.aspx?action=tuikuan&chrcode=" + chrcode + "&xiaokill=" + xiaokill;
+	var  Digital=new  Date();
+	Digital=Digital+40000;
+	url=url+"&k="+(Digital);
+	$.ajax({
+		url: url,
+		success: function(msg){
+			if(msg == "ok"){
+				if(xiaokill=="9"){
+					document.getElementById("cid" + chrcode).innerHTML="<a href='javascript:void(0);' onclick=\"tgtuikuan('" + chrcode + "',0,'');\"><font color='red'>退款中!,取消退款申请？</font></a>";
+					alert("退款申请成功." + "\n" + "你的退款将在5个工作日内将你的退款返回到你的付款账户");
+				}else if(xiaokill=="0"){
+					document.getElementById("cid" + chrcode).innerHTML="正常!";
+			
+				}else if(xiaokill=="19"){
+					document.getElementById("cid" + chrcode).innerHTML="<a href='javascript:void(0);' onclick=\"tgtuikuan('" + chrcode + "',0,'');\"><font color='red'>退款中!,取消退款申请？</font></a>";
+					alert("退款申请成功." + "\n" + "由于你使用了[" + daijinname + "]账户抵扣购买，" + "\n" + "你的退款将在2个工作日内将你的退款返回到你的[" + daijinname + "]账户," + "\n" + "你可以使用[" + daijinname + "]账户中的余额继续购买。");
+			
+				}
+				return false;
+			}else{
+				alert(msg);
+				return false;
+			}
+		}
+	});
+}
+function changemystate(val,id){
+	if(confirm("您确认要更改状态吗？")){
+		var url="../request.aspx?action=changemytgorder&iskill="+val+"&id="+encodeURIComponent(id);
+		var  Digital=new  Date();
+		Digital=Digital+40000;
+		url=url+"&k="+(Digital);
+		$.ajax({
+			url: url,
+			success: function(msg){
+				window.location.href="mytgorder.aspx";
+			}
+		});
+	}
+}
+</script>
+
+
+ </body></html>

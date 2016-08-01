@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)#/company/join.aspx -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页-店铺-店铺加盟</title>
+<link href="./css/member-mb.css" rel="stylesheet" type="text/css">
+<script>
+window['siteUrl'] = '#/';
+window['ipageTitleTxt'] = '店铺加盟';
+</script>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+<body>
+<div class="top_gg po_re" id="top_gg" style="display:none;">{$Mh163k_wap_首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="javascript:void(0);" onclick="return window.history.go(-1);" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">店铺加盟</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+
+<script>
+function getUserState(){
+	if(!!$.isEmptyObject(window['userDate'])){
+		MSGwindowShow('company','1','对不起，请登录后再提交加盟申请！',window['siteUrl']+'member/login.html?from='+encodeURIComponent(window.location.href),'');
+	}
+}
+</script>
+<div class="o_main">
+<form name="aspnetForm" method="post" action="#/member/myshop.aspx?action=save" target="tijiao" onsubmit="return checkaddshop(this)">
+ <div class="inp_Itembox">
+  <dl class="clearfix">
+   <dt>店铺名称</dt>
+   <dd><input type="text" name="chrshop" id="chrshop" value="" placeholder="输入店铺名称"></dd>
+  </dl>		
+  <dl class="clearfix">
+   <dt>形象图片</dt>
+   <dd><span id="str1" style="display:none;"><img src="#/company/join.aspx" style="display:block; margin-bottom:5px;" class="img_block" id="for_url_0" width="150" height="100" alt=""><a href="#/company/join.aspx#" onclick="return upload_img_action_X(&#39;str1&#39;,&#39;str2&#39;);" style=" border:1px solid #e6e6e6; background-color:#f6f6f6; font-size:12px; padding:1px 5px;">重新上传</a></span><span id="str2">
+								<iframe name="ifm_upload" frameborder="0" width="100%" height="40" scrolling="no" src="./images/upload_one.html"></iframe>
+								<input type="hidden" value="" name="url0" id="url0"></span><input type="hidden" value="150" name="filewidth"><input type="hidden" value="100" name="fileheight"></dd>
+  </dl>			
+  <div style="display:none;">-&gt;&gt;</div>
+  <dl class="biyeshijian clearfix">
+   <dt>行业</dt>
+   <dd id="categoryid2"><div class="menu"><i></i><i></i><i></i></div><select name="qu_catgoryid" id="qu_catgoryid" onchange="javascript:showquyu(this.value);"> <option value="">::请选择店铺分类::</option><option value="14">休闲娱乐</option><option value="15">餐饮美食</option><option value="16">生活便利</option><option value="17">旅游出行</option><option value="89">购物天地</option><option value="90">教育培训</option><option value="91">装饰装修</option><option value="92">汽车世界</option><option value="93">其他类别</option></select></dd>
+   <dd id="categoryid1"><div class="menu"><i></i><i></i><i></i></div><select name="qu_classid" id="qu_classid"><option value="">::请选择店铺分类::</option></select></dd>
+  </dl>
+  <dl class="biyeshijian clearfix">
+   <dt>模板风格</dt>
+   <dd><div class="menu"><i></i><i></i><i></i></div><select name="moban" id="moban"><option value="1">::默认模版::</option><option value="1">橙色</option><option value="2">粉红</option><option value="3">红色</option><option value="4">蓝色</option><option value="5">绿色</option><option value="6">紫色</option></select></dd>
+  </dl>
+  <div style="display:none;">-&gt;&gt;</div>
+  <dl class="biyeshijian clearfix">
+   <dt>所在区域</dt>
+   <dd id="categoryid3"><div class="menu"><i></i><i></i><i></i></div><select name="bigchrdiqu" id="bigchrdiqu"> <option value="">::请选择区域/地段分类::</option><option value="1">朝阳区</option><option value="2">海淀区</option><option value="11">丰台区</option><option value="12">西城区</option><option value="13">通州区</option><option value="77">东城区</option><option value="78">昌平区</option><option value="79">宣武区</option><option value="80">崇文区</option><option value="82">其他区县</option></select></dd>
+   <dd id="categoryid4"><div class="menu"><i></i><i></i><i></i></div><select name="chrdiqu" id="chrdiqu"><option value="">::请选择区域/地段分类::</option></select></dd>
+  </dl>
+  <dl class="clearfix"> 
+   <dt>地址</dt>
+   <dd><input type="text" name="chraddress" id="chraddress" class="codebox2-input" placeholder="输入详细地址" value=""><input type="hidden" id="shop_x" name="shop_x"><input type="hidden" id="shop_y" name="shop_y"><input type="hidden" id="shop_z" name="shop_z"> <input type="hidden" id="ggmap" name="ggmap" value="1"></dd>
+  </dl>
+  
+  <dl class="clearfix">
+   <dt>联系电话</dt>
+   <dd><input type="text" name="chrtel" id="chrtel" value="" placeholder="请输入电话或者手机"></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>联系QQ</dt>
+   <dd><input type="text" name="chrqq" id="chrqq" value="" placeholder="请输入常用网络联系方式"></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>交通线路</dt>
+   <dd><input type="text" name="chrjiaotong" id="chrjiaotong" value="" placeholder="请输入交通线路,以便找到"></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>营业时间</dt>
+   <dd><input type="text" name="chrdate" id="chrdate" value="" placeholder="请输入营业时间"></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>折扣</dt>
+   <dd><input type="text" name="zhe" id="zhe" value="" placeholder="比如：95折，88折"></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>本店特色</dt>
+   <dd><input type="text" name="shoptese" id="shoptese" value="" placeholder="比如：绿色、无污染、土特产品"></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>人均消费</dt>
+   <dd><input type="text" placeholder="请输入人均消费" name="consumption" id="consumption" value=""><span class="yuan">元</span></dd>
+  </dl>
+ </div>
+ <div class="inp_Itembox">
+  <textarea id="chrmark" name="chrmark" placeholder="请输入店铺简介，仅限50字" class="txt"></textarea>
+ </div>
+			<p style="text-align:center; margin:0 0 10px;"><input type="checkbox" name="checkbox" value="checkbox" checked=""> 已经阅读并接受<a href="javascript:showxieyi(&#39;XIEYI&#39;);" style="color:#36c;">店铺加盟协议</a></p>
+			<div style="border:1px solid #ddd; background-color:#fff; padding:6px; margin:10px;display:none;" id="XIEYI">口碑店铺加盟协议内容请在“网站后台-系统配置-网站协议”中编辑</div>
+ <button type="submit" class="fb">确 认</button>
+</form>
+<iframe src="./images/saved_resource.html" id="tijiao" name="tijiao" height="0" width="0" scrolling="no" frameborder="no" border="0" style="display:none;"></iframe>
+	<div class="foot_link" id="foot_link">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+</div>
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="javascript:;" class="back close">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#/';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','8000');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<script>
+function uploadsuccess(sid,surl,num){
+	document.getElementById('url'+num).value=surl;
+	var tag = $('#for_url_'+num);
+	tag.attr({'src':surl});
+	upload_img_action_X('str2','str1');
+}
+function upload_img_action_X(str1,str2){
+	$('#'+str1).hide();
+	$('#'+str2).show();
+	return false;
+}
+function showxieyi(id){
+	if(!!$('#'+id+':visible')[0]){
+		$('#'+id).hide();}
+	else{
+		$('#'+id).show();
+	}
+}
+function checkaddshop(o){
+	
+	if($("#chrshop").val()=="" || $("#chrshop").val().length<3){
+		MSGwindowShow('company','0','对不起，输入店铺名称！','','');
+		return false;
+	}
+	if($("#qu_classid").val()=="" ){
+		MSGwindowShow('company','0','对不起,选择您的行业分类！','','');
+		return false;
+	}
+	if($("#chrdiqu").val()=="" ){
+		MSGwindowShow('company','0','对不起,请选择所在区域！','','');
+		return false;
+	}
+	if($("chraddress").val()=="" || $("#chraddress").val().length<3){
+		MSGwindowShow('company','0','对不起,请输入详细地址！','','');
+		return false;
+	}
+	
+}
+function BuildSel(str,sel){
+	sel.options.length=0;
+	var arrstr = new Array();
+	arrstr = str.split(",");
+	sel.options.add(new Option( "::请选择::","")); 
+	if(str.length>0){
+		for(var i=0;i<arrstr.length-1;i++){
+			var subarrstr=new Array
+			subarrstr=arrstr[i].split("|")
+			sel.options.add(new Option(subarrstr[1],subarrstr[0])); 
+		}
+		sel.options[0].selected=true
+	}
+}
+function showquyu(str){ 
+	if (str.length > 0){ 
+		var url="../request.aspx?action=quyu&id="+str;
+		$.ajax({url:url,success:function(data){
+			BuildSel(data ,document.getElementById("qu_classid"));
+		}});
+	}
+} 
+function showTgQuyu(str,docId,nowcc){
+	var url="../request.aspx?action=quyu&id="+str;
+	var  Digital=new  Date();
+	Digital=Digital+40000;
+	url=url+"&k="+encodeURIComponent(Digital);
+	jQuery.ajax({url:url,success: function(data){
+		var sel=document.getElementById(docId);
+		var val="::请选择::";
+		var str =data;
+		sel.options.length=0;
+		var arrstr = [];
+		arrstr = str.split(",");
+		sel.options.add(new Option( val,"")); 
+		if(str.length>0){
+			for(var i=0;i<arrstr.length-1;i++){
+				var subarrstr=[];
+				subarrstr=arrstr[i].split("|");
+				sel.options.add(new Option(subarrstr[1],subarrstr[0])); 
+				if(nowcc==subarrstr[0]){
+					sel.options[i+1].selected=true;
+				}
+			}
+		}
+	}});
+}
+$(function() {
+	$('#categoryid1').append($('#qu_classid').detach());
+	$('#categoryid2').append($('#qu_catgoryid').detach());
+	$('#categoryid3').append($('#bigchrdiqu').detach());
+	$('#categoryid4').append($('#chrdiqu').detach());
+	$('#bigchrdiqu').change(function(){
+		showTgQuyu($(this).val(),'chrdiqu');
+	});
+});
+</script>
+
+
+ <img src="./images/join.aspx" alt="" width="0" height="0"></body></html>

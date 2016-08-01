@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)#/tieba/?page=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页-贴吧</title>
+<!-- UC默认竖屏 ，UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<meta name="browsermode" content="application">
+<!-- QQ强制竖屏 QQ强制全屏 -->
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="x5-page-mode" content="app">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link href="./css/tieba-mb.css" rel="stylesheet">
+<link rel="stylesheet" rev="stylesheet" href="./css/news-scroll5.css">
+<style type="text/css">
+.foot_link { margin-top:0!important;}
+#pageNavigation { display:none;}
+#wrapper { top:169px}
+</style>
+<script>
+window['Bigcategory'] = '0';
+</script>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+<body style="min-height: 667px;">
+<div class="top_gg po_re" id="top_gg" style="display:none;">{首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="index.html" onclick="" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">贴吧</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+
+
+<div class="p_main">
+<div class="posts">
+ <div id="hideHead" style="display: block;">
+	 <div class="card_num">
+	  帖子：<span class="a">106</span>   今日：<span class="b">0</span>  昨日：<span class="c">0</span>
+	 </div>
+	 <div onclick="return showQD(this);" id="qiandao" class="sign_btn isqiandao0"><a href="javascript:void(0);">签到</a></div>
+	 <div class="blank10"></div>
+ </div>
+ <div class="filter2 tbindex_filter2" id="filter2">
+	<ul class="tab clearfix">
+		<li class="item"><a href="javascript:void(0);"><span id="bigCatTxt">全部版块</span><em></em></a></li>
+		<li class="item"><a href="javascript:void(0);"><span id="smallCatTxt">全部帖子</span><em></em></a></li>
+		<li class="item"><a href="javascript:void(0);"><span id="smallHuifuTxt">默认排序</span><em></em></a></li>
+	</ul>
+	<div class="inner" style="display:none;">
+		<ul><li id="s_a_0" class="cur"><a href="#/tieba_a0_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" data-bazhu="0" onclick="return showCatA({&#39;a&#39;:&#39;0&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this)">全部版块</a></li><li id="s_a_2258"><a href="#/tieba_a2258_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2258&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2258" data-bazhu=" x4demo1 wenxin">京城茶馆<s>(21)</s></a></li><li id="s_a_2263"><a href="#/tieba_a2263_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2263&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2263" data-bazhu=" x4demo1">风味美食<s>(21)</s></a></li><li id="s_a_2276"><a href="#/tieba_a2276_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2276&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2276" data-bazhu=" aufly wenxin">通讯数码<s>(21)</s></a></li><li id="s_a_2265"><a href="#/tieba_a2265_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2265&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2265" data-bazhu=" future">驴行天下<s>(21)</s></a></li><li id="s_a_2272"><a href="#/tieba_a2272_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2272&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2272" data-bazhu=" energy">家装交流<s>(19)</s></a></li><li id="s_a_2261"><a href="#/tieba_a2261_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2261&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2261" data-bazhu="暂时没有版主!">灌水拍砖<s>(0)</s></a></li><li id="s_a_2260"><a href="#/tieba_a2260_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2260&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2260" data-bazhu="暂时没有版主!">上班一族<s>(0)</s></a></li><li id="s_a_2259"><a href="#/tieba_a2259_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2259&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2259" data-bazhu="暂时没有版主!">情感驿站<s>(0)</s></a></li><li id="s_a_2262"><a href="#/tieba_a2262_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2262&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2262" data-bazhu="暂时没有版主!">文化沙龙<s>(0)</s></a></li><li id="s_a_2264"><a href="#/tieba_a2264_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2264&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2264" data-bazhu="暂时没有版主!">时尚购物<s>(0)</s></a></li><li id="s_a_2266"><a href="#/tieba_a2266_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2266&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2266" data-bazhu="暂时没有版主!">休闲娱乐<s>(0)</s></a></li><li id="s_a_2267"><a href="#/tieba_a2267_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2267&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2267" data-bazhu="暂时没有版主!">亲子乐园<s>(0)</s></a></li><li id="s_a_2268"><a href="#/tieba_a2268_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2268&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2268" data-bazhu="暂时没有版主!">健康生活<s>(0)</s></a></li><li id="s_a_2269"><a href="#/tieba_a2269_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2269&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2269" data-bazhu="暂时没有版主!">教育培训<s>(0)</s></a></li><li id="s_a_2270"><a href="#/tieba_a2270_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2270&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2270" data-bazhu="暂时没有版主!">家有宠物<s>(0)</s></a></li><li id="s_a_2271"><a href="#/tieba_a2271_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2271&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2271" data-bazhu="暂时没有版主!">京城房产<s>(0)</s></a></li><li id="s_a_2273"><a href="#/tieba_a2273_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2273&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2273" data-bazhu="暂时没有版主!">喜庆婚嫁<s>(0)</s></a></li><li id="s_a_2274"><a href="#/tieba_a2274_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2274&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2274" data-bazhu="暂时没有版主!">车友汇聚<s>(0)</s></a></li><li id="s_a_2275"><a href="#/tieba_a2275_b0_c0_d0_e0_f0_g0_h0_i0_p1.html" onclick="return showCatA({&#39;a&#39;:&#39;2275&#39;,&#39;b&#39;:&#39;0&#39;},&#39;s_a_&#39;,this);" data-catid="2275" data-bazhu="暂时没有版主!">理财股市<s>(0)</s></a></li></ul>
+	</div>
+	<div class="inner" style="display:none;">
+		<ul id="inner2">
+			<li id="s_h_0" class="cur"><a href="javascript:void(0);" data-catid="0" onclick="return showCatB({&#39;h&#39;:&#39;0&#39;},&#39;#smallCatTxt&#39;,&#39;s_h_&#39;,this);">全部帖子</a></li>
+            <li id="s_h_1"><a href="javascript:void(0);" data-catid="1" onclick="return showCatB({&#39;h&#39;:&#39;1&#39;},&#39;#smallCatTxt&#39;,&#39;s_h_&#39;,this);">只看精华</a></li>
+		</ul>
+	</div>
+	<div class="inner" style="display:none;">
+		<ul>
+			<li id="s_e_0" class="cur"><a href="javascript:void(0);" data-catid="0" onclick="return showCatB({&#39;e&#39;:&#39;0&#39;},&#39;#smallHuifuTxt&#39;,&#39;s_e_&#39;,this);">最后回复</a></li>
+			<li id="s_e_1"><a href="javascript:void(0);" data-catid="1" onclick="return showCatB({&#39;e&#39;:&#39;1&#39;},&#39;#smallHuifuTxt&#39;,&#39;s_e_&#39;,this);">最新发贴</a></li>
+			<li id="s_e_3"><a href="javascript:void(0);" data-catid="3" onclick="return showCatB({&#39;e&#39;:&#39;3&#39;},&#39;#smallHuifuTxt&#39;,&#39;s_e_&#39;,this);">最多回复</a></li>
+			<li id="s_e_4"><a href="javascript:void(0);" data-catid="4" onclick="return showCatB({&#39;e&#39;:&#39;4&#39;},&#39;#smallHuifuTxt&#39;,&#39;s_e_&#39;,this);">最多浏览</a></li>
+		</ul>
+	</div>
+	<div class="inner_parent" id="parent_container" style="display:none;"><div class="innercontent"></div></div>
+	<div class="inner_child" id="inner_container" style="display:none;"><div class="innercontent"></div></div>
+</div>
+<div class="fullbg" id="fullbg" style="display: none; height: 667px;"><i class="pull2"></i></div>
+<input id="pagenum" type="hidden" value="1">
+<div id="wrapper" style="transform: translate3d(0px, 0px, 0px); transition: transform 0.6s; height: auto;">
+	<div id="scroller" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+		<div id="pullDown" style="display: none;"><span class="loader" style="display: none;">loadding</span></div>
+		
+		<div class="post_list">
+			<ul id="pagingList"><div class="item">
+ <h2><span class="j display1">精</span><span class="d display1">置顶</span><a href="#/tieba_show_114.html" style="color:" class="link bold1">----＝＝＝＝贴吧使用指南＝＝＝＝＝-----…</a></h2>
+ <div class="con">前言：《163k地方门户系统》在互动方面一直是相对薄弱，主要依赖整合…<div class="n_img" id="n_img_114"><a href="#//UploadFile/tieba/image/20150717/6357276667733697697818944.png" target="_blank" class="itemAlbum" original="./images/6357276667733697697818944.png"><img src="./images/2016011410335020111141.png" data-src="./images/2016011410335020111141.png" data-ifshow="1" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150717/6357276686509371595888112.png" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150717/6357276686509371595888112.png"><img src="./images/2016011410335024808815.png" data-src="./images/2016011410335024808815.png" data-ifshow="1" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>x4demo1 <span class="stime">2015-07-18</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;114&#39;,&#39;styleid=1&amp;isyes=1&#39;);">19</span>
+   <span class="hf"><a href="#/tieba_show_114.html">14</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=114" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;114&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;114&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display1">精</span><span class="d display1">置顶</span><a href="#/tieba_show_65.html" style="color:#2299ee" class="link bold1">中式客厅装饰效果图</a></h2>
+ <div class="con">古色古香的中式风格是现在很多人都很喜欢的，在中式风格的客厅中大…<div class="n_img" id="n_img_65"><a href="#//UploadFile/tieba/image/20150713/6357240031652425007602107.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357240031652425007602107.jpg"><img src="./images/2015071316085777424701.jpg" data-src="../UploadFile/tieba/2015-0713/2015071316085777424701.jpg" data-ifshow="1" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357240032308675001506073.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357240032308675001506073.jpg"><img src="./images/2015071316085780557306.jpg" data-src="../UploadFile/tieba/2015-0713/2015071316085780557306.jpg" data-ifshow="1" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357240032941487502339580.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357240032941487502339580.jpg"><img src="./images/2015071316085783672617.jpg" data-src="../UploadFile/tieba/2015-0713/2015071316085783672617.jpg" data-ifshow="1" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357240043166487502444197.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357240043166487502444197.jpg"><img src="./images/2015071316085785230872.jpg" data-src="../UploadFile/tieba/2015-0713/2015071316085785230872.jpg" data-ifshow="1" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>233334 <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;65&#39;,&#39;styleid=1&amp;isyes=1&#39;);">14</span>
+   <span class="hf"><a href="#/tieba_show_65.html">23</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=65" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;65&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;65&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display1">精</span><span class="d display1">置顶</span><a href="#/tieba_show_55.html" style="color:#003366" class="link bold1">乡村”or“欧式”难取舍？业之峰混搭…</a></h2>
+ <div class="con">媳妇是个“白富美”，当初费尽心机才把她追到手，现在才发现有了后遗症…<div class="n_img" id="n_img_55"><a href="#//UploadFile/tieba/image/20150713/6357239792430550005466265.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239792430550005466265.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071315314757110716.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357239793953987504119310.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239793953987504119310.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071315314760236582.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357239795627425001732441.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239795627425001732441.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071315314766481924.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357239801188362501086942.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239801188362501086942.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071315314769610564.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>kkkkk <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;55&#39;,&#39;styleid=1&amp;isyes=1&#39;);">10</span>
+   <span class="hf"><a href="#/tieba_show_55.html">5</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=55" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;55&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;55&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display1">精</span><span class="d display1">置顶</span><a href="#/tieba_show_107.html" style="color:" class="link bold0">如今各种智能手表炙手可热 UNOVA…</a></h2>
+ <div class="con"> 如今各种智能手表炙手可热，正如Apple Watch，但严格来说Apple WAt…<div class="n_img" id="n_img_107"><a href="#//UploadFile/tieba/image/20150713/6357242087828987507036606.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357242087828987507036606.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071321480144610160.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250662928987505983315.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250662928987505983315.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421371491487914.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250662968050008270462.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250662968050008270462.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421371493054541.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250663205550001429371.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250663205550001429371.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421371494610470.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>kkkkk <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;107&#39;,&#39;styleid=1&amp;isyes=1&#39;);">7</span>
+   <span class="hf"><a href="#/tieba_show_107.html">5</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=107" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;107&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;107&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display1">精</span><span class="d display1">置顶</span><a href="#/tieba_show_91.html" style="color:" class="link bold0">北京传统风味小吃艾窝窝</a></h2>
+ <div class="con">艾窝窝是北京一款用糯米制作的清真风味小吃，其特点是色泽雪白，形…<div class="n_img" id="n_img_91"><a href="#//UploadFile/tieba/image/20150713/6357241446910237507527981.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357241446910237507527981.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071320022299308948.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357241446988362502698620.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357241446988362502698620.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071320022302421243.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357241447053987505299565.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357241447053987505299565.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071320022303988142.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357241447089925009343374.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357241447089925009343374.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071320022305554029.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>ruyi111111 <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;91&#39;,&#39;styleid=1&amp;isyes=1&#39;);">8</span>
+   <span class="hf"><a href="#/tieba_show_91.html">4</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=91" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;91&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;91&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display1">精</span><span class="d display1">置顶</span><a href="#/tieba_show_78.html" style="color:" class="link bold0">封闭式阳台装修</a></h2>
+ <div class="con">封闭式阳台指的就是用实体栏板、玻璃等物全部围闭的阳台。而这种阳…<div class="n_img" id="n_img_78"><a href="#//UploadFile/tieba/image/20150713/6357240325635237502503049.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357240325635237502503049.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071316545339924867.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357240326208675001520457.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357240326208675001520457.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071316545341489268.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357240327113362507084100.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357240327113362507084100.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071316545343051274.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357240327633675005473912.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357240327633675005473912.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071316545344618131.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>king <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;78&#39;,&#39;styleid=1&amp;isyes=1&#39;);">4</span>
+   <span class="hf"><a href="#/tieba_show_78.html">5</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=78" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;78&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;78&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display1">精</span><span class="d display1">置顶</span><a href="#/tieba_show_77.html" style="color:" class="link bold0">10平米小卧室装修</a></h2>
+ <div class="con">现在很多的朋友家里都会有一个小房间，怎么样装修才能运用好这个空…<div class="n_img" id="n_img_77"><a href="#//UploadFile/tieba/image/20150713/6357240308783675007019434.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357240308783675007019434.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071316520566480128.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357240309275862503622866.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357240309275862503622866.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071316520569613284.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357240310321175004416583.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357240310321175004416583.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071316520571171047.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357240310822737504750027.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357240310822737504750027.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071316520572736526.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>x4demo3 <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;77&#39;,&#39;styleid=1&amp;isyes=1&#39;);">6</span>
+   <span class="hf"><a href="#/tieba_show_77.html">4</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=77" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;77&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;77&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display1">精</span><span class="d display1">置顶</span><a href="#/tieba_show_52.html" style="color:" class="link bold0">老舍茶馆</a></h2>
+ <div class="con">提起“老舍茶馆”，不但在京城妇孺皆知，就是在外埠，甚至在国外，知道…<div class="n_img" id="n_img_52"><a href="#//UploadFile/tieba/image/20150713/6357239713597737509994021.jpeg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239713597737509994021.jpeg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071315124194610504.jpeg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357239713205550009562762.jpeg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239713205550009562762.jpeg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071315124197737589.jpeg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357239713255550007648848.jpeg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239713255550007648848.jpeg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071315124199307412.jpeg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357239713402425003663769.jpeg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239713402425003663769.jpeg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071315124202429392.jpeg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>wenxin <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;52&#39;,&#39;styleid=1&amp;isyes=1&#39;);">2</span>
+   <span class="hf"><a href="#/tieba_show_52.html">5</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=52" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;52&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;52&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display1">精</span><span class="d display1">置顶</span><a href="#/tieba_show_42.html" style="color:" class="link bold0">不吹不黑，爆出你手机里面你认为最…</a></h2>
+ <div class="con"><div class="n_img" id="n_img_42"><a href="#//UploadFile/tieba/image/20150713/6357239568563362509071135.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239568563362509071135.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071314482769615326.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357239568582112502829331.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239568582112502829331.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071314482772733917.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250687003987506933795.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250687003987506933795.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421411452425767.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250687122737505864164.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250687122737505864164.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421411455550506.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>fortest003 <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;42&#39;,&#39;styleid=1&amp;isyes=1&#39;);">3</span>
+   <span class="hf"><a href="#/tieba_show_42.html">4</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=42" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;42&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;42&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display1">精</span><span class="d display1">置顶</span><a href="#/tieba_show_33.html" style="color:#2299ee" class="link bold0">【巴厘岛】曲径深处别样世界</a></h2>
+ <div class="con">之前写剧本开始，我都非常珍惜每一个空档时间，假期总是来之不易又…<div class="n_img" id="n_img_33"><a href="#//UploadFile/tieba/image/20150713/6357239308693050006854296.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239308693050006854296.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071314053050867527.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357239308786800006539793.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239308786800006539793.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071314053053988180.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357239308869612501426352.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239308869612501426352.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071314053055556975.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357239308985237502113383.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239308985237502113383.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071314053058677659.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>ruyi111111 <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;33&#39;,&#39;styleid=1&amp;isyes=1&#39;);">7</span>
+   <span class="hf"><a href="#/tieba_show_33.html">6</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=33" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;33&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;33&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display1">精</span><span class="d display1">置顶</span><a href="#/tieba_show_32.html" style="color:" class="link bold0">九黄小资三日游</a></h2>
+ <div class="con">这里的原始森林清冷幽静，一个个海子在阳光下宛如瑰丽的的宝石，树…<div class="n_img" id="n_img_32"><a href="#//UploadFile/tieba/image/20150713/6357239256232112507049159.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239256232112507049159.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071313584041483814.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357239257639925009717000.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239257639925009717000.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071313584047739803.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357239266914925001185981.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239266914925001185981.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071313584052429390.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150713/6357239268641487508426708.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357239268641487508426708.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071313584057115901.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>energy <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;32&#39;,&#39;styleid=1&amp;isyes=1&#39;);">2</span>
+   <span class="hf"><a href="#/tieba_show_32.html">4</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=32" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;32&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;32&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display0">精</span><span class="d display0">置顶</span><a href="#/tieba_show_113.html" style="color:" class="link bold0">移动互联网时代，小众化品牌成精</a></h2>
+ <div class="con">移动互联网时代，90后登上消费舞台，消费者的消费观念正在悄悄发生转…<div class="n_img" id="n_img_113"><a href="#//UploadFile/tieba/image/20150714/6357250699969612501744967.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250699969612501744967.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421433308676041.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250700061800004659710.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250700061800004659710.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421433310236358.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250700069612506917139.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250700069612506917139.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421433310231581.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>shuiguo <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;113&#39;,&#39;styleid=1&amp;isyes=1&#39;);">4</span>
+   <span class="hf"><a href="#/tieba_show_113.html">8</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=113" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;113&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;113&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display0">精</span><span class="d display0">置顶</span><a href="#/tieba_show_112.html" style="color:" class="link bold0">电脑对人体有哪些危害？</a></h2>
+ <div class="con">电脑现在已成为日常生活的必须品了，就像家用电器家家都有，很多人…<div class="n_img" id="n_img_112"><a href="#//UploadFile/tieba/image/20150713/6357242178283675004780541.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357242178283675004780541.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071322030497730587.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250593283675003079401.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250593283675003079401.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421260083675460.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250593410237504267199.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250593410237504267199.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421260086805850.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>energy <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;112&#39;,&#39;styleid=1&amp;isyes=1&#39;);">2</span>
+   <span class="hf"><a href="#/tieba_show_112.html">4</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=112" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;112&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;112&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display0">精</span><span class="d display0">置顶</span><a href="#/tieba_show_111.html" style="color:" class="link bold0">智能家居为何概念很火但是落地很…</a></h2>
+ <div class="con">智能家居的概念火到什么程度？想必你已经有所耳闻目睹。<div class="n_img" id="n_img_111"><a href="#//UploadFile/tieba/image/20150713/6357242159257112502754007.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357242159257112502754007.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071321595599305691.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250599385237505054494.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250599385237505054494.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421271730558727.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250599507112506526372.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250599507112506526372.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421271732115131.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250599544612507340937.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250599544612507340937.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421271732117487.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>x4demo5 <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;111&#39;,&#39;styleid=1&amp;isyes=1&#39;);">2</span>
+   <span class="hf"><a href="#/tieba_show_111.html">3</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=111" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;111&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;111&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display1">精</span><span class="d display0">置顶</span><a href="#/tieba_show_110.html" style="color:" class="link bold0">城市人吃的蔬菜不注意的危害 远离…</a></h2>
+ <div class="con">城里人吃的蔬菜水果都是农民种出来的，农民自己都不吃那些蔬菜，他…<div class="n_img" id="n_img_110"><a href="#//UploadFile/tieba/image/20150713/6357242157796175003756742.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357242157796175003756742.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071321594155555496.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250644189925004201776.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250644189925004201776.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421341410230709.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250644225862503543758.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250644225862503543758.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421341411807956.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250644628987504475784.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250644628987504475784.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421341413364137.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>future <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;110&#39;,&#39;styleid=1&amp;isyes=1&#39;);">1</span>
+   <span class="hf"><a href="#/tieba_show_110.html">5</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=110" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;110&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;110&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display0">精</span><span class="d display0">置顶</span><a href="#/tieba_show_109.html" style="color:" class="link bold0">国产低价手机原来省在这里</a></h2>
+ <div class="con">最近用国产低价手机陆续遇到不少问题，有的是以前就知道的，有的是…<div class="n_img" id="n_img_109"></div></div>
+ <dl>
+  <dt>x4demo5 <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;109&#39;,&#39;styleid=1&amp;isyes=1&#39;);">2</span>
+   <span class="hf"><a href="#/tieba_show_109.html">4</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=109" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;109&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;109&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display1">精</span><span class="d display0">置顶</span><a href="#/tieba_show_108.html" style="color:" class="link bold0">iPhone6后苹果还有哪些产品及功能…</a></h2>
+ <div class="con">苹果刚刚发布了下一代智能手机iPhone 6及iPhone 6 Plus，没有期待中…<div class="n_img" id="n_img_108"><a href="#//UploadFile/tieba/image/20150713/6357242087302425007861947.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357242087302425007861947.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071321480439924365.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250652061800006017007.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250652061800006017007.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421352571179797.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250652121175003131277.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250652121175003131277.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421352572734176.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250652261800007361351.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250652261800007361351.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421352574308216.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>spirit <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;108&#39;,&#39;styleid=1&amp;isyes=1&#39;);">0</span>
+   <span class="hf"><a href="#/tieba_show_108.html">5</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=108" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;108&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;108&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display0">精</span><span class="d display0">置顶</span><a href="#/tieba_show_106.html" style="color:" class="link bold0">暴跌之后A股将进入“慢牛”时代</a></h2>
+ <div class="con">在过去的近一个月，A股市场演绎了一场波澜壮阔的大行情，如此跌宕起…<div class="n_img" id="n_img_106"></div></div>
+ <dl>
+  <dt>spirit <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;106&#39;,&#39;styleid=1&amp;isyes=1&#39;);">1</span>
+   <span class="hf"><a href="#/tieba_show_106.html">2</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=106" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;106&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;106&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display1">精</span><span class="d display0">置顶</span><a href="#/tieba_show_105.html" style="color:" class="link bold0">蓝牙音箱如何连接手机,明白的朋友…</a></h2>
+ <div class="con"> 办理联通宽带，赠送一个双胞胎蓝牙音箱，是双胞胎X3，问：如何连接手…<div class="n_img" id="n_img_105"><a href="#//UploadFile/tieba/image/20150713/6357242060663362506776968.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357242060663362506776968.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071321435974300592.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250684133675008497934.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250684133675008497934.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421404880559648.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250684363362508399414.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250684363362508399414.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421404883676105.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250684541487504444053.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250684541487504444053.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421404883677358.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>aufly <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;105&#39;,&#39;styleid=1&amp;isyes=1&#39;);">5</span>
+   <span class="hf"><a href="#/tieba_show_105.html">2</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=105" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;105&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;105&#39;);" class="blue">删除</a></div>
+</div><div class="item">
+ <h2><span class="j display1">精</span><span class="d display0">置顶</span><a href="#/tieba_show_104.html" style="color:" class="link bold0">微电商：迟来但正确的微博电商之路…</a></h2>
+ <div class="con">当微博在最鼎盛期决定走商业化道路时，更多的还是走广告的老路子。…<div class="n_img" id="n_img_104"><a href="#//UploadFile/tieba/image/20150713/6357242055014925008521816.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150713/6357242055014925008521816.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0713/2015071321423178987382.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250655666487507229302.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250655666487507229302.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421360035235154.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250655677425007730068.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250655677425007730068.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421360036804596.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a><a href="#//UploadFile/tieba/image/20150714/6357250655750862507886615.jpg" target="_blank" class="itemAlbum" original="..//UploadFile/tieba/image/20150714/6357250655750862507886615.jpg"><img src="./images/tiebalistnopic.png" data-src="../UploadFile/tieba/2015-0714/2015071421360038362097.jpg" data-ifshow="0" alt=""><div class="feed_highlight"></div></a></div></div>
+ <dl>
+  <dt>spirit <span class="stime">2015-07-13</span></dt>
+  <dd>
+   <span class="zan" onclick="return putRevertPage(this,&#39;104&#39;,&#39;styleid=1&amp;isyes=1&#39;);">2</span>
+   <span class="hf"><a href="#/tieba_show_104.html">4</a></span>
+  </dd>
+ </dl>
+ <div class="manage"><a href="#/tieba/addedit.aspx?action=edit&amp;id=104" class="blue">编辑</a>　<a href="javascript:void(0);" onclick="superManage(&#39;104&#39;);" class="blue">超级管理</a>　<a href="javascript:void(0);" onclick="$.managerTBisdel(&#39;104&#39;);" class="blue">删除</a></div>
+</div></ul>
+			<div id="pullUp" style="display:none;"><span class="loader">loadding</span></div>
+			<div class="pageNavigation" id="pageNavigation"><div class="FirstPage"><span class="kill">&lt;</span></div><div class="EndPage"><a href="#/tieba/?page=1#" onclick="return getPagingGlobal({&#39;p&#39;:&#39;2&#39;});" title="下一页">&gt;</a></div>1/6</div>
+		</div>
+		<!--<div style="height:100px; background-color:#eee;"></div>-->
+	</div>
+	
+	<div id="reload" style="display: none;"><s class="s"></s><span class="txt">下拉可以刷新</span><br>最后更新：<span class="time">今天 17:04</span></div>
+	<span class="loader" id="pageLoader" style="display: none;">loadding</span>
+</div>
+
+ 
+</div>
+
+	<div class="foot_link" id="foot_link">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+</div>
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="#/" class="back close" onclick="">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','25001');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<div class="post_btn"><button type="button" id="seniorSend">发帖子</button></div>
+<!--推荐帖子-->
+<div class="reco_post" id="footLogin0" style="display:none;">
+ <ul>
+  <li><a href="#/member/register.html?from=#/tieba/" class="reg">注册</a></li>
+  <li><a href="#/member/login.html?from=#/tieba/" class="login">登录</a></li>
+ </ul>
+</div>
+<!--<div class="reco_post" style="display:none;" id="footLogin1"><div id="userInfo" class="foot_user_info"></div></div>-->
+<script type="text/javascript" src="./js/purl.js"></script>
+<script type="text/javascript" src="./js/iscroll-probe.js"></script>
+<script src="./js/commonPaging.js"></script>
+<script src="./js/wap_tieba.js"></script>
+<script type="text/javascript" src="./js/getTiebaPage.js"></script>
+<script>
+window['isIscroll5'] = true; //列表是否启用iscroll5
+window['isIscroll5_hideHead']= true;
+window['islazyImg'] = true; //是否开启了延迟加载图片
+var nowdomain ="#";
+var keyvalues = {"table_id":"25",
+	"pagesize":"20",
+	"tplpath":"tieba",
+	"tplname":"paging_wap_tieba_index_list.html",
+	"strlen":"60",	
+	"titleLen":"30",
+	"isjson":"0",
+	"p":"1",
+	"_key":"",
+	"a":"0",//板块
+	"b":"0",//小类
+	"e":"0",//排序(0默认回复时间倒,1发帖时间倒,2:精华前,3回复数,4:浏览数)
+	"g":"0",//只查看某用户贴(userid)
+	"h":"0",//只看精华
+	"i":"0"//有图
+};
+function showCatA(obj,ids,node){
+	getPagingGlobal(obj,node,ids,'2');
+	$('#bigCatTxt').html($(node).html());
+	$('#fullbg').trigger('click');
+	window['Bigcategory'] = obj.a;
+	getUserState();
+	return false;
+}
+function showCatB(obj,sid,ids,node){
+	getPagingGlobal(obj,node,ids,'2');
+	$(sid).html($(node).html());
+	$('#fullbg').trigger('click');
+	return false;
+}
+
+window.onload = function(){
+	loaded_page();
+};
+</script>
+
+
+ </body></html>

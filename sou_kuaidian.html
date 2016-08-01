@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页-外卖</title>
+<!-- UC默认竖屏 ，UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<meta name="browsermode" content="application">
+<!-- QQ强制竖屏 QQ强制全屏 -->
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="x5-page-mode" content="app">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" rev="stylesheet" href="./css/kd-mb.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/news-scroll5.css">
+<style type="text/css">
+#pageNavigation { display:none;}
+#wrapper { top:125px}
+#scroller .noMore { padding-left:0; padding-right:0;}
+</style>
+<script type="text/javascript">
+var sys_time = Date.parse('07/19/2016 14:56:56');
+</script>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+<body style="min-height: 667px;">
+<div class="top_gg po_re" id="top_gg" style="display:none;">{$Mh163k_wap_首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="javascript:void(0);" onclick="return window.history.go(-1);" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico" style="display: none;">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">外卖</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+
+<div class="nav_bottom">
+ <ul>
+  <li><a href="index.html">首页</a></li>
+  <li class="current"><a href="sou_kuaidian.html">附近</a></li>
+  <li><a href="sou_dianping.html">订单</a></li>
+  <li><a href="sou_gouwuche.html">购物车</a></li>
+  <li><a href="wode_index.html">我的</a></li>
+ </ul>
+</div>
+<div class="wrapper p_main" style="margin:0;">
+ <div class="guess_local clearfix" id="hideHead">
+  <dl>
+   <dt id="curLocation">未知位置</dt>
+   <dd><a href="javascript:void(0);" onclick="showNewPage(&#39;切换位置&#39;,locationHtml,locationCallBack);">切换</a></dd>
+  </dl>
+ </div>
+<div class="filter2" id="filter2">
+	<ul class="tab clearfix">
+		<li class="item"><a href="javascript:void(0);"><span id="str_b_node">全部分类</span><em></em></a></li>
+		<li class="item"><a href="javascript:void(0);"><span id="str_d_node">全部区域</span><em></em></a></li>
+	</ul>
+	<div class="inner" style="display:none;">
+		<ul id="inner1"><li><a href="#/kd_a0_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">全部分类</a></li><li id="cat_692" class="hasUL"><a href="#/k/?page=1#" class="hasUlLink">餐饮美食</a><ul><li id="s_692"><a href="#/kd_a0_b0_c0_d0_e0_f692_g0_h0_i0_p1.html?_key=">全部小类</a></li><li id="s_694"><a href="#/kd_a0_b0_c0_d0_e0_f692_g694_h0_i0_p1.html?_key=">中式快餐</a></li><li id="s_695"><a href="#/kd_a0_b0_c0_d0_e0_f692_g695_h0_i0_p1.html?_key=">品牌快餐</a></li><li id="s_696"><a href="#/kd_a0_b0_c0_d0_e0_f692_g696_h0_i0_p1.html?_key=">中式正餐</a></li><li id="s_697"><a href="#/kd_a0_b0_c0_d0_e0_f692_g697_h0_i0_p1.html?_key=">西式快餐</a></li><li id="s_698"><a href="#/kd_a0_b0_c0_d0_e0_f692_g698_h0_i0_p1.html?_key=">咖啡甜品</a></li><li id="s_699"><a href="#/kd_a0_b0_c0_d0_e0_f692_g699_h0_i0_p1.html?_key=">特色小吃</a></li><li id="s_700"><a href="#/kd_a0_b0_c0_d0_e0_f692_g700_h0_i0_p1.html?_key=">日韩料理</a></li><li id="s_701"><a href="#/kd_a0_b0_c0_d0_e0_f692_g701_h0_i0_p1.html?_key=">糕点饮品</a></li></ul></li><li id="cat_693" class="hasUL"><a href="#/k/?page=1#" class="hasUlLink">便利店</a><ul><li id="s_693"><a href="#/kd_a0_b0_c0_d0_e0_f693_g0_h0_i0_p1.html?_key=">全部小类</a></li><li id="s_703"><a href="#/kd_a0_b0_c0_d0_e0_f693_g703_h0_i0_p1.html?_key=">生活日用</a></li><li id="s_704"><a href="#/kd_a0_b0_c0_d0_e0_f693_g704_h0_i0_p1.html?_key=">果蔬</a></li><li id="s_705"><a href="#/kd_a0_b0_c0_d0_e0_f693_g705_h0_i0_p1.html?_key=">药店</a></li></ul></li><li id="cat_702"><a href="#/kd_a0_b0_c0_d0_e0_f702_g0_h0_i0_p1.html?_key=">自定义</a></li></ul>
+	</div>
+	<div class="inner" style="display:none;">
+		<ul id="inner2"><li><a href="#/kd_a0_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">全部区域</a></li><li id="s_a_1" class="hasUL"><a href="#/k/?page=1#" class="hasUlLink">朝阳区</a><ul><li id="s_b_1"><a href="#/kd_a1_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">全部地段</a></li><li id="s_b_402"><a href="#/kd_a1_b402_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">国贸</a></li><li id="s_b_403"><a href="#/kd_a1_b403_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">大望路</a></li><li id="s_b_404"><a href="#/kd_a1_b404_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">四惠</a></li><li id="s_b_405"><a href="#/kd_a1_b405_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">双井</a></li><li id="s_b_406"><a href="#/kd_a1_b406_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">劲松</a></li><li id="s_b_407"><a href="#/kd_a1_b407_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">潘家园</a></li><li id="s_b_408"><a href="#/kd_a1_b408_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">广渠门</a></li><li id="s_b_409"><a href="#/kd_a1_b409_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">建外大街</a></li><li id="s_b_410"><a href="#/kd_a1_b410_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">东大桥</a></li><li id="s_b_411"><a href="#/kd_a1_b411_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">和平街</a></li><li id="s_b_412"><a href="#/kd_a1_b412_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">左家庄</a></li><li id="s_b_413"><a href="#/kd_a1_b413_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">太阳宫</a></li><li id="s_b_414"><a href="#/kd_a1_b414_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">芍药居</a></li><li id="s_b_415"><a href="#/kd_a1_b415_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">安贞</a></li><li id="s_b_416"><a href="#/kd_a1_b416_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">亚运村</a></li><li id="s_b_417"><a href="#/kd_a1_b417_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">安慧桥</a></li><li id="s_b_418"><a href="#/kd_a1_b418_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">小关</a></li><li id="s_b_419"><a href="#/kd_a1_b419_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">北沙滩</a></li><li id="s_b_420"><a href="#/kd_a1_b420_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">其他</a></li></ul></li><li id="s_a_2" class="hasUL"><a href="#/k/?page=1#" class="hasUlLink">海淀区</a><ul><li id="s_b_2"><a href="#/kd_a2_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">全部地段</a></li><li id="s_b_396"><a href="#/kd_a2_b396_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">清河</a></li><li id="s_b_397"><a href="#/kd_a2_b397_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">小营</a></li><li id="s_b_398"><a href="#/kd_a2_b398_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">西北旺</a></li><li id="s_b_399"><a href="#/kd_a2_b399_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">上地</a></li><li id="s_b_400"><a href="#/kd_a2_b400_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">马连洼</a></li><li id="s_b_401"><a href="#/kd_a2_b401_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">西三旗</a></li><li id="s_b_426"><a href="#/kd_a2_b426_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">二里庄</a></li><li id="s_b_427"><a href="#/kd_a2_b427_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">学院路</a></li><li id="s_b_428"><a href="#/kd_a2_b428_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">知春路</a></li><li id="s_b_429"><a href="#/kd_a2_b429_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">牡丹园</a></li><li id="s_b_430"><a href="#/kd_a2_b430_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">北航</a></li><li id="s_b_431"><a href="#/kd_a2_b431_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">北太平庄</a></li><li id="s_b_432"><a href="#/kd_a2_b432_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">蓟门桥</a></li><li id="s_b_433"><a href="#/kd_a2_b433_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">双榆树</a></li><li id="s_b_434"><a href="#/kd_a2_b434_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">人民大学</a></li><li id="s_b_435"><a href="#/kd_a2_b435_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">皂君庙</a></li><li id="s_b_436"><a href="#/kd_a2_b436_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">万柳</a></li><li id="s_b_437"><a href="#/kd_a2_b437_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">万泉河</a></li><li id="s_b_438"><a href="#/kd_a2_b438_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">西苑</a></li><li id="s_b_439"><a href="#/kd_a2_b439_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">马连洼</a></li><li id="s_b_440"><a href="#/kd_a2_b440_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">西北旺</a></li><li id="s_b_441"><a href="#/kd_a2_b441_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">海淀周边</a></li></ul></li><li id="s_a_11" class="hasUL"><a href="#/k/?page=1#" class="hasUlLink">丰台区</a><ul><li id="s_b_11"><a href="#/kd_a11_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">全部地段</a></li><li id="s_b_442"><a href="#/kd_a11_b442_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">西客站</a></li><li id="s_b_443"><a href="#/kd_a11_b443_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">太平桥</a></li><li id="s_b_444"><a href="#/kd_a11_b444_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">六里桥</a></li><li id="s_b_445"><a href="#/kd_a11_b445_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">丰台路</a></li><li id="s_b_446"><a href="#/kd_a11_b446_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">青塔</a></li><li id="s_b_447"><a href="#/kd_a11_b447_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">岳各庄</a></li><li id="s_b_448"><a href="#/kd_a11_b448_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">卢沟桥</a></li><li id="s_b_449"><a href="#/kd_a11_b449_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">长辛店</a></li><li id="s_b_450"><a href="#/kd_a11_b450_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">云岗</a></li><li id="s_b_451"><a href="#/kd_a11_b451_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">北大地</a></li><li id="s_b_452"><a href="#/kd_a11_b452_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">丰台体育馆</a></li><li id="s_b_453"><a href="#/kd_a11_b453_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">丽泽桥</a></li><li id="s_b_454"><a href="#/kd_a11_b454_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">科技园区</a></li><li id="s_b_455"><a href="#/kd_a11_b455_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">世界公园</a></li><li id="s_b_456"><a href="#/kd_a11_b456_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">花乡</a></li><li id="s_b_457"><a href="#/kd_a11_b457_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">玉泉营</a></li><li id="s_b_458"><a href="#/kd_a11_b458_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">菜户营</a></li></ul></li><li id="s_a_12" class="hasUL"><a href="#/k/?page=1#" class="hasUlLink">西城区</a><ul><li id="s_b_12"><a href="#/kd_a12_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">全部地段</a></li><li id="s_b_459"><a href="#/kd_a12_b459_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">西直门</a></li><li id="s_b_460"><a href="#/kd_a12_b460_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">车公庄</a></li><li id="s_b_461"><a href="#/kd_a12_b461_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">官园</a></li><li id="s_b_462"><a href="#/kd_a12_b462_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">百万庄</a></li><li id="s_b_463"><a href="#/kd_a12_b463_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">阜成门</a></li><li id="s_b_464"><a href="#/kd_a12_b464_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">西四</a></li><li id="s_b_465"><a href="#/kd_a12_b465_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">展览路</a></li><li id="s_b_466"><a href="#/kd_a12_b466_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">月坛</a></li><li id="s_b_467"><a href="#/kd_a12_b467_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">金融街</a></li><li id="s_b_468"><a href="#/kd_a12_b468_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">西单</a></li><li id="s_b_469"><a href="#/kd_a12_b469_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">德胜门</a></li><li id="s_b_470"><a href="#/kd_a12_b470_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">六铺炕</a></li><li id="s_b_471"><a href="#/kd_a12_b471_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">积水潭</a></li><li id="s_b_472"><a href="#/kd_a12_b472_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">小西天</a></li><li id="s_b_473"><a href="#/kd_a12_b473_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">新街口</a></li><li id="s_b_474"><a href="#/kd_a12_b474_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">马甸</a></li><li id="s_b_475"><a href="#/kd_a12_b475_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">鼓楼</a></li><li id="s_b_476"><a href="#/kd_a12_b476_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">地安门</a></li></ul></li><li id="s_a_13" class="hasUL"><a href="#/k/?page=1#" class="hasUlLink">通州区</a><ul><li id="s_b_13"><a href="#/kd_a13_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">全部地段</a></li><li id="s_b_477"><a href="#/kd_a13_b477_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">北关</a></li><li id="s_b_478"><a href="#/kd_a13_b478_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">北关环岛</a></li><li id="s_b_479"><a href="#/kd_a13_b479_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">永顺</a></li><li id="s_b_480"><a href="#/kd_a13_b480_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">新华大街</a></li><li id="s_b_481"><a href="#/kd_a13_b481_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">通州北苑</a></li><li id="s_b_482"><a href="#/kd_a13_b482_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">八里桥</a></li><li id="s_b_483"><a href="#/kd_a13_b483_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">果园</a></li><li id="s_b_484"><a href="#/kd_a13_b484_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">九棵树</a></li><li id="s_b_485"><a href="#/kd_a13_b485_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">梨园</a></li><li id="s_b_486"><a href="#/kd_a13_b486_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">土桥</a></li><li id="s_b_487"><a href="#/kd_a13_b487_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">临河里</a></li><li id="s_b_488"><a href="#/kd_a13_b488_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">中仓</a></li><li id="s_b_489"><a href="#/kd_a13_b489_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">西门</a></li><li id="s_b_490"><a href="#/kd_a13_b490_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">乔庄</a></li><li id="s_b_491"><a href="#/kd_a13_b491_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">东关</a></li><li id="s_b_492"><a href="#/kd_a13_b492_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">运河大街</a></li><li id="s_b_493"><a href="#/kd_a13_b493_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">玉桥</a></li><li id="s_b_494"><a href="#/kd_a13_b494_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">张家湾</a></li><li id="s_b_495"><a href="#/kd_a13_b495_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">八通轻轨</a></li></ul></li><li id="s_a_77" class="hasUL"><a href="#/k/?page=1#" class="hasUlLink">东城区</a><ul><li id="s_b_77"><a href="#/kd_a77_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">全部地段</a></li><li id="s_b_496"><a href="#/kd_a77_b496_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">东直门</a></li><li id="s_b_497"><a href="#/kd_a77_b497_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">东直门外</a></li><li id="s_b_498"><a href="#/kd_a77_b498_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">和平里</a></li><li id="s_b_499"><a href="#/kd_a77_b499_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">雍和宫</a></li><li id="s_b_500"><a href="#/kd_a77_b500_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">安定门</a></li><li id="s_b_501"><a href="#/kd_a77_b501_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">交道口</a></li><li id="s_b_502"><a href="#/kd_a77_b502_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">东四十条</a></li><li id="s_b_503"><a href="#/kd_a77_b503_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">海运仓</a></li><li id="s_b_504"><a href="#/kd_a77_b504_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">北新桥</a></li><li id="s_b_505"><a href="#/kd_a77_b505_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">朝阳门</a></li><li id="s_b_506"><a href="#/kd_a77_b506_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">建国门</a></li><li id="s_b_507"><a href="#/kd_a77_b507_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">北京站</a></li><li id="s_b_508"><a href="#/kd_a77_b508_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">王府井</a></li><li id="s_b_509"><a href="#/kd_a77_b509_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">景山</a></li><li id="s_b_510"><a href="#/kd_a77_b510_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">灯市口</a></li><li id="s_b_511"><a href="#/kd_a77_b511_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">沙滩</a></li><li id="s_b_513"><a href="#/kd_a77_b513_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">东四东城周边</a></li></ul></li><li id="s_a_78" class="hasUL"><a href="#/k/?page=1#" class="hasUlLink">昌平区</a><ul><li id="s_b_78"><a href="#/kd_a78_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">全部地段</a></li><li id="s_b_514"><a href="#/kd_a78_b514_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">天通苑</a></li><li id="s_b_515"><a href="#/kd_a78_b515_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">立水桥</a></li><li id="s_b_516"><a href="#/kd_a78_b516_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">东小口</a></li><li id="s_b_517"><a href="#/kd_a78_b517_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">霍营</a></li><li id="s_b_518"><a href="#/kd_a78_b518_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">小汤山</a></li><li id="s_b_519"><a href="#/kd_a78_b519_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">北七家</a></li><li id="s_b_520"><a href="#/kd_a78_b520_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">回龙观</a></li><li id="s_b_521"><a href="#/kd_a78_b521_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">龙泽</a></li><li id="s_b_522"><a href="#/kd_a78_b522_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">城北</a></li><li id="s_b_523"><a href="#/kd_a78_b523_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">沙河</a></li><li id="s_b_524"><a href="#/kd_a78_b524_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">百善</a></li><li id="s_b_525"><a href="#/kd_a78_b525_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">阳坊</a></li><li id="s_b_526"><a href="#/kd_a78_b526_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">南口</a></li><li id="s_b_527"><a href="#/kd_a78_b527_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">城南</a></li><li id="s_b_528"><a href="#/kd_a78_b528_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">昌平县城</a></li><li id="s_b_529"><a href="#/kd_a78_b529_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">昌平周边</a></li></ul></li><li id="s_a_79" class="hasUL"><a href="#/k/?page=1#" class="hasUlLink">宣武区</a><ul><li id="s_b_79"><a href="#/kd_a79_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">全部地段</a></li><li id="s_b_530"><a href="#/kd_a79_b530_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">广安门外</a></li><li id="s_b_531"><a href="#/kd_a79_b531_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">广安门内</a></li><li id="s_b_532"><a href="#/kd_a79_b532_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">天宁寺</a></li><li id="s_b_533"><a href="#/kd_a79_b533_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">马连道</a></li><li id="s_b_534"><a href="#/kd_a79_b534_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">红莲</a></li><li id="s_b_535"><a href="#/kd_a79_b535_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">白纸坊</a></li><li id="s_b_536"><a href="#/kd_a79_b536_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">南菜园</a></li><li id="s_b_537"><a href="#/kd_a79_b537_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">大观园</a></li><li id="s_b_538"><a href="#/kd_a79_b538_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">白广路</a></li><li id="s_b_539"><a href="#/kd_a79_b539_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">牛街</a></li><li id="s_b_540"><a href="#/kd_a79_b540_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">长椿街</a></li><li id="s_b_541"><a href="#/kd_a79_b541_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">宣武门</a></li><li id="s_b_542"><a href="#/kd_a79_b542_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">椿树街道</a></li><li id="s_b_543"><a href="#/kd_a79_b543_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">菜市口</a></li><li id="s_b_544"><a href="#/kd_a79_b544_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">陶然亭</a></li><li id="s_b_545"><a href="#/kd_a79_b545_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">珠市口</a></li><li id="s_b_546"><a href="#/kd_a79_b546_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">虎坊桥</a></li><li id="s_b_547"><a href="#/kd_a79_b547_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">天桥</a></li><li id="s_b_548"><a href="#/kd_a79_b548_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">大栅栏</a></li><li id="s_b_549"><a href="#/kd_a79_b549_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">和平门</a></li><li id="s_b_550"><a href="#/kd_a79_b550_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">宣武周边</a></li></ul></li><li id="s_a_80" class="hasUL"><a href="#/k/?page=1#" class="hasUlLink">崇文区</a><ul><li id="s_b_80"><a href="#/kd_a80_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">全部地段</a></li><li id="s_b_551"><a href="#/kd_a80_b551_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">崇文门</a></li><li id="s_b_552"><a href="#/kd_a80_b552_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">前门</a></li><li id="s_b_553"><a href="#/kd_a80_b553_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">新世界</a></li><li id="s_b_554"><a href="#/kd_a80_b554_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">广渠门</a></li><li id="s_b_555"><a href="#/kd_a80_b555_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">东花市</a></li><li id="s_b_556"><a href="#/kd_a80_b556_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">法华寺</a></li><li id="s_b_557"><a href="#/kd_a80_b557_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">体育馆路</a></li><li id="s_b_558"><a href="#/kd_a80_b558_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">磁器口</a></li><li id="s_b_559"><a href="#/kd_a80_b559_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">天坛</a></li><li id="s_b_560"><a href="#/kd_a80_b560_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">永定门</a></li><li id="s_b_561"><a href="#/kd_a80_b561_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">龙潭湖</a></li><li id="s_b_562"><a href="#/kd_a80_b562_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">光明楼</a></li><li id="s_b_563"><a href="#/kd_a80_b563_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">崇文周边</a></li></ul></li><li id="s_a_82" class="hasUL"><a href="#/k/?page=1#" class="hasUlLink">其他区县</a><ul><li id="s_b_82"><a href="#/kd_a82_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">全部地段</a></li><li id="s_b_578"><a href="#/kd_a82_b578_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">房山</a></li><li id="s_b_579"><a href="#/kd_a82_b579_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">大兴</a></li><li id="s_b_580"><a href="#/kd_a82_b580_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">顺义</a></li><li id="s_b_581"><a href="#/kd_a82_b581_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">密云</a></li><li id="s_b_582"><a href="#/kd_a82_b582_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">怀柔</a></li><li id="s_b_583"><a href="#/kd_a82_b583_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">延庆</a></li><li id="s_b_584"><a href="#/kd_a82_b584_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">平谷</a></li><li id="s_b_585"><a href="#/kd_a82_b585_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">门头沟</a></li></ul></li></ul>
+	</div>
+	<div class="inner_parent" id="parent_container" style="display:none;"><div class="innercontent"></div></div>
+	<div class="inner_child" id="inner_container" style="display:none;"><div class="innercontent"></div></div>
+</div>
+<div class="fullbg" id="fullbg" style="display: none; height: 667px;"><i class="pull2"></i></div>
+<!--商家列表-->
+
+
+<input id="pagenum" type="hidden" value="1">
+<div id="wrapper">
+	<div id="scroller" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+		<div id="pullDown" style="display:none;"><span class="loader" style="display:none;">loadding</span></div>
+		<div class="sj_box" id="mapPoint" style="background-color:#fff;">
+			
+		
+<ul id="pagingList"><li class="zis0 item" data-x="116.602219" data-y="39.915415" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="1" data-startdate="11:00" data-enddate="14:30" data-startdate2="17:00" data-enddate2="22:30">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/2015051517442490718561.jpg" data-src="../uploadfile/good_shop/2015/05_15/2015051517442490718561.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="1" alt="">
+     <p class="state state_3">打烊了</p>
+    </div>
+    <div class="con">
+     <h3>瑞祥阁美味快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费5元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis1 item" data-x="116.312318" data-y="39.884916" data-isopen="2" data-shipkill="0" data-startkill="1" data-start2kill="1" data-startdate="11:00" data-enddate="14:30" data-startdate2="17:00" data-enddate2="22:30">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/2015051516193153265011.jpg" data-src="../uploadfile/good_shop/2015/05_15/2015051516193153265011.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="1" alt="">
+     <p class="state state_2">暂停营业</p>
+    </div>
+    <div class="con">
+     <h3>炫多滋餐饮快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费5元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis1 item" data-x="116.312821" data-y="39.946731" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="0" data-startdate="08:00" data-enddate="22:00" data-startdate2="00:00" data-enddate2="23:59">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/2015051516203636072341.jpg" data-src="../uploadfile/good_shop/2015/05_15/2015051516203636072341.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="1" alt="">
+     <p class="state state_1">营业中</p>
+    </div>
+    <div class="con">
+     <h3>大旗便利快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费10元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis1 item" data-x="116.29004" data-y="39.850415" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="0" data-startdate="08:00" data-enddate="22:00" data-startdate2="00:00" data-enddate2="23:59">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/2015051521083776630331.jpg" data-src="../uploadfile/good_shop/2015/05_15/2015051521083776630331.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="1" alt="">
+     <p class="state state_1">营业中</p>
+    </div>
+    <div class="con">
+     <h3>美乐多便利快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费10元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis1 item" data-x="116.288603" data-y="39.879324" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="1" data-startdate="11:00" data-enddate="14:30" data-startdate2="17:00" data-enddate2="22:30">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051516080048591101.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_3">打烊了</p>
+    </div>
+    <div class="con">
+     <h3>土大力餐饮快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费5元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis0 item" data-x="116.309659" data-y="39.849307" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="1" data-startdate="11:00" data-enddate="14:30" data-startdate2="17:00" data-enddate2="22:30">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051516403998580051.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_3">打烊了</p>
+    </div>
+    <div class="con">
+     <h3>石锅香辣蛙快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费5元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis1 item" data-x="116.24455" data-y="40.21321" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="1" data-startdate="11:00" data-enddate="14:30" data-startdate2="17:00" data-enddate2="22:30">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051517003257953101.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_3">打烊了</p>
+    </div>
+    <div class="con">
+     <h3>上岛咖啡快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费5元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis1 item" data-x="116.337399" data-y="39.861825" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="1" data-startdate="11:00" data-enddate="14:30" data-startdate2="17:00" data-enddate2="22:30">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051512284236068891.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_3">打烊了</p>
+    </div>
+    <div class="con">
+     <h3>徐记海鲜快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费5元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis0 item" data-x="116.373546" data-y="39.922" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="1" data-startdate="11:00" data-enddate="14:30" data-startdate2="17:00" data-enddate2="22:30">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051515571454835931.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_3">打烊了</p>
+    </div>
+    <div class="con">
+     <h3>稻香蛙快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费5元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis0 item" data-x="116.428379" data-y="39.930687" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="1" data-startdate="11:00" data-enddate="14:30" data-startdate2="17:00" data-enddate2="22:30">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051515530509497861.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_3">打烊了</p>
+    </div>
+    <div class="con">
+     <h3>小蜜蜂餐饮快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费5元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis1 item" data-x="116.337973" data-y="39.969461" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="1" data-startdate="11:00" data-enddate="14:30" data-startdate2="17:00" data-enddate2="22:30">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051516474575180201.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_3">打烊了</p>
+    </div>
+    <div class="con">
+     <h3>尚沃汤多多快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费5元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis0 item" data-x="116.289249" data-y="40.224725" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="1" data-startdate="11:00" data-enddate="14:30" data-startdate2="17:00" data-enddate2="22:30">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051516465346976411.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_3">打烊了</p>
+    </div>
+    <div class="con">
+     <h3>美膳坊餐饮快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费5元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis1 item" data-x="116.371031" data-y="39.924933" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="1" data-startdate="11:00" data-enddate="14:30" data-startdate2="17:00" data-enddate2="22:30">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051516322315726941.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_3">打烊了</p>
+    </div>
+    <div class="con">
+     <h3>布衣家宴餐饮快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费5元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis1 item" data-x="116.289681" data-y="39.881095" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="0" data-startdate="08:00" data-enddate="22:00" data-startdate2="00:00" data-enddate2="23:59">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051511474353279491.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_1">营业中</p>
+    </div>
+    <div class="con">
+     <h3>快乐便利快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>60分钟<span class="s"> | </span>配送费10元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis0 item" data-x="116.656621" data-y="39.937991" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="0" data-startdate="08:00" data-enddate="22:00" data-startdate2="00:00" data-enddate2="23:59">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051516410831342281.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_1">营业中</p>
+    </div>
+    <div class="con">
+     <h3>利客隆百货快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费10元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis1 item" data-x="116.395465" data-y="39.880154" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="0" data-startdate="08:00" data-enddate="22:00" data-startdate2="00:00" data-enddate2="23:59">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051521045418810691.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_1">营业中</p>
+    </div>
+    <div class="con">
+     <h3>OK便利快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费10元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis1 item" data-x="116.347963" data-y="39.994119" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="0" data-startdate="08:00" data-enddate="22:00" data-startdate2="00:00" data-enddate2="23:59">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051521180661020691.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_1">营业中</p>
+    </div>
+    <div class="con">
+     <h3>新世纪百货快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费10元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis0 item" data-x="116.425505" data-y="39.947837" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="0" data-startdate="08:00" data-enddate="22:00" data-startdate2="00:00" data-enddate2="23:59">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051521225126692941.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_1">营业中</p>
+    </div>
+    <div class="con">
+     <h3>三利百货快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费10元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis0 item" data-x="116.643038" data-y="39.895711" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="0" data-startdate="08:00" data-enddate="22:00" data-startdate2="00:00" data-enddate2="23:59">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051514334678263111.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_1">营业中</p>
+    </div>
+    <div class="con">
+     <h3>易捷24h快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费10元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li><li class="zis1 item" data-x="116.430463" data-y="39.890674" data-isopen="1" data-shipkill="0" data-startkill="1" data-start2kill="0" data-startdate="08:00" data-enddate="22:00" data-startdate2="00:00" data-enddate2="23:59">
+   <a href="sou_kuaidian_xiangqing.html">
+    <div class="sj_logo">
+     <img src="./images/kuaison_nofind.gif" data-src="../uploadfile/good_shop/2015/05_15/2015051517031837684811.jpg" onerror="this.src=&#39;#/template/pc/main/default/images/kuaison_nofind.gif&#39;;this.onerror=&#39;&#39;;" data-ifshow="0" alt="">
+     <p class="state state_1">营业中</p>
+    </div>
+    <div class="con">
+     <h3>伊佳便利快送</h3>
+     <s class="s_4"></s>
+     <p>50元起送<span class="s"> | </span>30分钟<span class="s"> | </span>配送费10元</p>
+     <dl>
+       <dt>
+        <tt class="r display11">赠</tt><tt class="g display11">减</tt><tt class="y display11">1st</tt>
+       </dt>
+       <dd class="juli">未知</dd>
+     </dl>  
+    </div>
+    </a>
+</li></ul>
+			<div id="pullUp" style="display:none;"><span class="loader">loadding</span></div>
+			<div class="sys_more pageNavigation" id="pageNavigation"><span class="kill">&lt;</span> <span class="current">1</span> <a href="#/k/?page=1#" onclick="return getPagingGlobal({&#39;p&#39;:&#39;2&#39;});">2</a> <a href="#/k/?page=1#" onclick="return getPagingGlobal({&#39;p&#39;:&#39;2&#39;});" title="下一页">&gt;</a></div>
+		</div>
+		<div style="height:54px; background-color:#eee;"></div>
+	</div>
+	
+	<div id="reload" style="display:none;"><s class="s"></s><span class="txt">下拉可以刷新</span><br>最后更新：<span class="time">今天 14:56</span></div>
+	<span class="loader" id="pageLoader" style="display: none;">loadding</span>
+</div>
+	<div class="foot_link" id="foot_link">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+</div>
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="javascript:;" class="back close">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#/';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','24001');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<script type="text/javascript" src="./js/purl.js"></script>
+<script src="./js/iscroll-probe.js"></script>
+<script src="./js/jquery.cookie.js"></script>
+<script type="text/javascript" src="./images/api"></script><script type="text/javascript" src="./images/getscript"></script>
+<script type="text/javascript" src="./js/convertor.js"></script>
+<script src="./js/commonPaging.js"></script>
+<script src="./js/wap_kuaisonCommon.js"></script>
+<script type="text/javascript" src="./js/getKuaidianPage.js"></script>
+<script>
+window['isIscroll5'] = true; //列表是否启用iscroll5
+window['isIscroll5_hideHead']= true;
+//var nowdomain ="#;
+var keyvalues = {"table_id":24,
+	"pagesize":20,
+	"tplpath":"k",
+	"tplname":"paging_wap_k_index_list.html", //原k/listproducts.htm复制得来
+	"strlen":100,	
+	"titleLen":80,
+	"isjson":0,
+	"p":"1",
+	"_key":"",
+	"a":"0",////kd_a(区大)_b(区小)_c排序(1新2推荐3排序)_d(1营业中,2可预订)_e(1免费配送)_f店类大_g店类小_h0_i0_p().html?_key=
+	"b":"0",
+	"c":"0",
+	"d":"0",
+	"e":"0",
+	"f":"0",
+	"g":"0",
+	"h":"0",
+	"i":"0",
+	"x":"",//用户坐标x
+	"y":""//用户坐标y
+};
+
+
+window['loadCat'] = 0;
+document.addEventListener('DOMContentLoaded',function(){
+	$('#search_ico').show();
+	$('#login_ico').hide();
+	getCategory('inner1','21',showCategory);
+	getCategory('inner2','0',showQuyu);
+	if($('#listEmpty')[0]){
+		$('#listEmpty').html('抱歉，没有找到符合条件的店家');
+	}
+	loaded_page();
+	
+	if($.cookie('myPoint') === undefined){
+		getLocation();
+	}else{
+		var myPoint = decodeURIComponent($.cookie('myPoint')).split(',');
+		getPagingGlobal({'x':myPoint[0],'y':myPoint[1]},true);
+	}
+},false);
+function showFilterTxt(){
+	var s_a_txt = '';
+	var s_c_txt = '';
+	if('0' !== '' && '0' !== '0'){
+		$('#s_a_0').addClass('cur');
+		s_c_txt = $('#s_a_0 > a').text();
+		if('0' !== '' && '0' !== '0'){
+			$('#s_b_0').addClass('cur');
+			s_c_txt = $('#s_b_0').text();
+		}
+		$('#str_d_node').html(s_c_txt);
+	}
+	
+	if('0' !== '' && '0' !== '0'){
+		$('#cat_0').addClass('cur');
+		s_a_txt = $('#cat_0 > a').text();
+		if('0' !== '' && '0' !== '0'){
+			$('#s_0').addClass('cur');
+			s_a_txt = $('#s_0').text();
+		}
+		$('#str_b_node').html(s_a_txt);
+	}
+}
+function showCategory(node,d){
+	var txt='<li><a href="../kd_a0_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">全部分类</a></li>',txt2='';
+	for(var i=0;i<d.length;i++){
+		if(!jQuery.isEmptyObject(d[i].arr)){
+			txt2 = '<ul><li id="s_'+d[i].id+'"><a href="../kd_a0_b0_c0_d0_e0_f'+d[i].id+'_g0_h0_i0_p1.html?_key=">全部小类</a></li>';
+			for(var k in d[i].arr){
+				txt2 += '<li id="s_'+k+'"><a href="../kd_a0_b0_c0_d0_e0_f'+d[i].id+'_g'+k+'_h0_i0_p1.html?_key=">'+d[i].arr[k]+'</a></li>';
+			}
+			txt2 += '</ul>';
+			txt += '<li id="cat_'+d[i].id+'"><a href="#">'+d[i].name+'</a>'+txt2+'</li>';
+			
+		}else{
+			txt += '<li id="cat_'+d[i].id+'"><a href="../kd_a0_b0_c0_d0_e0_f'+d[i].id+'_g0_h0_i0_p1.html?_key=">'+d[i].name+'</a></li>';
+		}
+	}
+	$('#'+node).html(txt);
+	if(window['loadCat'] === 2){
+		window['myScroll_parent'] = null;
+		window['myScroll_inner'] = null;
+		showFilter({ibox:'filter2',content1:'parent_container',content2:'inner_container',fullbg:'fullbg'});
+		showFilterTxt();
+	}
+}
+function showQuyu(node,d){
+	var txt='<li><a href="../kd_a0_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">全部区域</a></li>',txt2='';
+	for(var i=0;i<d.length;i++){
+		if(!jQuery.isEmptyObject(d[i].arr)){
+			txt2 = '<ul><li id="s_b_'+d[i].id+'"><a href="../kd_a'+d[i].id+'_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">全部地段</a></li>';
+			for(var k in d[i].arr){
+				txt2 += '<li id="s_b_'+k+'"><a href="../kd_a'+d[i].id+'_b'+k+'_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">'+d[i].arr[k]+'</a></li>';
+			}
+			txt2 += '</ul>';
+			txt += '<li id="s_a_'+d[i].id+'"><a href="#">'+d[i].name+'</a>'+txt2+'</li>';
+			
+		}else{
+			txt += '<li id="s_a_'+d[i].id+'"><a href="../kd_a'+d[i].id+'_b0_c0_d0_e0_f0_g0_h0_i0_p1.html?_key=">'+d[i].name+'</a></li>';
+		}
+	}
+	$('#'+node).html(txt);
+	if(window['loadCat'] === 2){
+		window['myScroll_parent'] = null;
+		window['myScroll_inner'] = null;
+		showFilter({ibox:'filter2',content1:'parent_container',content2:'inner_container',fullbg:'fullbg'});
+		showFilterTxt();
+	}
+}
+var locationHtml = '<div class="searchbar2">'+
+	'<div class="guess_local clearfix">我们猜您在：<span id="curLocation2">未知位置</span></div>'+
+	'<form id="myform2" method="get">'+
+		'<input type="text" id="meSleKey2" class="s_ipt" placeholder="输入小区、单位、学校、商圈、地址..." />'+
+		'<input type="submit" class="submit" value="确定">'+
+	'</form></div><ul id="r-result" class="r-result"></ul>';
+function locationCallBack(){
+	var form = $('#myform2'),ipt = $('#meSleKey2');
+	reloadLocation();
+	$('#curLocation2').bind('click',function(e){
+		e.preventDefault();
+		$.removeCookie('myPoint');
+		getLocation();
+		$('#windowIframe').find('.close').trigger('click');
+	});
+	form.submit(function(e){
+		if(ipt.val() === '' || !ipt.val()){
+			MSGwindowShow('location','4','请输入小区、单位、学校、商圈、地址','','');
+			return false;
+		}
+		searchLocation('北京',ipt.val());
+		e.preventDefault();
+	});
+}
+function searchLocation(city,val){
+	var map = new BMap.Map("l-map");        
+	map.centerAndZoom(city,11);
+	var options = {
+		onSearchComplete: function(results){
+			if (local.getStatus() == BMAP_STATUS_SUCCESS){
+				var txt = '';
+				for (var i = 0; i < results.getCurrentNumPois(); i ++){
+					txt += '<li data-point-lng="'+results.getPoi(i).point.lng+'" data-point-lat="'+results.getPoi(i).point.lat+'"><p>'+results.getPoi(i).title+'</p><span>'+results.getPoi(i).address+'</span></li>';
+				}
+				document.getElementById("r-result").innerHTML = txt;
+				$('#r-result').on('click','li',function(e){
+					e.preventDefault();
+					$.cookie('myPoint',$(this).attr('data-point-lng')+','+$(this).attr('data-point-lat'),{path:'/',expires:10});
+					$('#windowIframe').find('.close').trigger('click');
+					showMapBD($(this).attr('data-point-lng'),$(this).attr('data-point-lat'));
+				});
+			}
+		}
+	};
+	var local = new BMap.LocalSearch(map, options);
+	local.search(val);
+}
+var searchHtml = '<div class="searchbar2">'+
+	'<form id="myform" action="../k_good_a0_b0_c0_d0_e0_f0_g0_p1.html" method="get">'+
+		'<select id="mySle" class="s_sel"><option value="2" selected="selected">商品</option><option value="1">快店</option></select>'+
+		'<input type="text" name="_key" id="meSleKey" class="s_ipt" value="" placeholder="输入您要找的美食、商品关键词" />'+
+		'<input type="submit" class="s_btn po_ab" value="搜索">'+
+	'</form></div>';
+function newPageSearch(){
+	var myform = $('#myform');
+	if($('#meSleKey').val() !== ''){$('#mySle').val('1');myform.attr({'action':'?'});}
+	$('#mySle').change(function(){
+		var val = $(this).val();
+		if(val === '1'){
+			myform.attr({'action':'?'});
+		}else{
+			myform.attr({'action':'../k_good_a0_b0_c0_d0_e0_f0_g0_p1.html'});
+		}
+	}); 
+}
+function getkill(){//营业状态
+	var iDate = new Date();
+	var theYear = iDate.getFullYear();
+	var theMonth = iDate.getMonth()+1;
+	theMonth = theMonth>9?theMonth.toString():'0' + theMonth;
+	var theDay = iDate.getDate();
+	var today = theMonth + '/' + theDay + '/' + theYear + ' ';
+	
+	$('#pagingList').find('.item').each(function(){
+		var state_node = $(this).find('.state'),
+			isopen = $(this).attr('data-isopen'),
+			shipkill = $(this).attr('data-shipkill'),
+			startkill = $(this).attr('data-startkill'),
+			start2kill = $(this).attr('data-start2kill'),
+			startdate = $(this).attr('data-startdate'),
+			enddate = $(this).attr('data-enddate'),
+			startdate2 = $(this).attr('data-startdate2'),
+			enddate2 = $(this).attr('data-enddate2');
+		if(isopen === '2'){
+			state_node.addClass('state_2').html('暂停营业');
+			return;
+		}
+		var thestartdate = Date.parse(today + startdate + ':00');
+		var theenddate = Date.parse(today + enddate + ':00');
+		var thestartdate2 = Date.parse(today + startdate2 + ':00');
+		var theenddate2 = Date.parse(today + enddate2 + ':00');
+		
+		if((startkill === '1' && thestartdate < sys_time && sys_time<theenddate)||(start2kill === '1' && thestartdate2 < sys_time && sys_time<theenddate2)){
+			showkill(!0);
+		}else{
+			showkill(!1);
+		}
+		function showkill(allow){
+			if(!!allow){
+				state_node.addClass('state_1').html('营业中');
+			}else{
+				shipkill === '0'?(state_node.addClass('state_3').html('打烊了')):(state_node.addClass('state_2').html('打烊了'));
+			}
+		}
+	});
+}
+</script>
+
+ <div class="sys_tips" id="sys_tips" style="top: 265px; display: none;"><div class="hd" id="sys_tips_title">提示</div><div class="bd"><p id="sys_tips_info">抱歉，位置服务被拒绝</p><div class="btn"><a href="#/k/?page=1#" class="btn2" id="sys_tips_submit">确定</a></div></div></div></body></html>

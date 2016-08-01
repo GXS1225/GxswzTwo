@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)#/member/myorder.aspx -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页-快店-订单</title>
+<link rel="stylesheet" rev="stylesheet" href="./css/tg-mb.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/order2015.css">
+<script>
+window['ipageTitleTxt'] = '快店订单';
+</script>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+<body>
+<div class="top_gg po_re" id="top_gg" style="display:none;">{$Mh163k_wap_首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="#/member/index.html" onclick="" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">快店订单</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+
+<div class="p_tabs clearfix" id="p_tabs">
+   <ul>
+    <li id="s_skill" class="current"><a href="#/member/myorder.aspx">全部</a></li>
+	<li id="s_skill0"><a href="#/member/myorder.aspx?iskill=0">未支付</a></li>
+	<li id="s_skill1"><a href="#/member/myorder.aspx?iskill=1">已支付</a></li>
+	<li id="s_skill4"><a href="#/member/myorder.aspx?iskill=4">失败</a></li>
+	<li id="s_skill3"><a href="#/member/myorder.aspx?iskill=3">完成</a></li>
+   </ul>
+</div>
+	<div id="order_list" class="user_order_list">    
+     <div style=" background-color:#fff; font-size:20px; text-align:center; padding:100px 0;" id="listEmpty">没有找到符合条件的信息</div>
+</div>
+    <div class="pageNavigation">
+			<div class="FirstPage"><span class="kill">&lt;</span></div><div class="EndPage"><span class="kill">&gt;</span></div>1/0
+		</div>
+		<input type="hidden" value="07/19/2016 15:08:21" id="system_date">
+	<div class="foot_link" id="foot_link">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="#/member/index.html" class="back close" onclick="">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#/';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','20');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<input type="hidden" id="changeAddressId" value="">
+<input type="hidden" id="addressid" value="">
+<script>
+$(function() {
+	$('.header .back').attr({'href':'index.html','onclick':''});
+	$('#s_skill').addClass('current');
+	$('#order_list').find('.view_order_detial').each(function(){
+		$(this).bind('click',function(e){
+			e.preventDefault();
+			$(this).parent().siblings('.item').removeClass('cur');
+			$(this).parent().siblings('.item').find('.order_detial').hide();
+			$(this).parent().siblings('.item').find('.view_order_detial').removeClass('open');
+			var $order_detial = $(this).siblings('.order_detial');
+			$order_detial.toggle();
+			$(this).toggleClass('open');
+			$(this).parent().toggleClass('cur');
+		});
+	});
+	$('#order_list').find('.ispayok').each(function(){
+		if($(this).attr('data-ispayok')==='1'){
+			$(this).html('已付款');
+		}else{
+			$(this).html('未付款');
+		}
+	});
+});
+function getNewPage(page){
+	window.location.href="?page="+page;
+	return false;
+}
+function delMyOrder(o,orderid){
+	var url = siteUrl+'request.ashx?action=delmyorder&id='+orderid+'&remark=&jsoncallback=?&timer='+Math.random();
+	$.getJSON(url,function(data){
+		if(data[0].islogin === '1'){
+			MSGwindowShow('shopping','0','取消订单成功！','','');
+			$(o).parents('.item').remove();
+		}else{
+			MSGwindowShow('shopping','0',data[0].error,'','');
+		}
+	});
+}
+function changekill(o,sid){
+	var url = window['siteUrl']+'request.ashx?action=myorderiskill&id='+sid+'&iskill=3&skill=10&isadmin=2';
+	var Digital=new Date();
+	Digital=Digital+40000;
+	url=url+"&k="+encodeURIComponent(Digital);
+	$.ajax({url:url,success:function(data){
+		if(data.islogin === '1'){
+			MSGwindowShow('revert','1','收货成功！',window.location.href,'');
+		}else{
+			MSGwindowShow('revert','0',data.error,'','');
+		}
+	}});
+	return false;
+}
+function tuikuan(o,sid){
+	if(!window.confirm('您确定要取消该订单吗？')){return false;}
+	var url = window['siteUrl']+'request.ashx?action=myorderiskill&id='+sid+'&iskill=4&skill=&isadmin=2';
+	var Digital=new Date();
+	Digital=Digital+40000;
+	url=url+"&k="+encodeURIComponent(Digital);
+	$.ajax({url:url,success:function(data){
+		if(data.islogin === '1'){
+			MSGwindowShow('revert','1','退款申请成功，请耐心等待系统处理！',window.location.href,'');
+		}else{
+			MSGwindowShow('revert','0',data.error,'','');
+		}
+	}});
+	return false;
+}
+//时间控件
+var secArr = [];
+function getInitTime(){
+  //$('#item_1')[0]&&$('#item_1').find('.order_detial').show().end().find('.view_order_detial').addClass('open');
+  var cur_time = Date.parse($('#system_date').val());
+  var start_time;
+  $('.time_left').each(function(){
+	 var jobj = $(this);
+	 var sec = {};
+	 var theid = jobj.attr('data-id');
+	 if(jobj.attr('data-iskill') === '3'){
+		 $("#time_"+theid).html('<p style="color:#3e9b00;">已完成</p>');
+	 }else if(jobj.attr('data-state') === '7'){
+		 $("#time_"+theid).html('<p">派送失败</p>');
+	 }else if(jobj.attr('data-state') === '10'){
+		 $("#time_"+theid).html('<p style="color:#3e9b00;">派送完成</p>');
+	 } else if(jobj.attr('data-iskill') === '4'){
+		 $("#time_"+theid).html('<p">已取消</p>');
+	 }else if(jobj.attr('data-iskill') === '0'){
+		 if(jobj.attr('data-payid') === '99'){
+			 start_time = Date.parse(jobj.html());
+			 var SysSecond = parseInt(cur_time - start_time)/1000;
+			 sec['sec']= SysSecond;
+			 sec['sid'] = theid;
+			 secArr.push(sec);
+		 }else{
+			 $("#time_"+theid).html('<p">付款后开始计时</p>');
+		 }
+	 }else{
+		if(jobj.attr('data-payid') == '99'){
+			 start_time = Date.parse(jobj.html());
+		}else{
+			 start_time = Date.parse($('.time_left_'+theid).html());
+		}
+		 var SysSecond = parseInt(cur_time - start_time)/1000;
+		 sec['sec']= SysSecond;
+		 sec['sid'] = theid;
+		 secArr.push(sec);
+	 }
+  });
+}
+getInitTime();
+function SetRemainTime(){
+	for(var i=0;i<secArr.length;i++){
+		setRemainTimeSite(secArr[i]);
+	}
+}
+function setRemainTimeSite(secObj){
+  var second = Math.floor(secObj.sec % 60).toString();
+  var minite = Math.floor((secObj.sec / 60) % 60).toString();
+  var hour = Math.floor((secObj.sec / 3600) % 24).toString();
+  var day = Math.floor((secObj.sec / 3600) / 24).toString();
+  if(day > 0){
+	$("#time_"+secObj.sid).html('<span style="color:#999;">已超24小时</span>');
+  }else{
+	$("#time_"+secObj.sid).html('<s class="time_ico"></s><span style="color:#d00;">'+hour+'</span>时<span style="color:#d00;">'+minite+'</span>分<span style="color:#d00;">'+second+'</span>秒');
+ 	secObj.sec++;
+  }
+}
+window.setInterval(SetRemainTime,1000);
+</script>
+
+ </body></html>

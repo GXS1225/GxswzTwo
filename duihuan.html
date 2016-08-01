@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0151)#/gift/duihuan.aspx?id=31&tt=Tue%20Jul%2019%202016%2017:04:01%20GMT+0800%20(%E4%B8%AD%E5%9B%BD%E6%A0%87%E5%87%86%E6%97%B6%E9%97%B4) -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>礼品兑换申请单</title>
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base(1).css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+</head>
+<body>
+<div class="register-form">
+	<form id="form1" name="form1" method="post" onsubmit="return checkduihuan();">
+		<input type="hidden" name="jiangpinid" id="jiangpinid" value="31">
+		<p class="box"><span class="form_label">您的姓名：</span><span class="form_control"><input type="text" name="contactname" id="contactname" class="codebox2-input"></span></p>
+		<p class="box"><span class="form_label">联系电话：</span><span class="form_control"><input type="text" name="contacttel" id="contacttel" class="codebox2-input"></span></p>
+		<p class="box"><span class="form_label">收货地址：</span><span class="form_control"><input type="text" name="contactaddress" id="contactaddress" class="codebox2-input"></span></p>
+		<p class="box"><span class="form_label">简短附言：</span><span class="form_control"><textarea name="chrmark" id="chrmark" class="codebox2-textarea" rows="2" data-max="800"></textarea></span></p>
+		
+		<p style="text-align:center;"><input class="comn-submit" type="submit" value="确定提交">　<input class="comn-submit gray" onclick="parent.LoginHide();" type="button" value="取消"></p>
+	</form>
+</div>
+<script src="./js/jquery-2.1.1.min(1).js"></script>
+<script>
+var errorold = '';
+var chrbaotruename_error=errorold+"对不起,请填写您的真实姓名!";
+var chrbaotruename11_error=errorold+"请正确填写您的真实姓名!";
+var chkbaochrtel_error=errorold+"对不起,请填写您的联系电话!";
+var chkbaoaddress_error=errorold+"对不起,请填写您的收货地址!";
+var chkchrmark_error=errorold+"对不起,简短附言限定在100字内!";
+function checkduihuan(){
+	if($("#contactname").val()==""){
+		alert(chrbaotruename_error);
+		return false;
+	}
+	if($("#contactname").val().length<2){
+		alert(chrbaotruename11_error);
+		return false;
+	}	
+	if($("#contacttel").val()==""){
+		alert(chkbaochrtel_error);
+		return false;
+	}
+	if($("#contactaddress").val()==""){
+		alert(chkbaoaddress_error);
+		return false;
+	}
+	
+	if($("#chrmark").val().length>100){
+		alert(chkchrmark_error);
+		return false;
+	}
+	var chrname="",chrpwd="";
+	addduihuan($("#contactname").val(),$("#contacttel").val(),$("#chrmark").val(),$("#jiangpinid").val(),chrname,chrpwd,$("#contactaddress").val());
+	return false;
+}
+function addduihuan(contactname,contacttel,chrmark,jiangpinid,chrname,chrpwd,contactaddress){
+	var url="../request.aspx?action=addduihuan&contactname="+encodeURIComponent(contactname)+"&contacttel="+encodeURIComponent(contacttel);
+	url = url +"&chrmark="+encodeURIComponent(chrmark)+"&jiangpinid="+encodeURIComponent(jiangpinid)+"&chrname="+encodeURIComponent(chrname)+"&chrpwd="+encodeURIComponent(chrpwd)+"&contactaddress="+encodeURIComponent(contactaddress);
+	var  Digital=new  Date();
+	Digital=Digital+40000;
+	url=url+"&k="+encodeURIComponent(Digital);
+	$.ajax({url: url}).done(function( msg ) {
+		if(msg=="1"){
+			alert("您的礼品兑换申请已经提交成功，稍后客服会与您联系！");
+			parent.LoginHide();
+		}
+		else{
+			alert(msg);
+		}
+	});	
+}
+</script>
+
+</body></html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)#/tieba/addedit.aspx?bigcategoryid=0&categoryid=0 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页-贴吧-发布</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link href="./css/tieba-mb.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+
+<body>
+<div class="top_gg po_re" id="top_gg" style="display:none;">{$Mh163k_wap_首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="javascript:void(0);" onclick="return window.history.go(-1);" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico" style="display: none;">我的</a>
+	<div class="type" id="nav_ico" style="display: none;">导航</div>
+	<span id="ipageTitle" style="">发表帖子</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+
+<script>
+window['ipageTitleTxt'] = '发表帖子';
+</script>
+<style type="text/css">
+#bigcategoryid,#categoryid { display:block; width:100%; outline:0; padding:8px;-webkit-appearance: none; border:0 none; border-top:1px solid #dee0e0;}
+</style>
+<div class="p_main">
+	<form method="post" action="#/tieba/addedit.aspx?action=save" target="tijiao" enctype="multipart/form-data" onsubmit="return checkmyfabu();">
+		<input type="hidden" data-title="远程图片本地化" value="1" name="issavehttpimg">
+		<input type="hidden" value="tieba" name="table_id">
+		<input type="hidden" value="3428343951651449" name="state" id="state2">
+		<input type="hidden" value="900" name="filewidth">
+		<input type="hidden" value="0" name="filehight">
+		<input type="hidden" value="0" name="smallfilewidth1">
+		<input type="hidden" value="90" name="smallfileheight1">
+		<div class="catNode"><label id="cat_1"><select name="bigcategoryid" id="bigcategoryid"> <option value="">::请选择贴吧板块::</option><option value="2258">京城茶馆</option><option value="2263">风味美食</option><option value="2276">通讯数码</option><option value="2265">驴行天下</option><option value="2272">家装交流</option><option value="2261">灌水拍砖</option><option value="2260">上班一族</option><option value="2259">情感驿站</option><option value="2262">文化沙龙</option><option value="2264">时尚购物</option><option value="2266">休闲娱乐</option><option value="2267">亲子乐园</option><option value="2268">健康生活</option><option value="2269">教育培训</option><option value="2270">家有宠物</option><option value="2271">京城房产</option><option value="2273">喜庆婚嫁</option><option value="2274">车友汇聚</option><option value="2275">理财股市</option></select></label><label id="cat_2" class="display1"><select name="categoryid" id="categoryid"><option value="">::请选择主题分类::</option></select></label></div>
+		<div class="fill_title"><input type="text" name="title" id="fabu_title" placeholder="标题(必填)"></div>
+		<div class="fill_content">
+			<textarea name="chrcontent" class="cmt_txt" id="chrcontent" placeholder="内容(必填)"></textarea>
+			
+			<div class="insert_btn" id="tabADS01">
+				<ul class="tab-hd">
+					<li class="item iPic current">插入图片</li>
+					<li class="item iHead" style="display:none">插入头像</li>
+				</ul>
+				<div class="imgcon tab-cont">
+					<!--<iframe name="ifm_upload" frameborder="0" width="100%" height="40" scrolling="no" src="/kindeditor/upload_one.aspx?action=1&table_id=tieba&type=0"></iframe>-->
+					<div style="color:#aaa; padding:5px 0; text-align:center; font-size:14px;">单次上传一张，可多次上传</div>
+					<div id="xiangce" class="my_prop_imgitem_node clearfix">
+						<div class="upimgFileBtnNode"><div id="pageLoaderNode"><span id="pageLoader">loadding</span></div><img src="./images/upimg.png" id="upimgFileBtn" class="upimgFileBtn imgview" alt="" style="height: 79px;"></div>
+					</div>
+					<input type="hidden" id="urlhidden" value="">
+				</div>
+				<div class="imgcon tab-cont" style="display:none;"><img src="./images/biaoqing.jpg" style="vertical-align:top; margin:0 auto;"></div>
+			</div>
+			<div style="margin:10px;"><input type="hidden" id="onestatenum" name="onestatenum" value="973002763394099"><input class="comn-submit btn_block fabu_btn" type="submit" value="发 布"></div>
+		</div>
+	</form>
+	<div class="foot_link" id="foot_link">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+</div>
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="javascript:;" class="back close">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#/';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','25110');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<iframe src="./js/saved_resource.html" id="tijiao" name="tijiao" height="0" width="0" scrolling="no" frameborder="no" border="0" style="display:none;"></iframe>
+<form enctype="multipart/form-data" method="post" id="fileForm">
+	<input id="table_id" name="table_id" type="hidden" value="tieba">
+	<input id="id" name="id" type="hidden" value="">
+	<input id="dir" name="dir" type="hidden" value="tieba">
+	<input id="state" name="state" type="hidden" value="3428343951651449">
+	<input id="filewidth" name="filewidth" type="hidden" value="900">
+	<input id="fileheight" name="fileheight" type="hidden" value="0">	
+	<input id="smallfilewidth" name="smallfilewidth1" type="hidden" value="0">
+	<input id="smallfileheight" name="smallfileheight1" type="hidden" value="90">
+	<input type="file" style="display:none;" id="imgFile" name="imgFile">
+</form>
+<script src="./js/jquery.form.js"></script>
+<script src="./js/commonPaging.js"></script>
+<script src="./js/wap_upimgOne.js"></script>
+<script>
+var mathState = Math.round(Math.random()*1E16);
+$('#state,#state2').val(mathState);
+var nowdomain ="#/";
+function checkmyfabu(){
+	var txtReplay = $('#chrcontent');
+	if($('#fabu_title').val() === ''){
+		MSGwindowShow('tieba','4','请输入帖子标题！','','');
+		return false;
+	}
+	if(txtReplay.val() === ''){
+		MSGwindowShow('tieba','4','请输入帖子内容！','','');
+		return false;
+	}
+	var imgtxt = $('#urlhidden').val();
+	if(imgtxt !== ''){
+		imgtxt = '<div class="mobile_content_img">'+imgtxt+'</div>';
+	}
+	$('#chrcontent').val(imgtxt + txtReplay.val());
+	setStatenum('#onestatenum');
+}
+$(document).ready(function(){
+	setStatenum('#onestatenum');
+	upLoad_init();
+	$('#nav_ico').hide();
+	$('#login_ico').hide();
+	$('#bigcategoryid').change(function(){categoryData_set("1","bigcategoryid",0,"categoryid",'');});
+	IDC.tabADS($('#tabADS01'));
+	$('#bigcategoryid').appendTo('#cat_1');
+	$('#categoryid').appendTo('#cat_2');
+});
+</script>
+
+ </body></html>

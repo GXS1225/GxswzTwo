@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)#/job/jianzhi.aspx -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页-人才-兼职简历</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" rev="stylesheet" href="./css/member-mb.css">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+<body>
+<div class="top_gg po_re" id="top_gg" style="display:none;">{$Mh163k_wap_首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="javascript:void(0);" onclick="return window.history.go(-1);" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">人才</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+
+<div class="nav_job_bottom">
+ <ul>
+  <li>
+    <a href="#/">
+     <span class="home"></span>
+     首页
+    </a> 
+  </li>
+ <li>
+    <a href="#/member/myzhiwei.aspx?action=add">
+     <span class="sjob"></span>
+     发布职位
+    </a> 
+  </li>
+  <li>
+    <a href="#/member/myjianli.aspx">
+     <span class="post_resumes"></span>
+     登记简历
+    </a> 
+  </li>
+  <li>
+    <a href="#/member/">
+     <span class="mine"></span>
+     我的
+    </a> 
+  </li>
+ </ul>
+</div>
+<div class="o_main mar_b_50">
+ <div class="job_tabs">
+  <ul>
+   <li><a href="sou_zhaopin_quanzhi.html">全职简历</a></li>
+   <li class="current">兼职简历</li>
+  </ul>
+ </div>  
+ <!--排序-->
+<div class="filter2" id="filter2">
+	<ul class="tab clearfix">
+		<li class="item"><a href="javascript:void(0);"><span id="str_sex_node">性别不限</span><em></em></a></li>
+		<li class="item"><a href="javascript:void(0);"><span id="str_xueli_node">学历不限</span><em></em></a></li>
+	</ul>
+	
+	<div class="inner" style="display:none;" id="navbox_sex">
+		<ul>
+			<li><a href="#/job/jianzhi.aspx?sex=&amp;" id="s_sex_" class="cur">性别不限</a></li>
+			<li><a href="#/job/jianzhi.aspx?sex=1&amp;" id="s_sex_1">男</a></li>
+			<li><a href="#/job/jianzhi.aspx?sex=2&amp;" id="s_sex_2">女</a></li>
+		</ul>
+	</div>
+	<div class="inner" style="display:none;" id="navbox_xueli">
+		<ul>
+			<li class="cur"><a href="#/job/jianzhi.aspx?xueli=&amp;" id="s_xueli_">学历不限</a></li>
+			<li><a href="#/job/jianzhi.aspx?xueli=42&amp;" id="s_xueli_42">初中</a></li>
+			<li><a href="#/job/jianzhi.aspx?xueli=31&amp;" id="s_xueli_31">高中/中专</a></li>
+			<li><a href="#/job/jianzhi.aspx?xueli=32&amp;" id="s_xueli_32">大专及同等学历</a></li>
+			<li><a href="#/job/jianzhi.aspx?xueli=33&amp;" id="s_xueli_33">本科/学士及同等学历</a></li>
+			<li><a href="#/job/jianzhi.aspx?xueli=34&amp;" id="s_xueli_34">硕士及以上学历</a></li>
+		</ul>
+	</div>
+	<div class="inner_parent" id="parent_container" style="display:none;"><div class="innercontent"></div></div>
+	<div class="inner_child" id="inner_container" style="display:none;"><div class="innercontent"></div></div>
+</div>
+<div class="fullbg" id="fullbg" style="display: none; height: 1477px;"><i class="pull2"></i></div> 
+
+<!--找人才-->
+<div class="person_list jianzhi_list">
+ <ul>
+  <li class="clearfix">
+   <div class="con">
+    <span class="name">李瑞强</span>
+    <span>男</span>
+    <span class="age">29岁</span>
+    <span class="jy">本科</span>
+    <span class="xl">翻译</span>
+    <!--<div class="r_time">2013-8-9</div>-->
+    <dl>
+     <dt>联系电话</dt>
+     <dd><a href="tel:1365482561" class="tel">1365482561</a></dd>
+	 <dt>自我评价</dt>
+     <dd>曾翻译过两本英文著作
+翻译的各种文献 文件 受客户好评</dd>
+    </dl>
+   </div>
+</li><li class="clearfix">
+   <div class="con">
+    <span class="name">李大民</span>
+    <span>男</span>
+    <span class="age">44岁</span>
+    <span class="jy">本科</span>
+    <span class="xl">景观师</span>
+    <!--<div class="r_time">2013-8-9</div>-->
+    <dl>
+     <dt>联系电话</dt>
+     <dd><a href="tel:16785465248" class="tel">16785465248</a></dd>
+	 <dt>自我评价</dt>
+     <dd>设计过城市景观
+参加过城市景观大赛
+本城市中有四处景观由本人设计
+
+</dd>
+    </dl>
+   </div>
+</li><li class="clearfix">
+   <div class="con">
+    <span class="name">付泽宇</span>
+    <span>男</span>
+    <span class="age">30岁</span>
+    <span class="jy">大专</span>
+    <span class="xl">司机</span>
+    <!--<div class="r_time">2013-8-9</div>-->
+    <dl>
+     <dt>联系电话</dt>
+     <dd><a href="tel:14756851265" class="tel">14756851265</a></dd>
+	 <dt>自我评价</dt>
+     <dd>B本,10年经验
+熟悉道路,能适应出差工作</dd>
+    </dl>
+   </div>
+</li><li class="clearfix">
+   <div class="con">
+    <span class="name">王恩</span>
+    <span>女</span>
+    <span class="age">34岁</span>
+    <span class="jy">硕士</span>
+    <span class="xl">人力资源</span>
+    <!--<div class="r_time">2013-8-9</div>-->
+    <dl>
+     <dt>联系电话</dt>
+     <dd><a href="tel:18654758495" class="tel">18654758495</a></dd>
+	 <dt>自我评价</dt>
+     <dd>喜欢和人打交道
+熟悉人力部门的各项流程喜欢和人打交道
+熟悉人力部门的各项流程
+喜欢和人打交道
+熟悉人力部门的各项流程
+
+</dd>
+    </dl>
+   </div>
+</li><li class="clearfix">
+   <div class="con">
+    <span class="name">王宇思</span>
+    <span>女</span>
+    <span class="age">24岁</span>
+    <span class="jy">本科</span>
+    <span class="xl">礼仪模特</span>
+    <!--<div class="r_time">2013-8-9</div>-->
+    <dl>
+     <dt>联系电话</dt>
+     <dd><a href="tel:15698745246" class="tel">15698745246</a></dd>
+	 <dt>自我评价</dt>
+     <dd>曾参加走秀
+有相关经验
+求兼职各种活动礼仪模特,欢迎来电</dd>
+    </dl>
+   </div>
+</li><li class="clearfix">
+   <div class="con">
+    <span class="name">刘茵</span>
+    <span>男</span>
+    <span class="age">20岁</span>
+    <span class="jy">大专</span>
+    <span class="xl">发单</span>
+    <!--<div class="r_time">2013-8-9</div>-->
+    <dl>
+     <dt>联系电话</dt>
+     <dd><a href="tel:154245874857" class="tel">154245874857</a></dd>
+	 <dt>自我评价</dt>
+     <dd>经常做这个,有需要联系</dd>
+    </dl>
+   </div>
+</li><li class="clearfix">
+   <div class="con">
+    <span class="name">孙天一</span>
+    <span>男</span>
+    <span class="age">45岁</span>
+    <span class="jy">本科</span>
+    <span class="xl">会计</span>
+    <!--<div class="r_time">2013-8-9</div>-->
+    <dl>
+     <dt>联系电话</dt>
+     <dd><a href="tel:1369587454" class="tel">1369587454</a></dd>
+	 <dt>自我评价</dt>
+     <dd>有会计证,
+对相关流程很熟悉
+现在一家单位做会计工作</dd>
+    </dl>
+   </div>
+</li><li class="clearfix">
+   <div class="con">
+    <span class="name">王成</span>
+    <span>男</span>
+    <span class="age">33岁</span>
+    <span class="jy">本科</span>
+    <span class="xl">电脑导购</span>
+    <!--<div class="r_time">2013-8-9</div>-->
+    <dl>
+     <dt>联系电话</dt>
+     <dd><a href="tel:16542548759" class="tel">16542548759</a></dd>
+	 <dt>自我评价</dt>
+     <dd>对电脑很熟悉,相应部件和整机性能 价格比较了解</dd>
+    </dl>
+   </div>
+</li><li class="clearfix">
+   <div class="con">
+    <span class="name">李阳</span>
+    <span>男</span>
+    <span class="age">21岁</span>
+    <span class="jy">高中/中专</span>
+    <span class="xl">送餐员,快递员</span>
+    <!--<div class="r_time">2013-8-9</div>-->
+    <dl>
+     <dt>联系电话</dt>
+     <dd><a href="tel:13654875985" class="tel">13654875985</a></dd>
+	 <dt>自我评价</dt>
+     <dd>对本地环境相当熟悉</dd>
+    </dl>
+   </div>
+</li><li class="clearfix">
+   <div class="con">
+    <span class="name">吴天成</span>
+    <span>男</span>
+    <span class="age">32岁</span>
+    <span class="jy">大专</span>
+    <span class="xl">网站编辑</span>
+    <!--<div class="r_time">2013-8-9</div>-->
+    <dl>
+     <dt>联系电话</dt>
+     <dd><a href="tel:1635478471" class="tel">1635478471</a></dd>
+	 <dt>自我评价</dt>
+     <dd>曾负责网站栏目内容的转载、上传和专题策划、编辑工作对此类工作有相当经验</dd>
+    </dl>
+   </div>
+</li>
+ </ul>
+ <div class="pageNav"><div class="FirstPage"><a class="kill" href="javascript:;">&lt;</a></div><div class="EndPage"><a href="#/job/jianzhi.aspx?Colname=&amp;PageNo=2&amp;KeyWord=&amp;a=1&amp;xueli=&amp;keyword1=&amp;keyword2=&amp;keyword3=&amp;key=&amp;sex=" title="下一页">&gt;</a> </div>1/2</div>
+</div>
+	<div class="foot_link" id="foot_link">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+</div>
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="javascript:;" class="back close">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#/';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','5011');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<script type="text/javascript" src="./js/iscroll.js"></script>
+<script src="./js/purl.js"></script>
+<script>
+var current_host = window.location;
+var url_obj = $.url(current_host).param();
+
+$.fn.jobUrl = function(){
+	var that = $(this),txt_obj = {};
+	for(var i in url_obj){
+		$('#'+i+url_obj[i]).addClass('current');
+	}
+	that.find('a').each(function(i,item){
+		var txt='?';
+		var txt_now = $(item).attr('href');
+		var txt_obj_now = $.url(txt_now).param();
+		txt_obj = $.extend({},url_obj,txt_obj_now);
+		
+		for(var v in txt_obj){
+			txt = txt+v+'='+txt_obj[v]+'&';
+		}
+		$(item).attr('href',txt);
+	});	
+}
+$('#navbox_xueli').jobUrl();
+$('#navbox_sex').jobUrl();
+
+
+if(!url_obj['xueli'] || url_obj['xueli'] === ''){
+	$('#s_xueli_').parent().addClass('cur');
+}else{
+	var txt=$('#s_xueli_'+url_obj['xueli']).html();
+	$('#str_xueli_node').html(txt);
+	$('#s_xueli_'+url_obj['xueli']).parent().addClass('cur');
+}
+
+if(!url_obj['sex'] || url_obj['sex'] === ''){
+	$('#s_sex_').addClass('cur');
+}else{
+	var txt=$('#s_sex_'+url_obj['sex']).html();
+	$('#str_sex_node').html(txt);
+	$('#s_sex_'+url_obj['sex']).parent().addClass('cur');
+}
+(function($){
+	window['myScroll_parent'] = null;
+	window['myScroll_inner'] = null;
+	showFilter({ibox:'filter2',content1:'parent_container',content2:'inner_container',fullbg:'fullbg'});
+})(jQuery);
+</script>
+
+
+ <img src="./兼职人才简历-招聘求职栏目首页-招聘求职-163k地方门户网站系统_files/jianzhi.aspx" alt="" width="0" height="0"></body></html>

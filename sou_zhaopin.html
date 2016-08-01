@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)#/job/zhiwei.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页-人才</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" rev="stylesheet" href="./css/member-mb.css">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+<body>
+<div class="top_gg po_re" id="top_gg" style="display:none;">{首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="sou_shichang.html" onclick="return window.history.go(-1);" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">人才</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+
+<div class="nav_job_bottom">
+ <ul>
+  <li>
+    <a href="#/">
+     <span class="home"></span>
+     首页
+    </a> 
+  </li>
+  <li>
+    <a href="#/member/myzhiwei.aspx?action=add">
+     <span class="sjob"></span>
+     发布职位
+    </a> 
+  </li>
+  <li>
+    <a href="#/member/myjianli.aspx">
+     <span class="post_resumes"></span>
+     登记简历
+    </a> 
+  </li>
+  <li>
+    <a href="#/member/">
+     <span class="mine"></span>
+     我的
+    </a> 
+  </li>
+ </ul>
+</div>
+<div class="o_main mar_b_50">
+ <div class="job_tabs">
+  <ul>
+   <li class="current">找工作</li>
+   <li><a href="sou_zhaopin_quanzhi.html">找人才</a></li>
+  </ul>
+ </div>  
+ <!--排序-->
+ 
+ <div class="filter2" id="filter2">
+	<ul class="tab clearfix">
+		<li class="item"><a href="javascript:void(0);"><span id="str_hangye_node">行业不限</span><em></em></a></li>
+		<li class="item"><a href="javascript:void(0);"><span id="str_daiyu_node">待遇不限</span><em></em></a></li>
+		<li class="item"><a href="javascript:void(0);"><span id="str_xueli_node">学历不限</span><em></em></a></li>
+	</ul>
+	<div class="inner" style="display:none;" id="navbox_hangye">
+		<ul id="inner1"><li><a href="#/job/zhiwei.html?s_hangye=0&amp;">全部行业</a></li><li class="hasUL"><a href="#/job/zhiwei.html?" id="cat_49" class="hasUlLink">计算机/互联网类</a><ul><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=0&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_49">全部岗位</a></li><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=54&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_54">CTO/技术总监/经理</a></li><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=55&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_55">CIO/IT经理</a></li><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=56&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_56">产品经理</a></li><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=57&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_57">系统分析员</a></li><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=58&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_58">软件工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=59&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_59">硬件工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=60&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_60">软件测试工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=273&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_273">硬件测试工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=274&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_274">数据库管理员</a></li><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=275&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_275">信息安全工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=276&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_276">售前/售后支持工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=277&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_277">系统集成工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=278&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_278">系统管理员/网管</a></li><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=279&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_279">网络工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=49&amp;tt=280&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_280">IT工程师</a></li></ul></li><li class="hasUL"><a href="#/job/zhiwei.html?" id="cat_50" class="hasUlLink">建筑/房地产/装饰装修</a><ul><li><a href="#/job/zhiwei.html?s_hangye=50&amp;tt=0&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_50">全部岗位</a></li><li><a href="#/job/zhiwei.html?s_hangye=50&amp;tt=281&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_281">建筑师</a></li><li><a href="#/job/zhiwei.html?s_hangye=50&amp;tt=282&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_282">结构工程师/土建工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=50&amp;tt=283&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_283">建筑制图</a></li><li><a href="#/job/zhiwei.html?s_hangye=50&amp;tt=284&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_284">建筑工程管理</a></li><li><a href="#/job/zhiwei.html?s_hangye=50&amp;tt=285&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_285">工程监理</a></li><li><a href="#/job/zhiwei.html?s_hangye=50&amp;tt=286&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_286">给排水/强电/弱电/制冷暖通</a></li><li><a href="#/job/zhiwei.html?s_hangye=50&amp;tt=287&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_287">房地产开发/策划</a></li><li><a href="#/job/zhiwei.html?s_hangye=50&amp;tt=288&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_288">房地产评估</a></li><li><a href="#/job/zhiwei.html?s_hangye=50&amp;tt=289&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_289">设备工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=50&amp;tt=290&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_290">工程造价/估价/预决算</a></li><li><a href="#/job/zhiwei.html?s_hangye=50&amp;tt=291&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_291">路桥/隧道/港口/航道工程</a></li></ul></li><li class="hasUL"><a href="#/job/zhiwei.html?" id="cat_51" class="hasUlLink">医疗卫生/美容保健</a><ul><li><a href="#/job/zhiwei.html?s_hangye=51&amp;tt=0&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_51">全部岗位</a></li><li><a href="#/job/zhiwei.html?s_hangye=51&amp;tt=292&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_292">医疗管理人员</a></li><li><a href="#/job/zhiwei.html?s_hangye=51&amp;tt=293&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_293">医疗技术人员</a></li><li><a href="#/job/zhiwei.html?s_hangye=51&amp;tt=294&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_294">医生/医师</a></li><li><a href="#/job/zhiwei.html?s_hangye=51&amp;tt=295&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_295">心理医生</a></li><li><a href="#/job/zhiwei.html?s_hangye=51&amp;tt=296&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_296">医药检验</a></li><li><a href="#/job/zhiwei.html?s_hangye=51&amp;tt=297&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_297">护士/护理人员</a></li><li><a href="#/job/zhiwei.html?s_hangye=51&amp;tt=298&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_298">药学技术与管理人员</a></li><li><a href="#/job/zhiwei.html?s_hangye=51&amp;tt=299&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_299">疾病控制/公共卫生</a></li><li><a href="#/job/zhiwei.html?s_hangye=51&amp;tt=300&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_300">美容/整形师</a></li><li><a href="#/job/zhiwei.html?s_hangye=51&amp;tt=301&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_301">兽医/宠物医生</a></li></ul></li><li class="hasUL"><a href="#/job/zhiwei.html?" id="cat_52" class="hasUlLink">电子/电器/通信</a><ul><li><a href="#/job/zhiwei.html?s_hangye=52&amp;tt=0&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_52">全部岗位</a></li><li><a href="#/job/zhiwei.html?s_hangye=52&amp;tt=302&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_302">电子工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=52&amp;tt=303&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_303">电器工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=52&amp;tt=304&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_304">电信工程师/通讯工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=52&amp;tt=305&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_305">电声工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=52&amp;tt=306&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_306">数码产品开发工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=52&amp;tt=307&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_307">无线电工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=52&amp;tt=308&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_308">半导体工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=52&amp;tt=309&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_309">电子元器件工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=52&amp;tt=310&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_310">电子/电器维修</a></li><li><a href="#/job/zhiwei.html?s_hangye=52&amp;tt=311&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_311">研发工程师</a></li></ul></li><li class="hasUL"><a href="#/job/zhiwei.html?" id="cat_53" class="hasUlLink">电气/能源/动力</a><ul><li><a href="#/job/zhiwei.html?s_hangye=53&amp;tt=0&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_53">全部岗位</a></li><li><a href="#/job/zhiwei.html?s_hangye=53&amp;tt=312&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_312">电气工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=53&amp;tt=313&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_313">光源与照明工程</a></li><li><a href="#/job/zhiwei.html?s_hangye=53&amp;tt=314&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_314">变压器/磁电工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=53&amp;tt=315&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_315">电路工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=53&amp;tt=316&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_316">智能大厦/综合布线/弱电</a></li><li><a href="#/job/zhiwei.html?s_hangye=53&amp;tt=317&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_317">电力工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=53&amp;tt=319&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_319">水利/水电工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=53&amp;tt=320&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_320">核力/火力工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=53&amp;tt=321&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_321">空调/热能工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=53&amp;tt=322&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_322">石油天然气技术人员</a></li></ul></li><li class="hasUL"><a href="#/job/zhiwei.html?" id="cat_265" class="hasUlLink">机械/仪器仪表</a><ul><li><a href="#/job/zhiwei.html?s_hangye=265&amp;tt=0&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_265">全部岗位</a></li><li><a href="#/job/zhiwei.html?s_hangye=265&amp;tt=323&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_323">机械工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=265&amp;tt=324&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_324">模具工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=265&amp;tt=325&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_325">机械设计师</a></li><li><a href="#/job/zhiwei.html?s_hangye=265&amp;tt=326&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_326">机械制图员</a></li><li><a href="#/job/zhiwei.html?s_hangye=265&amp;tt=327&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_327">机电工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=265&amp;tt=328&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_328">精密机械/仪器仪表技术员</a></li><li><a href="#/job/zhiwei.html?s_hangye=265&amp;tt=329&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_329">铸造/锻造工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=265&amp;tt=330&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_330">注塑工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=265&amp;tt=331&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_331">CNC工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=265&amp;tt=332&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_332">冲压工程师</a></li></ul></li><li class="hasUL"><a href="#/job/zhiwei.html?" id="cat_266" class="hasUlLink">销售/项目管理/客户服务</a><ul><li><a href="#/job/zhiwei.html?s_hangye=266&amp;tt=0&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_266">全部岗位</a></li><li><a href="#/job/zhiwei.html?s_hangye=266&amp;tt=333&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_333">销售总监/经理/主管</a></li><li><a href="#/job/zhiwei.html?s_hangye=266&amp;tt=334&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_334">客户经理/业务经理</a></li><li><a href="#/job/zhiwei.html?s_hangye=266&amp;tt=335&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_335">渠道经理/主管</a></li><li><a href="#/job/zhiwei.html?s_hangye=266&amp;tt=336&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_336">销售代表</a></li><li><a href="#/job/zhiwei.html?s_hangye=266&amp;tt=337&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_337">售前/售后工程师</a></li><li><a href="#/job/zhiwei.html?s_hangye=266&amp;tt=338&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_338">销售助理</a></li><li><a href="#/job/zhiwei.html?s_hangye=266&amp;tt=339&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_339">业务拓展经理/主管</a></li><li><a href="#/job/zhiwei.html?s_hangye=266&amp;tt=340&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_340">业务拓展专员/助理</a></li><li><a href="#/job/zhiwei.html?s_hangye=266&amp;tt=341&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_341">客户服务专员/助理</a></li><li><a href="#/job/zhiwei.html?s_hangye=266&amp;tt=342&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_342">客户关系管理</a></li><li><a href="#/job/zhiwei.html?s_hangye=266&amp;tt=343&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_343">客户咨询/热线支持</a></li></ul></li><li class="hasUL"><a href="#/job/zhiwei.html?" id="cat_267" class="hasUlLink">市场/广告/公关与媒介</a><ul><li><a href="#/job/zhiwei.html?s_hangye=267&amp;tt=0&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_267">全部岗位</a></li><li><a href="#/job/zhiwei.html?s_hangye=267&amp;tt=344&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_344">市场推广专员</a></li><li><a href="#/job/zhiwei.html?s_hangye=267&amp;tt=345&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_345">市场联盟与拓展经理/主管</a></li><li><a href="#/job/zhiwei.html?s_hangye=267&amp;tt=346&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_346">市场联盟与拓展专员</a></li><li><a href="#/job/zhiwei.html?s_hangye=267&amp;tt=347&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_347">市场推广经理/主管</a></li><li><a href="#/job/zhiwei.html?s_hangye=267&amp;tt=348&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_348">产品/品牌专员</a></li><li><a href="#/job/zhiwei.html?s_hangye=267&amp;tt=349&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_349">市场调研与分析</a></li><li><a href="#/job/zhiwei.html?s_hangye=267&amp;tt=350&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_350">广告创意与策划/文案</a></li><li><a href="#/job/zhiwei.html?s_hangye=267&amp;tt=351&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_351">市场总监/经理</a></li><li><a href="#/job/zhiwei.html?s_hangye=267&amp;tt=352&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_352">市场专员/助理</a></li><li><a href="#/job/zhiwei.html?s_hangye=267&amp;tt=353&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_353">产品/品牌经理/主管</a></li></ul></li><li class="hasUL"><a href="#/job/zhiwei.html?" id="cat_268" class="hasUlLink">人力资源/行政/文职人员</a><ul><li><a href="#/job/zhiwei.html?s_hangye=268&amp;tt=0&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_268">全部岗位</a></li><li><a href="#/job/zhiwei.html?s_hangye=268&amp;tt=354&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_354">行政/人力资源总监</a></li><li><a href="#/job/zhiwei.html?s_hangye=268&amp;tt=355&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_355">人力资源经理/主管</a></li><li><a href="#/job/zhiwei.html?s_hangye=268&amp;tt=356&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_356">人力资源专员/助理</a></li><li><a href="#/job/zhiwei.html?s_hangye=268&amp;tt=357&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_357">招聘经理/主管</a></li><li><a href="#/job/zhiwei.html?s_hangye=268&amp;tt=358&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_358">招聘专员/助理</a></li><li><a href="#/job/zhiwei.html?s_hangye=268&amp;tt=359&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_359">绩效考核经理/主管</a></li></ul></li><li class="hasUL"><a href="#/job/zhiwei.html?" id="cat_269" class="hasUlLink">财务/审计/统计</a><ul><li><a href="#/job/zhiwei.html?s_hangye=269&amp;tt=0&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_269">全部岗位</a></li><li><a href="#/job/zhiwei.html?s_hangye=269&amp;tt=360&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_360">CFO/财务总监/经理</a></li><li><a href="#/job/zhiwei.html?s_hangye=269&amp;tt=361&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_361">财务主管</a></li><li><a href="#/job/zhiwei.html?s_hangye=269&amp;tt=362&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_362">税务主管/专员</a></li><li><a href="#/job/zhiwei.html?s_hangye=269&amp;tt=363&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_363">财务助理</a></li><li><a href="#/job/zhiwei.html?s_hangye=269&amp;tt=366&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_366">商务经理/主管/专员/助理</a></li></ul></li><li class="hasUL"><a href="#/job/zhiwei.html?" id="cat_270" class="hasUlLink">贸易/物流/采购/运输</a><ul><li><a href="#/job/zhiwei.html?s_hangye=270&amp;tt=0&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_270">全部岗位</a></li><li><a href="#/job/zhiwei.html?s_hangye=270&amp;tt=364&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_364">外贸经理/主管/专员/助理</a></li><li><a href="#/job/zhiwei.html?s_hangye=270&amp;tt=365&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_365">国内贸易经理/主管/专员</a></li><li><a href="#/job/zhiwei.html?s_hangye=270&amp;tt=367&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_367">采购经理/主管/专员/助理</a></li><li><a href="#/job/zhiwei.html?s_hangye=270&amp;tt=368&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_368">物流经理/主管/专员</a></li><li><a href="#/job/zhiwei.html?s_hangye=270&amp;tt=369&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_369">仓库经理/主管/管理员</a></li></ul></li><li class="hasUL"><a href="#/job/zhiwei.html?" id="cat_271" class="hasUlLink">酒店/餐饮/旅游/运动休闲</a><ul><li><a href="#/job/zhiwei.html?s_hangye=271&amp;tt=0&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_271">全部岗位</a></li><li><a href="#/job/zhiwei.html?s_hangye=271&amp;tt=370&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_370">娱乐/餐饮管理</a></li><li><a href="#/job/zhiwei.html?s_hangye=271&amp;tt=371&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_371">大堂经理/副理</a></li></ul></li><li class="hasUL"><a href="#/job/zhiwei.html?" id="cat_272" class="hasUlLink">美术/设计/创意</a><ul><li><a href="#/job/zhiwei.html?s_hangye=272&amp;tt=0&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_272">全部岗位</a></li><li><a href="#/job/zhiwei.html?s_hangye=272&amp;tt=372&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_372">设计管理人员</a></li><li><a href="#/job/zhiwei.html?s_hangye=272&amp;tt=373&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_373">美术/图形设计</a></li><li><a href="#/job/zhiwei.html?s_hangye=272&amp;tt=374&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_374">工业/产品设计</a></li><li><a href="#/job/zhiwei.html?s_hangye=272&amp;tt=375&amp;s_daiyu=&amp;s_xueli=&amp;" id="s_375">纺织品设计师</a></li></ul></li><li><a href="#/job/zhiwei.html?s_hangye=688&amp;s_daiyu=&amp;s_xueli=&amp;" id="cat_688">贸易/消费/制造/营运</a></li><li><a href="#/job/zhiwei.html?s_hangye=689&amp;s_daiyu=&amp;s_xueli=&amp;" id="cat_689">专业服务/教育/培训</a></li><li><a href="#/job/zhiwei.html?s_hangye=690&amp;s_daiyu=&amp;s_xueli=&amp;" id="cat_690">非赢利机构/其他</a></li><li><a href="#/job/zhiwei.html?s_hangye=691&amp;s_daiyu=&amp;s_xueli=&amp;" id="cat_691">金融/银行/保险</a></li></ul>
+	</div>
+	<div class="inner" style="display:none;" id="navbox_xinzi">
+		<ul>
+			<li><a href="#/job/zhiwei.html?s_daiyu=0&amp;" id="s_daiyu0">待遇不限</a></li>
+			<li><a href="#/job/zhiwei.html?s_daiyu=1&amp;" id="s_daiyu1">面议</a></li>
+			<li><a href="#/job/zhiwei.html?s_daiyu=23&amp;" id="s_daiyu23">1000元以下</a></li>
+			<li><a href="#/job/zhiwei.html?s_daiyu=24&amp;" id="s_daiyu24">1000-1500元</a></li>
+			<li><a href="#/job/zhiwei.html?s_daiyu=25&amp;" id="s_daiyu25">1500-2000元</a></li>
+			<li><a href="#/job/zhiwei.html?s_daiyu=26&amp;" id="s_daiyu26">2000-3000元</a></li>
+			<li><a href="#/job/zhiwei.html?s_daiyu=27&amp;" id="s_daiyu27">3000-5000元</a></li>
+			<li><a href="#/job/zhiwei.html?s_daiyu=28&amp;" id="s_daiyu28">5000-8000元</a></li>
+			<li><a href="#/job/zhiwei.html?s_daiyu=29&amp;" id="s_daiyu29">8000元以上</a></li>
+		</ul>
+	</div>
+	<div class="inner" style="display:none;" id="navbox_xueli">
+		<ul>
+			<li><a href="#/job/zhiwei.html?s_xueli=0&amp;" id="s_xueli0">学历不限</a></li>
+			<li><a href="#/job/zhiwei.html?s_xueli=42&amp;" id="s_xueli42">初中</a></li>
+			<li><a href="#/job/zhiwei.html?s_xueli=31&amp;" id="s_xueli31">高中/中专</a></li>
+			<li><a href="#/job/zhiwei.html?s_xueli=32&amp;" id="s_xueli32">大专及同等学历</a></li>
+			<li><a href="#/job/zhiwei.html?s_xueli=33&amp;" id="s_xueli33">本科/学士及同等学历</a></li>
+			<li><a href="#/job/zhiwei.html?s_xueli=34&amp;" id="s_xueli34">硕士及以上学历</a></li>
+		</ul>
+	</div>
+	<div class="inner_parent" id="parent_container" style="display:none;"><div class="innercontent"></div></div>
+	<div class="inner_child" id="inner_container" style="display:none;"><div class="innercontent"></div></div>
+</div>
+<div class="fullbg" id="fullbg" style="display: none; height: 2909px;"><i class="pull2"></i></div>
+<!--搜索-->
+<div class="job_search">
+ <div class="sbox clearfix">
+ <form name="form11" method="get" action="#/job/zhiwei.html">
+	<input type="hidden" name="key" value="0">
+	<input type="hidden" name="s_hangye" value="0" id="s_hangye">
+	<input type="hidden" name="s_gangwei" value="0" id="s_gangwei">
+	<input type="hidden" name="s_daiyu" value="" id="s_daiyu">
+	<input type="hidden" name="s_xueli" value="{$s_xueli}" id="s_xueli">
+	<input type="text" name="keyword" placeholder="关键字/职位/公司/地点" value="">
+	<button type="submit">搜索</button>
+</form>
+ </div> 
+</div>
+<!--查询列表-->
+<div class="job_list">
+ <ul>
+  <li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>市场总监</h3>
+   <dl class="clearfix">
+    <dt class="address">迪岸传媒集团</dt>
+    <dd class="distance">本科/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">面议</dt>
+    <dd class="r_time">2016-3-6 22:27:00</dd>
+   </dl>
+   <div class="po"><span class="hot display0">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>销售代表</h3>
+   <dl class="clearfix">
+    <dt class="address">北京盛世春华文化传播有限公司</dt>
+    <dd class="distance">本科/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">2000-3000元</dt>
+    <dd class="r_time">2015-9-8 9:11:00</dd>
+   </dl>
+   <div class="po"><span class="hot display1">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display0">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>拓展专员</h3>
+   <dl class="clearfix">
+    <dt class="address">国富通信息技术发展有限公司</dt>
+    <dd class="distance">本科/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">3000-5000元</dt>
+    <dd class="r_time">2015-9-8 9:11:00</dd>
+   </dl>
+   <div class="po"><span class="hot display1">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display0">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>市场联盟推广员</h3>
+   <dl class="clearfix">
+    <dt class="address">北京中财银通投资有限公司</dt>
+    <dd class="distance">大专/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">2000-3000元</dt>
+    <dd class="r_time">2015-9-8 9:11:00</dd>
+   </dl>
+   <div class="po"><span class="hot display1">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>设计管理人员</h3>
+   <dl class="clearfix">
+    <dt class="address">北京中创网路有限公司</dt>
+    <dd class="distance">本科/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">3000-5000元</dt>
+    <dd class="r_time">2015-9-8 9:10:00</dd>
+   </dl>
+   <div class="po"><span class="hot display1">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display0">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>市场推广专员</h3>
+   <dl class="clearfix">
+    <dt class="address">北京市冠捷服务有限公司</dt>
+    <dd class="distance">大专/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">2000-3000元</dt>
+    <dd class="r_time">2015-9-8 9:10:00</dd>
+   </dl>
+   <div class="po"><span class="hot display1">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>招聘经理</h3>
+   <dl class="clearfix">
+    <dt class="address">塞维斯塞迪维尔绝缘子（北京）</dt>
+    <dd class="distance">硕士/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">8000元以上</dt>
+    <dd class="r_time">2015-9-8 9:09:00</dd>
+   </dl>
+   <div class="po"><span class="hot display1">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display0">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>销售专员</h3>
+   <dl class="clearfix">
+    <dt class="address">嘉事瑞康(北京)医药有限公司</dt>
+    <dd class="distance">本科/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">2000-3000元</dt>
+    <dd class="r_time">2015-9-8 9:09:00</dd>
+   </dl>
+   <div class="po"><span class="hot display1">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>人力资源经理</h3>
+   <dl class="clearfix">
+    <dt class="address">北京昌明投资担保有限公司</dt>
+    <dd class="distance">本科/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">1500-2000元</dt>
+    <dd class="r_time">2015-9-8 9:08:00</dd>
+   </dl>
+   <div class="po"><span class="hot display1">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>人力资源总监</h3>
+   <dl class="clearfix">
+    <dt class="address">北京里伯顿石油服务公司</dt>
+    <dd class="distance">本科/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">3000-5000元</dt>
+    <dd class="r_time">2015-9-8 9:08:00</dd>
+   </dl>
+   <div class="po"><span class="hot display1">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display0">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>市场推广经理</h3>
+   <dl class="clearfix">
+    <dt class="address">北京光明科技公司</dt>
+    <dd class="distance">本科/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">3000-5000元</dt>
+    <dd class="r_time">2015-9-8 9:07:00</dd>
+   </dl>
+   <div class="po"><span class="hot display1">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>售后支持工程师</h3>
+   <dl class="clearfix">
+    <dt class="address">清华科技园钻石企业</dt>
+    <dd class="distance">大专/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">1000-1500元</dt>
+    <dd class="r_time">2015-9-8 9:06:00</dd>
+   </dl>
+   <div class="po"><span class="hot display1">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>市场推广</h3>
+   <dl class="clearfix">
+    <dt class="address">嘉事瑞康(北京)医药有限公司</dt>
+    <dd class="distance">本科/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">3000-5000元</dt>
+    <dd class="r_time">2015-9-8 9:05:00</dd>
+   </dl>
+   <div class="po"><span class="hot display1">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>医疗护理人员</h3>
+   <dl class="clearfix">
+    <dt class="address">嘉事瑞康(北京)医药有限公司</dt>
+    <dd class="distance">面议/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">5000-8000元</dt>
+    <dd class="r_time">2015-9-8 9:04:00</dd>
+   </dl>
+   <div class="po"><span class="hot display0">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>经理助理</h3>
+   <dl class="clearfix">
+    <dt class="address">紫阳大宇投资管理有限公司</dt>
+    <dd class="distance">面议/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">3000-5000元</dt>
+    <dd class="r_time">2015-9-8 9:03:00</dd>
+   </dl>
+   <div class="po"><span class="hot display0">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>行政助理</h3>
+   <dl class="clearfix">
+    <dt class="address">金海华(北京)投资集团有限公司</dt>
+    <dd class="distance">面议/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">3000-5000元</dt>
+    <dd class="r_time">2015-9-8 9:03:00</dd>
+   </dl>
+   <div class="po"><span class="hot display0">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>外贸专员</h3>
+   <dl class="clearfix">
+    <dt class="address">北京中财银通投资有限公司</dt>
+    <dd class="distance">本科/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">5000-8000元</dt>
+    <dd class="r_time">2015-9-8 9:03:00</dd>
+   </dl>
+   <div class="po"><span class="hot display0">热门</span><span class="tui display1">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>前台人员</h3>
+   <dl class="clearfix">
+    <dt class="address">北京市冠捷服务有限公司</dt>
+    <dd class="distance">面议/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">5000-8000元</dt>
+    <dd class="r_time">2014-5-30 10:47:00</dd>
+   </dl>
+   <div class="po"><span class="hot display0">热门</span><span class="tui display0">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>前端工程师</h3>
+   <dl class="clearfix">
+    <dt class="address">北京中创网路有限公司</dt>
+    <dd class="distance">面议/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">8000元以上</dt>
+    <dd class="r_time">2014-5-30 10:46:00</dd>
+   </dl>
+   <div class="po"><span class="hot display0">热门</span><span class="tui display0">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>业务员</h3>
+   <dl class="clearfix">
+    <dt class="address">迪岸传媒集团</dt>
+    <dd class="distance">面议/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">5000-8000元</dt>
+    <dd class="r_time">2014-5-30 10:45:00</dd>
+   </dl>
+   <div class="po"><span class="hot display0">热门</span><span class="tui display0">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>化工技术员</h3>
+   <dl class="clearfix">
+    <dt class="address">北京大海化工公司</dt>
+    <dd class="distance">大专/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">5000-8000元</dt>
+    <dd class="r_time">2014-5-30 10:45:00</dd>
+   </dl>
+   <div class="po"><span class="hot display0">热门</span><span class="tui display0">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>操作员</h3>
+   <dl class="clearfix">
+    <dt class="address">招商证券股份有限公司(北京)</dt>
+    <dd class="distance">大专/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">3000-5000元</dt>
+    <dd class="r_time">2014-5-30 10:44:00</dd>
+   </dl>
+   <div class="po"><span class="hot display0">热门</span><span class="tui display0">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>通信技术工程师</h3>
+   <dl class="clearfix">
+    <dt class="address">塞维斯塞迪维尔绝缘子（北京）</dt>
+    <dd class="distance">大专/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">5000-8000元</dt>
+    <dd class="r_time">2014-5-30 10:37:00</dd>
+   </dl>
+   <div class="po"><span class="hot display0">热门</span><span class="tui display0">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>副经理</h3>
+   <dl class="clearfix">
+    <dt class="address">江河农村电气化发展有限公司</dt>
+    <dd class="distance">面议/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">5000-8000元</dt>
+    <dd class="r_time">2014-5-30 10:36:00</dd>
+   </dl>
+   <div class="po"><span class="hot display0">热门</span><span class="tui display0">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li><li>
+   <a href="sou_zhaopin_zhiwei.html">
+   <h3>会计</h3>
+   <dl class="clearfix">
+    <dt class="address">北京昌明投资担保有限公司</dt>
+    <dd class="distance">面议/全职</dd>
+   </dl>
+   <dl class="clearfix">
+    <dt class="price">8000元以上</dt>
+    <dd class="r_time">2014-5-30 10:34:00</dd>
+   </dl>
+   <div class="po"><span class="hot display0">热门</span><span class="tui display0">推荐</span><span class="new display0">最新</span><span class="urgent display1">急聘</span></div>
+   
+   </a>
+</li>
+ </ul>
+ <div class="pageNav2"><div class="FirstPage"><span class="kill invalid">&lt;</span></div><div class="EndPage"><a href="#/job/zhiwei.html?Colname=0&amp;KeyWord=&amp;PageNo=2&amp;s_hangye=0&amp;s_gangwei=0&amp;s_xueli=&amp;s_didian=&amp;s_xinzhi=&amp;s_date=&amp;s_qiyexingzhi=&amp;s_daiyu=&amp;key=" title="下一页">&gt;</a></div>1/2</div>
+</div>
+	<div class="foot_link" id="foot_link">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+</div>
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="sou_shichang.html" onclick="return window.history.go(-1);" class="back">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = 'sou_shichang.html';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','5010');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<script type="text/javascript" src="./js/iscroll.js"></script>
+<script src="./js/purl.js"></script>
+<script>
+var nowdomain = '#/';
+var current_host = window.location;
+var url_obj = $.url(current_host).param();
+
+$.fn.jobUrl = function(){
+	var that = $(this),txt_obj = {};
+	
+	for(var i in url_obj){
+		$('#'+i+url_obj[i]).parent().addClass('cur');
+	}
+	that.find('a').each(function(i,item){
+		var txt='?';
+		var txt_now = $(item).attr('href');
+		var txt_obj_now = $.url(txt_now).param();
+		txt_obj = $.extend({},url_obj,txt_obj_now);
+		
+		for(var v in txt_obj){
+			txt = txt+v+'='+txt_obj[v]+'&';
+		}
+		$(item).attr('href',txt);
+	});	
+}
+
+if(url_obj['s_daiyu'] !== '' && url_obj['s_daiyu'] !== '0'){
+	var txt=$('#s_daiyu'+url_obj['s_daiyu']).html();
+	$('#str_daiyu_node').html(txt);
+}
+if(url_obj['s_xueli'] !== '' && url_obj['s_xueli'] !== '0'){
+	var txt=$('#s_xueli'+url_obj['s_xueli']).html();
+	$('#str_xueli_node').html(txt);
+}
+
+function showCategory(node,d){
+	var url = nowdomain+'request.ashx?action=category&id=9&json=1&jsoncallback=?';
+	var s_daiyu = url_obj['s_daiyu'] || '';
+	var s_xueli = url_obj['s_xueli'] || '';
+	$.getJSON(url,function(data){
+		var d = data[0].MSG;
+		var txt='<li><a href="#/job/zhiwei.html?s_hangye=0">全部行业</a></li>',txt2='';
+		for(var i=0;i<d.length;i++){
+			if(!jQuery.isEmptyObject(d[i].arr)){
+				txt2 = '<ul><li><a href="#/job/zhiwei.html?s_hangye='+d[i].id+'&tt=0&s_daiyu='+s_daiyu+'&s_xueli='+s_xueli+'" id="s_'+d[i].id+'">全部岗位</a></li>';
+				for(var k in d[i].arr){
+					txt2 += '<li><a href="#/job/zhiwei.html?s_hangye='+d[i].id+'&tt='+k+'&s_daiyu='+s_daiyu+'&s_xueli='+s_xueli+'" id="s_'+k+'">'+d[i].arr[k]+'</a></li>';
+				}
+				txt2 += '</ul>';
+				txt += '<li><a href="#" id="cat_'+d[i].id+'">'+d[i].name+'</a>'+txt2+'</li>';
+				
+			}else{
+				txt += '<li><a href="#/job/zhiwei.html?s_hangye='+d[i].id+'&s_daiyu='+s_daiyu+'&s_xueli='+s_xueli+'" id="cat_'+d[i].id+'">'+d[i].name+'</a></li>';
+			}
+		}
+		$('#'+node).html(txt);
+		window['myScroll_parent'] = null;
+		window['myScroll_inner'] = null;
+		showFilter({ibox:'filter2',content1:'parent_container',content2:'inner_container',fullbg:'fullbg'});
+		$('#navbox_hangye').jobUrl();
+		if(url_obj['s_hangye'] !== '' && url_obj['s_hangye'] !== '0'){
+			var txt=$('#cat_'+url_obj['s_hangye']).html();
+			$('#str_hangye_node').html(txt);
+			$('#cat_'+url_obj['s_hangye']).parent().addClass('cur');
+		}
+		
+		if(url_obj['tt'] !== '' && url_obj['tt'] !== '0'){
+			$('#s_'+url_obj['tt']).parent().addClass('cur');
+		}
+	});
+}
+(function($){
+	//showFilter({ibox:'filter2',content1:'parent_container',content2:'inner_container',fullbg:'fullbg'});
+	showCategory('inner1');
+	$('#navbox_xinzi').jobUrl();
+	$('#navbox_xueli').jobUrl();
+	$('.header .back').attr({'href':nowdomain,'onclick':''});
+})(jQuery);
+</script>
+
+ </body></html>

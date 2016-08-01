@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)#/house/xuqiu.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页-房产-求租求购</title>
+<link rel="stylesheet" rev="stylesheet" href="./css/house_mb_n.css">
+<script>
+window['ipageTitleTxt'] = '求租求购';
+</script>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+<body>
+<div class="top_gg po_re" id="top_gg" style="display:none;">{首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="javascript:void(0);" onclick="return window.history.go(-1);" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">求租求购</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+
+<div class="post_btn"><a href="#/house/qiugou.aspx" id="seniorSend">发需求</a></div>
+<div class="o_main">
+
+<div class="filter2 filterMore" id="filter2">
+	<ul class="tab clearfix">
+		<li class="item"><a href="javascript:void(0);"><span id="s_txt_lei">全部信息</span><em></em></a></li>
+		<li class="item"><a href="javascript:void(0);"><span id="s_txt_quyu">不限</span><em></em></a></li>
+		<li class="item"><a href="javascript:void(0);"><span id="s_txt_time">全部时间</span><em></em></a></li>
+		
+	</ul>
+	<div class="inner" style="display:none;" id="s_list_lei">
+        <ul>
+			<li><a href="#/house/xuqiu.html?quyuid=&amp;day=" class=" current">全部信息</a></li>
+			<li><a href="#/house/xuqiu.html?tt=0&amp;quyuid=&amp;day=" class=" ">求租信息</a></li>
+			<li><a href="#/house/xuqiu.html?tt=1&amp;quyuid=&amp;day=" class=" ">求购信息</a></li>
+		</ul>
+	</div>
+	<div class="inner" style="display:none;" id="s_list_quyu">
+		<a href="#/house/xuqiu.html?tt=&amp;day=&amp;quyuid=" data-id="0" id="s_areaid_0" class="selected">不限</a><a href="#/house/xuqiu.html?tt=&amp;day=&amp;quyuid=1" data-id="1" id="s_areaid_1">朝阳区</a><a href="#/house/xuqiu.html?tt=&amp;day=&amp;quyuid=2" data-id="2" id="s_areaid_2">海淀区</a><a href="#/house/xuqiu.html?tt=&amp;day=&amp;quyuid=11" data-id="11" id="s_areaid_11">丰台区</a><a href="#/house/xuqiu.html?tt=&amp;day=&amp;quyuid=12" data-id="12" id="s_areaid_12">西城区</a><a href="#/house/xuqiu.html?tt=&amp;day=&amp;quyuid=13" data-id="13" id="s_areaid_13">通州区</a><a href="#/house/xuqiu.html?tt=&amp;day=&amp;quyuid=77" data-id="77" id="s_areaid_77">东城区</a><a href="#/house/xuqiu.html?tt=&amp;day=&amp;quyuid=78" data-id="78" id="s_areaid_78">昌平区</a><a href="#/house/xuqiu.html?tt=&amp;day=&amp;quyuid=79" data-id="79" id="s_areaid_79">宣武区</a><a href="#/house/xuqiu.html?tt=&amp;day=&amp;quyuid=80" data-id="80" id="s_areaid_80">崇文区</a><a href="#/house/xuqiu.html?tt=&amp;day=&amp;quyuid=82" data-id="82" id="s_areaid_82">其他区县</a>
+	</div>
+	<div class="inner" style="display:none;" id="s_list_time">
+		<ul>
+			<li><a href="#/house/xuqiu.html?tt=&amp;quyuid=" class=" current">全部时间</a></li>
+			<li><a href="#/house/xuqiu.html?tt=&amp;quyuid=&amp;day=1" class=" ">今天</a></li>
+			<li><a href="#/house/xuqiu.html?tt=&amp;quyuid=&amp;day=2" class=" ">本周</a></li>
+			<li><a href="#/house/xuqiu.html?tt=&amp;quyuid=&amp;day=3" class=" ">本月</a></li>
+			<li><a href="#/house/xuqiu.html?tt=&amp;quyuid=&amp;day=4" class=" ">本季度</a></li>
+		</ul>
+	</div>
+	<div class="inner_parent" id="parent_container" style="display:none;"><div class="innercontent"></div></div>
+	<div class="inner_child" id="inner_container" style="display:none;"><div class="innercontent"></div></div>
+</div>
+<div class="fullbg fullbgMore" id="fullbg" style="display: none; height: 1243px;"><i class="pull2"></i></div>
+
+<div class="new_active">
+<div class="info_list xuqiu_list">
+  <ul id="xuqiuList">
+   <li><a href="javascript:void(0);" class="link">
+	<div class="pic"><div class="gou">购</div></div>
+	<div class="con clearfix">
+		<h3>[宣武区]求购团结湖地铁附近二居</h3>
+		<p class="date">2015-11-5</p>
+		
+	</div>
+	<div class="chrcontent">房子最好十年左右的，谢谢，真心购买，具体价格能再便宜些更好。最好不要靠马路，谢谢，<p><span class="hName">刘盛</span><span class="hTel">13800000028</span></p></div>
+	
+</a>
+	<a href="tel:13800000028" class="po_tel"></a>
+</li><li><a href="javascript:void(0);" class="link">
+	<div class="pic"><div class="zu">租</div></div>
+	<div class="con clearfix">
+		<h3>[海淀区]求租二炮医院附近房子，单间，隔断，地下室均可</h3>
+		<p class="date">2015-11-5</p>
+		
+	</div>
+	<div class="chrcontent">600元左右，女生，一个人住<p><span class="hName">李女士</span><span class="hTel">13800000027</span></p></div>
+	
+</a>
+	<a href="tel:13800000027" class="po_tel"></a>
+</li><li><a href="javascript:void(0);" class="link">
+	<div class="pic"><div class="gou">购</div></div>
+	<div class="con clearfix">
+		<h3>[丰台区]求购买两室一厅或两厅</h3>
+		<p class="date">2015-11-5</p>
+		
+	</div>
+	<div class="chrcontent">要求近几年房，有房本，可以贷款<p><span class="hName">陈女士</span><span class="hTel">13800000026</span></p></div>
+	
+</a>
+	<a href="tel:13800000026" class="po_tel"></a>
+</li><li><a href="javascript:void(0);" class="link">
+	<div class="pic"><div class="zu">租</div></div>
+	<div class="con clearfix">
+		<h3>[通州区]求租小屯路兆丰馨园或春园的房子，客厅可以没家具</h3>
+		<p class="date">2015-11-5</p>
+		
+	</div>
+	<div class="chrcontent">求租小屯路兆丰馨园或春园的房子，客厅可以没家具<p><span class="hName">张女士</span><span class="hTel">13800000025</span></p></div>
+	
+</a>
+	<a href="tel:13800000025" class="po_tel"></a>
+</li><li><a href="javascript:void(0);" class="link">
+	<div class="pic"><div class="gou">购</div></div>
+	<div class="con clearfix">
+		<h3>[昌平区]昌平邑上苑3室2卫</h3>
+		<p class="date">2015-11-5</p>
+		
+	</div>
+	<div class="chrcontent">求购昌平邑上苑3室2卫（其他小区不考虑），无税，精装修房屋，价格合适可全款。如有装修很好且综合单价2.2万以内的两居也可以考虑。<p><span class="hName">杨先生</span><span class="hTel">13800000024</span></p></div>
+	
+</a>
+	<a href="tel:13800000024" class="po_tel"></a>
+</li><li><a href="javascript:void(0);" class="link">
+	<div class="pic"><div class="zu">租</div></div>
+	<div class="con clearfix">
+		<h3>[西城区]求租单间一间</h3>
+		<p class="date">2015-11-5</p>
+		
+	</div>
+	<div class="chrcontent">本人，男，无不良嗜好，正当职业，希望在木樨地周边求租单间一间，不喜欢有个隔断的房子。<p><span class="hName">武先生</span><span class="hTel">13800000023</span></p></div>
+	
+</a>
+	<a href="tel:13800000023" class="po_tel"></a>
+</li><li><a href="javascript:void(0);" class="link">
+	<div class="pic"><div class="zu">租</div></div>
+	<div class="con clearfix">
+		<h3>[不限区域]个人求租建外大街一居</h3>
+		<p class="date">2015-11-5</p>
+		
+	</div>
+	<div class="chrcontent">要求能洗澡、能上网、最好配洗衣机空调<p><span class="hName">陈先生</span><span class="hTel">13800000022</span></p></div>
+	
+</a>
+	<a href="tel:13800000022" class="po_tel"></a>
+</li><li><a href="javascript:void(0);" class="link">
+	<div class="pic"><div class="gou">购</div></div>
+	<div class="con clearfix">
+		<h3>[昌平区]求购四合上院或者中信城一居室</h3>
+		<p class="date">2015-11-5</p>
+		
+	</div>
+	<div class="chrcontent">要新校区，只考虑四合上院和中信城的别的不考虑，自己住不是投资<p><span class="hName">齐先生</span><span class="hTel">13800000021</span></p></div>
+	
+</a>
+	<a href="tel:13800000021" class="po_tel"></a>
+</li><li><a href="javascript:void(0);" class="link">
+	<div class="pic"><div class="zu">租</div></div>
+	<div class="con clearfix">
+		<h3>[不限区域]本人求租上地、西二旗的开间或一居，价格2500</h3>
+		<p class="date">2015-11-5</p>
+		
+	</div>
+	<div class="chrcontent">本人是个人，不是中介，求租上地、菊园、马连洼，清河、西二旗附近的一居，价格2500以内，中介勿扰，情侣居住，爱干净，房主可以放心。<p><span class="hName">付先生</span><span class="hTel">13800000020</span></p></div>
+	
+</a>
+	<a href="tel:13800000020" class="po_tel"></a>
+</li><li><a href="javascript:void(0);" class="link">
+	<div class="pic"><div class="gou">购</div></div>
+	<div class="con clearfix">
+		<h3>[不限区域]急求购学区房急求购学区房</h3>
+		<p class="date">2015-11-5</p>
+		
+	</div>
+	<div class="chrcontent">急求购学区房急求购学区房急求购学区房急求购学区房<p><span class="hName">乔先生</span><span class="hTel">13800000019</span></p></div>
+	
+</a>
+	<a href="tel:13800000019" class="po_tel"></a>
+</li><li><a href="javascript:void(0);" class="link">
+	<div class="pic"><div class="zu">租</div></div>
+	<div class="con clearfix">
+		<h3>[石景山区]求新宫附近合租也行，最好压1付1.不要离新宫太远</h3>
+		<p class="date">2015-11-5</p>
+		
+	</div>
+	<div class="chrcontent">该有的全都要有，最好包取暖。不要违章房，住不了几个月就拆了<p><span class="hName">伊先生</span><span class="hTel">13800000018</span></p></div>
+	
+</a>
+	<a href="tel:13800000018" class="po_tel"></a>
+</li><li><a href="javascript:void(0);" class="link">
+	<div class="pic"><div class="gou">购</div></div>
+	<div class="con clearfix">
+		<h3>[崇文区]求购民岳家园一居室住房一套</h3>
+		<p class="date">2015-11-5</p>
+		
+	</div>
+	<div class="chrcontent">限民岳家园小区一居室，优先考虑朝东的户型，工作日请短信<p><span class="hName">吴先生</span><span class="hTel">13800000017</span></p></div>
+	
+</a>
+	<a href="tel:13800000017" class="po_tel"></a>
+</li><li><a href="javascript:void(0);" class="link">
+	<div class="pic"><div class="zu">租</div></div>
+	<div class="con clearfix">
+		<h3>[宣武区]求租主卧，最好两居中的一间，一男士自住</h3>
+		<p class="date">2015-11-5</p>
+		
+	</div>
+	<div class="chrcontent">武圣东里、松榆里、松榆西里附近优先，一个人住，希望合租人正常作息，着急搬家希望可以尽快找到合租的房子<p><span class="hName">牟先生</span><span class="hTel">13800000016</span></p></div>
+	
+</a>
+	<a href="tel:13800000016" class="po_tel"></a>
+</li><li><a href="javascript:void(0);" class="link">
+	<div class="pic"><div class="gou">购</div></div>
+	<div class="con clearfix">
+		<h3>[朝阳区]澳洲康都2居购买房子</h3>
+		<p class="date">2015-11-5</p>
+		
+	</div>
+	<div class="chrcontent">澳洲康都2居购买房子，只要这个小区，不要筒子楼<p><span class="hName">赵先生</span><span class="hTel">13800000015</span></p></div>
+	
+</a>
+	<a href="tel:13800000015" class="po_tel"></a>
+</li><li><a href="javascript:void(0);" class="link">
+	<div class="pic"><div class="gou">购</div></div>
+	<div class="con clearfix">
+		<h3>[不限区域]求购杨宋或庙城或怀柔的别墅</h3>
+		<p class="date">2015-11-5</p>
+		
+	</div>
+	<div class="chrcontent">求购怀柔区内别墅，位于怀柔城区或杨宋或庙城<p><span class="hName">张生</span><span class="hTel">13800000014</span></p></div>
+	
+</a>
+	<a href="tel:13800000014" class="po_tel"></a>
+</li>
+  </ul>
+  <div class="pageNav2 pageNav3">
+    <div class="FirstPage"><span class="long">&lt;</span></div><div class="EndPage"><span class="long"><a href="#/house/xuqiu.html?Colname=&amp;KeyWord=&amp;PageNo=2&amp;tt=&amp;day=&amp;quyuid=" title="下一页">&gt;</a></span></div>1/4
+  </div>
+ </div>
+ </div>
+	<div class="foot_link" id="foot_link">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+</div>
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="javascript:;" class="back close">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#/';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','2016');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<script src="./js/purl.js"></script>
+<script src="./js/iscroll.js"></script>
+<script>
+(function($){
+	$('#s_txt_lei').html($('#s_list_lei').find('.current').html());
+	$('#s_txt_quyu').html($('#s_list_quyu').find('.selected').html());
+	$('#s_txt_time').html($('#s_list_time').find('.current').html());
+	
+	showFilter({ibox:'filter2',content1:'parent_container',content2:'inner_container',fullbg:'fullbg'});
+	$('#xuqiuList').find('.link').bind('click',function(e){
+		e.preventDefault();
+		var itarget = $(this).parent();
+		if(itarget.hasClass('show')){
+			itarget.removeClass('show');
+		}else{
+			itarget.siblings('li').removeClass('show');
+			itarget.addClass('show');
+		}
+		
+	});
+	//$('#xuqiuList').find('li').eq(0).addClass('show');
+})(jQuery);
+
+</script>
+
+ <img src="./images/xuqiu.aspx" alt="" width="0" height="0"></body></html>

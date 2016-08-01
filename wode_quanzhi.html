@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)#/member/myjianli.aspx -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>我的-全职简历</title>
+<link href="./css/member-mb.css" rel="stylesheet" type="text/css">
+<script>
+window['ipageTitleTxt'] = '我的简历';
+</script>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+
+<body>
+<div class="top_gg po_re" id="top_gg" style="display:none;">{$Mh163k_wap_首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="javascript:void(0);" onclick="return window.history.go(-1);" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">我的简历</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+
+<div class="o_main">
+ <form name="form1" method="post" action="#/member/myjianli.aspx?action=editSave" enctype="multipart/form-data">
+ <!--填写信息-->
+<div id="mytabs">
+<div class="tabs">
+ <ul class="tab-hd">
+  <li class="item current">基本信息</li>
+  <li class="item">教育背景</li>
+  <li class="item">工作经历</li>
+  <li class="item">求职意向</li>
+ </ul>
+</div>
+<div class="tabItem tab-cont" style="display:block;">
+ <div class="inp_Itembox">
+  <dl class="clearfix sel_radio_form" data-name="isshow">
+   <dt>状态</dt>
+   <dd>
+   <span class="display0"><input type="radio" name="isshow" value="0" checked="" title="开启显示"><input type="radio" name="isshow" value="1" title="暂停显示"> </span>
+    <span class="gx_radio current" data-val="0">开启显示</span>
+    <span class="gx_radio" data-val="1">暂停显示</span>
+   </dd>
+  </dl>
+  
+ </div>
+ <div class="inp_Itembox">
+ 
+  <dl class="clearfix">
+   <dt>照片</dt>
+   <dd><span id="hidurl1" style="display: none;"><a href="javascript:void(0);"><img src="#/member/myjianli.aspx" border="0"></a> <span onclick="hidden1()" class="blue">重新上传</span></span>
+   <span id="hidurl2" style=""><input type="file" name="file1" class="text"></span><input type="hidden" name="url1" id="filepath" value="">
+   </dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>姓名</dt>
+   <dd><input type="text" name="chrname" value="" placeholder="输入真实姓名"></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>出生</dt>
+   <dd><input type="text" name="chusheng" value="" placeholder="输入出生年份"><div class="menu">年</div></dd>
+  </dl>
+ <dl class="clearfix sel_radio_form" data-name="chrsex">
+   <dt>性别</dt>
+   <dd>
+   <span class="display0"><input type="radio" name="chrsex" value="1" checked=""><input type="radio" name="chrsex" value="2"></span>
+    <span class="gx_radio current" data-val="1">男</span>
+    <span class="gx_radio" data-val="2">女</span>
+   </dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>籍贯</dt>
+   <dd><input type="text" name="jiguan" value="" placeholder="输入籍贯"></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>民族</dt>
+   <dd><input type="text" name="mingzu" value="" placeholder="输入民族"></dd>
+  </dl>
+ </div>
+ <div class="inp_Itembox">
+  <dl class="clearfix">
+   <dt>手机</dt>
+   <dd><input type="text" name="chrmobile" value="" placeholder="请输入手机号码"></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>Q  Q </dt>
+   <dd><input type="text" placeholder="请输入QQ号码" name="chrqq" value=""></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>邮箱</dt>
+   <dd><input type="mail" placeholder="请输入邮箱地址" name="chremail" value="1396795023@qq.com"></dd>
+  </dl>
+ </div>
+</div>
+<!--教育背景-->
+<div class="tabItem tab-cont" style="display: none;">
+  <div class="inp_Itembox words">
+   <dl class="clearfix">
+   <dt>最高学历</dt>
+   <dd><select name="xueli" id="xueli"> <option value="">请选择</option><option value="42">初中</option><option value="31">高中/中专</option><option value="32">大专</option><option value="33">本科</option><option value="34">硕士</option></select></dd>
+   <div class="menu">
+    <i></i>
+    <i></i>
+    <i></i>
+   </div>
+  </dl>
+  
+  <dl class="clearfix">
+   <dt>毕业院校</dt>
+   <dd><input type="text" name="biyexuexiao" value="" placeholder="输入毕业院校"></dd>
+  </dl>
+  <dl class="biyeshijian clearfix">
+   <dt>毕业时间</dt>
+   <dd><select name="biyeyear"><option value="1970">1970</option><option value="1971">1971</option><option value="1972">1972</option><option value="1973">1973</option><option value="1974">1974</option><option value="1975">1975</option><option value="1976">1976</option><option value="1977">1977</option><option value="1978">1978</option><option value="1979">1979</option><option value="1980">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option><option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option><option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016" selected="">2016</option></select> <span class="txts">年</span><div class="menu"><i></i><i></i><i></i></div></dd>
+   <dd><select name="biyemonth"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7" selected="">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select> <span class="txts">月</span><div class="menu"><i></i><i></i><i></i></div></dd>
+  </dl>
+  
+  <dl class="clearfix">
+   <dt>所属专业</dt>
+   <dd><input type="text" name="zhuangye" value="" placeholder="请输入专业类别"></dd>
+  </dl>
+ </div>
+ <div class="inp_Itembox words">
+  <dl class="clearfix">
+   <dt>外语水平</dt>
+   <dd><input type="text" name="waiyu" value="" placeholder="请输入外语水平"></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>电脑水平</dt>
+   <dd><input type="text" name="diannao" value="" placeholder="请输入电脑水平平"></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>其他教育</dt>
+   <dd><textarea name="qita" class="qita" placeholder="输入您的其他教育" rows="6"></textarea></dd>
+  </dl>
+ </div>
+</div>
+<!--工作经历-->
+<div class="tabItem tab-cont" style="display: none;">
+ <div class="inp_Itembox words">
+  <dl class="clearfix">
+   <dt>工作经验</dt>
+   <dd><input type="text" placeholder="请输入工作年限" name="gongzuoyear" value=""><div class="menu">年</div></dd>
+  </dl>
+  <textarea name="gongzuojingli" placeholder="请描述详细工作经历" class="txt"></textarea>
+ </div>
+</div>
+<!--求职意向-->
+<div class="tabItem tab-cont" style="display: none;">
+ <div class="inp_Itembox words">
+  <dl class="clearfix">
+   <dt>求职类型</dt>
+   <dd><select name="qiuzhileixing" id="qiuzhileixing"> <option value="">::请选择::</option><option value="14">全职</option><option value="15">兼职</option><option value="16">实习</option></select></dd>
+   <div class="menu">
+    <i></i>
+    <i></i>
+    <i></i>
+   </div>
+  </dl>
+  <div style="display:none;">-&gt;</div>
+  <dl class="biyeshijian clearfix">
+   <dt>希望岗位</dt>
+   <dd id="categoryid1"><div class="menu"><i></i><i></i><i></i></div><select name="hangyecategory" id="hangyecategory" onchange="javascript:showhangyecategory(this.value);"> <option value="">行业分类</option><option value="49">计算机/互联网类</option><option value="50">建筑/房地产/装饰装修</option><option value="51">医疗卫生/美容保健</option><option value="52">电子/电器/通信</option><option value="53">电气/能源/动力</option><option value="265">机械/仪器仪表</option><option value="266">销售/项目管理/客户服务</option><option value="267">市场/广告/公关与媒介</option><option value="268">人力资源/行政/文职人员</option><option value="269">财务/审计/统计</option><option value="270">贸易/物流/采购/运输</option><option value="271">酒店/餐饮/旅游/运动休闲</option><option value="272">美术/设计/创意</option><option value="688">贸易/消费/制造/营运</option><option value="689">专业服务/教育/培训</option><option value="690">非赢利机构/其他</option><option value="691">金融/银行/保险</option></select></dd>
+   <dd id="categoryid2"><div class="menu"><i></i><i></i><i></i></div><select name="categoryid" id="categoryid"><option value="">岗位分类</option></select></dd>
+   
+  </dl>
+  <dl class="clearfix">
+   <dt>期望薪资</dt>
+   <dd><select name="yuexin" id="yuexin"> <option value="">面议</option><option value="23">1000元以下</option><option value="24">1000-1500元</option><option value="25">1500-2000元</option><option value="26">2000-3000元</option><option value="27">3000-5000元</option><option value="28">5000-8000元</option><option value="29">8000元以上</option></select></dd>
+   <div class="menu">
+    <i></i>
+    <i></i>
+    <i></i>
+   </div>
+  </dl>
+  <dl class="clearfix">
+   <dt>希望地点</dt>
+   <dd><input type="text" placeholder="输入您的希望地区" name="gongzuodiqu" value="北京"></dd>
+  </dl>
+ </div>
+ <div class="inp_Itembox words">
+  <dl class="clearfix">
+   <dt>到岗时间</dt>
+   <dd><input type="text" placeholder="请输入具体日期" name="daogang" value="可随时到岗"></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>擅长技能</dt>
+   <dd><input type="text" placeholder="请输入掌握的工具和技术" name="jineng" value=""></dd>
+  </dl>
+ </div>
+ <div class="inp_Itembox">
+  <textarea name="jianyan" placeholder="请做自我评价，仅限500字" class="txt"></textarea>
+ </div>
+</div>
+</div>
+ <button type="submit" class="save">保 存</button>
+</form></div>
+
+	<div class="foot_link" id="foot_link">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="javascript:;" class="back close">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#/';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','20');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<script>
+IDC2.tabADS($('#mytabs'));
+$('#categoryid1').append($('#hangyecategory').detach());
+$('#categoryid2').append($('#categoryid').detach());
+$('.sel_radio_form').radioForm();
+if(document.getElementById('filepath').value==''){
+	hidden1();
+}
+function hidden1(){
+   $("#hidurl1").hide();
+   $("#hidurl2").show();
+}
+function showhangyecategory(str){ 
+	if (str.length > 0){ 
+		var url="../request.aspx?action=quyu&id="+str;
+		var  Digital=new  Date();
+		Digital=Digital+40000;
+		url=url+"&k="+encodeURIComponent(Digital);
+		
+		$.ajax({url:url}).done(function(msg){
+			BuildSel(msg ,document.getElementById("categoryid"))
+		}).error(function(e){alert(e);});		
+	} 
+} 
+function BuildSel(str,sel,val){
+	sel.options.length=0;
+	var arrstr = new Array();
+	arrstr = str.split(",");
+	//开始构建新的Select.
+	sel.options.add(new Option( "::请选择::","")); 
+	if(str.length>0){
+		for(var i=0;i<arrstr.length-1;i++){
+			//分割字符串
+			var subarrstr=new Array
+			subarrstr=arrstr[i].split("|")
+			//生成下级菜单
+			sel.options.add(new Option(subarrstr[1],subarrstr[0])); 
+		}
+		sel.options[0].selected=true
+	}
+}
+function checkaddrencaiform(o){
+	if(o.chrname.value==""){
+		alert("对不起,请输入姓名!");
+		return false;
+	}
+	if(o.chusheng.value==""){
+		alert("对不起,请输入出生年份!");
+		return false;
+	}
+	if(o.jiguan.value==""){
+		alert("对不起,请输入籍贯!");
+		return false;
+	}
+	if(o.mingzu.value==""){
+		alert("对不起,请输入民族!");
+		return false;
+	}
+	if(o.xueli.value==""){
+		alert("对不起,请选择学历!");
+		return false;
+	}
+	if(o.biyexuexiao.value==""){
+		alert("对不起,请输入毕业学校!");
+		return false;
+	}
+	if(o.hangyecategory.value==""){
+		alert("对不起,请选择希望行业分类!");
+		return false;
+	}
+	if(o.categoryid.value==""){
+		alert("对不起,请选择希望岗位!");
+		return false;
+	}
+	if(o.qiuzhileixing.value==""){
+		alert("对不起,请选择求职类型!");
+		return false;
+	}
+}
+</script>
+
+
+
+ </body></html>

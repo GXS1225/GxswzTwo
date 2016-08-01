@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页-咨询</title>
+<!-- UC默认竖屏 ，UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<meta name="browsermode" content="application">
+<!-- QQ强制竖屏 QQ强制全屏 -->
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="x5-page-mode" content="app">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" rev="stylesheet" href="./css/news-mb.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/news-scroll5.css">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+<body style="min-height: 667px;">
+<div class="top_gg po_re" id="top_gg" style="display:none;">{首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="javascript:void(0);" onclick="return window.history.go(-1);" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">资讯</span>
+	
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+	
+	<div class="content news_index">
+		<div class="select_01" id="wrapper2">
+			<ul class="tab-hd" id="scroller2" style="width: 1030px; transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+				<li class="current item" onclick="return showCatA(this,&#39;&#39;);"><a href="javascript:void(0);">头版</a></li>
+				<li class="item" onclick="return showCatA(this,&#39;88&#39;);"><a href="javascript:void(0);">京城快讯</a></li><li class="item" onclick="return showCatA(this,&#39;23&#39;);"><a href="javascript:void(0);">健康常识</a></li><li class="item" onclick="return showCatA(this,&#39;24&#39;);"><a href="javascript:void(0);">社交礼仪</a></li><li class="item" onclick="return showCatA(this,&#39;25&#39;);"><a href="javascript:void(0);">母婴健康</a></li><li class="item" onclick="return showCatA(this,&#39;84&#39;);"><a href="javascript:void(0);">生活百科</a></li><li class="item" onclick="return showCatA(this,&#39;85&#39;);"><a href="javascript:void(0);">医学常识</a></li><li class="item" onclick="return showCatA(this,&#39;86&#39;);"><a href="javascript:void(0);">职场人生</a></li><li class="item" onclick="return showCatA(this,&#39;87&#39;);"><a href="javascript:void(0);">投资理财</a></li><li class="item" onclick="return showCatA(this,&#39;385&#39;);"><a href="javascript:void(0);">感动天地</a></li><li class="item" onclick="return showCatA(this,&#39;386&#39;);"><a href="javascript:void(0);">社会万象</a></li>
+			</ul>
+			<div class="more" id="iscrollto"><span></span></div>
+		</div>
+		<div id="wrapper">
+			<div id="scroller" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+				<div id="pullDown" style="display:none;"><span class="loader" style="display:none;">loadding</span></div>
+				<div id="slide" class="clearfix" style="width: 375px;">
+					<div id="content" style="width: 1500px; transform: translate3d(-1125px, 0px, 0px) scale(1);">
+						<div class="cell" style="width: 375px;"><a href="#/article/article_2376.html"><img src="./images/2016011216164766961111.png" alt="" style="height: 281px;"></a><span class="title">中国历史文化名城古镇-贵州镇远古镇（东方威尼斯）</span></div><div class="cell" style="width: 375px;"><a href="#/article/article_2248.html"><img src="./images/2016011216174296681111.png" alt="" style="height: 281px;"></a><span class="title">男子救起落水11人遇难 获见义勇为称号</span></div><div class="cell" style="width: 375px;"><a href="#/article/article_2157.html"><img src="./images/2016011216181252998781.png" alt="" style="height: 281px;"></a><span class="title">公园圣地——各国国家公园渊源</span></div><div class="cell" style="width: 375px;"><a href="#/article/article_2151.html"><img src="./images/2016011216184338892271.png" alt="" style="height: 281px;"></a><span class="title">中国首台千万亿次超级计算机研制成功</span></div>
+					</div>
+					<ul id="indicator"><li class="">1</li><li class="">2</li><li class="">3</li><li class="active">4</li></ul>
+				</div>
+				<span class="prev" id="slide_prev" style="display:none">上一张</span><span class="next" id="slide_next" style="display:none">下一张</span>
+				
+				<ul id="innerrow" class="list_normal list_news">
+				
+				<li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011216164766961111.png" src="./images/2016011216164766961111.png" data-ifshow="1"></p>
+				
+				<p class="tit">中国历史文化名城古镇-贵州镇远古镇（东方威尼斯）</p><p class="txt clearfix"><span class="left">05-13 11:08</span><span class="right">人气：9545</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011021014077925691.png" src="./images/2016011021014077925691.png" data-ifshow="1"></p><p class="tit">南京“最牛公交站台”一站台停靠38趟车 小伙伴们都惊呆了</p><p class="txt clearfix"><span class="left">05-13 11:08</span><span class="right">人气：2399</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011021023313882321.png" src="./images/2016011021023313882321.png" data-ifshow="1"></p><p class="tit">中国十佳宜居城市排行榜”青岛获首位,幸福感城市第三位</p><p class="txt clearfix"><span class="left">05-13 11:08</span><span class="right">人气：1416</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011016253632651851.png" src="./images/2016011016253632651851.png" data-ifshow="1"></p><p class="tit">网络求职6大安全注意 给求职者敲响警钟 远离网络求职潜规则</p><p class="txt clearfix"><span class="left">05-13 11:08</span><span class="right">人气：1492</span></p></a></li><li class="haspic1"><a href="#/article/article_2372.html" class="link"><p class="img"><img data-src="./images/2016011021022021620831.png" src="./images/2016011021022021620831.png" data-ifshow="1"></p><p class="tit">劳动和社会保障局医保处给您支招:医保卡被偷要尽快补办 一周内可办好</p><p class="txt clearfix"><span class="left">05-13 11:08</span><span class="right">人气：994</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011021020396667861.png" src="./images/2016011021020396667861.png" data-ifshow="1"></p><p class="tit">多吃豆腐可排毒养颜</p><p class="txt clearfix"><span class="left">05-13 11:08</span><span class="right">人气：498</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011022492459126071.png" src="./images/2016011022492459126071.png" data-ifshow="1"></p><p class="tit">女子忘带钥匙为省80元开锁费7楼爬窗进屋坠亡</p><p class="txt clearfix"><span class="left">05-13 11:08</span><span class="right">人气：493</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011021015324869001.png" src="./images/2016011021015324869001.png" data-ifshow="1"></p><p class="tit">世界读书日--今天你“读书”了吗</p><p class="txt clearfix"><span class="left">05-13 11:08</span><span class="right">人气：290</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011021393827918491.png" src="./images/2016011021393827918491.png" data-ifshow="1"></p><p class="tit">职场应注意的九个社交技巧</p><p class="txt clearfix"><span class="left">05-13 11:08</span><span class="right">人气：362</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011021395402949041.png" src="./images/2016011021395402949041.png" data-ifshow="1"></p><p class="tit">成功求职的三个关键!</p><p class="txt clearfix"><span class="left">05-13 11:08</span><span class="right">人气：325</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011021400382645121.png" src="./images/2016011021400382645121.png" data-ifshow="1"></p><p class="tit">销售拜访的几点技巧</p><p class="txt clearfix"><span class="left">05-29 17:12</span><span class="right">人气：229</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011021025281045811.png" src="./images/2016011021025281045811.png" data-ifshow="1"></p><p class="tit">大学自习室2只贪睡母女猫走红</p><p class="txt clearfix"><span class="left">05-29 16:43</span><span class="right">人气：182</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011022493716968391.png" src="./images/2016011022493716968391.png" data-ifshow="1"></p><p class="tit">广州举办“万人比基尼”活动</p><p class="txt clearfix"><span class="left">05-29 16:41</span><span class="right">人气：338</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011022252491999431.png" src="./images/2016011022252491999431.png" data-ifshow="1"></p><p class="tit">小伙租2000平米广告屏求婚引围观</p><p class="txt clearfix"><span class="left">05-29 16:28</span><span class="right">人气：300</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011021163541911821.png" src="./images/2016011021163541911821.png" data-ifshow="1"></p><p class="tit">食疗养生攻略：八种果蔬最能帮助女性吃出易瘦体质</p><p class="txt clearfix"><span class="left">05-29 16:15</span><span class="right">人气：240</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011022254484121691.png" src="./images/2016011022254484121691.png" data-ifshow="1"></p><p class="tit">过年回家花费调查凉透网友心 八成网友恐归！</p><p class="txt clearfix"><span class="left">05-29 16:11</span><span class="right">人气：173</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011022495045160831.png" src="./images/2016011022495045160831.png" data-ifshow="1"></p><p class="tit">5月车市偏好 自主品牌现复苏迹象</p><p class="txt clearfix"><span class="left">05-29 16:03</span><span class="right">人气：167</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011022500154467421.png" src="./images/2016011022500154467421.png" data-ifshow="1"></p><p class="tit">华北高温预计持续至下月1日 局地最高温可达40℃</p><p class="txt clearfix"><span class="left">05-29 15:59</span><span class="right">人气：221</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011022501152944551.png" src="./images/2016011022501152944551.png" data-ifshow="1"></p><p class="tit">新疆戈壁奇迹 每字占地4亩</p><p class="txt clearfix"><span class="left">05-29 15:54</span><span class="right">人气：155</span></p></a></li><li class="haspic1"><a href="sou_zixun_xiangqing.html" class="link"><p class="img"><img data-src="./images/2016011022255738854671.png" src="./images/2016011022255738854671.png" data-ifshow="1"></p><p class="tit">伤感沉思录</p><p class="txt clearfix"><span class="left">05-29 15:49</span><span class="right">人气：139</span></p></a></li></ul>
+				
+				<div id="pullUp" style="display:none;"><span class="loader">loadding</span></div>
+			</div>
+			<div id="reload" style=""><s class="s"></s><span class="txt">下拉可以刷新</span><br>最后更新：<span class="time">今天 17:31</span></div>
+			<span class="loader" id="pageLoader" style="display: none;">loadding</span>
+		</div>
+	</div>
+	<div class="foot_link" id="foot_link" style="display: none;">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="javascript:;" class="back close">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#/';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','10001');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<input id="pagenum" type="hidden" value="1">
+<input id="bigcatid" type="hidden" value="">
+<input id="smallcatid" type="hidden" value="">
+<script type="text/template" id="tp">
+<li class="haspic{{hasImg}}">
+	<a href="article_{{newsid}}.html" class="link">
+	<p class="img"><img data-src="{{filepath}}" src="#/template/wap/main/default/images/livelistnopic.gif" data-ifshow="0" /></p>
+	<p class="tit">{{chrtitle}}</p>
+	<p class="txt clearfix"><span class="left">{{dtappenddate}}</span><span class="right">人气：{{hits}}</span></p>
+	</a>
+</li>
+</script>
+<script type="text/javascript" src="./js/purl.js"></script>
+<script type="text/javascript" src="./js/mustache.js"></script>
+<script type="text/javascript" src="./js/iscroll-probe.js"></script>
+<script type="text/javascript" src="./js/getArticlePage.js"></script>
+<script>
+var siteUrl = 'sou_zixun.html';
+function showCatA(o,sid){
+	if(sid===''){
+		$('#slide').show();
+	}else{
+		$('#slide').hide();
+	}
+	$('#bigcatid').val(sid);
+	//$('#pagenum').val('1');
+	getPageData('2');
+	$(o).siblings('.current').removeClass('current');
+	$(o).addClass('current');
+	window['myScroll2'].scrollToElement($(o)[0],500)
+}
+window['myScroll2'] = null;
+(function($){
+	var w_w = $(window).width();
+	$('#foot_link').hide();
+	var list = $('#content').find('.cell');
+	if(list.length > 0){
+		var txt = '';
+		list.each(function(i){
+			if(i === 0){
+				txt += '<li class="active">1</li>';
+			}else{
+				txt += '<li>'+(i+1)+'</li>';
+			}
+		});
+		$('#slide').show();
+		var hei_arr = [];
+		$('#content').find('img').each(function(){
+			$(this).imagesLoaded(function(){		  
+				hei_arr.push($(this).height());
+				
+			});	
+		});
+		$(window).load(function (){
+			var min_height=Math.min.apply(null, hei_arr);
+			//list.css({'height':min_height+'px','overflow':'hidden'});
+			$('#content').find('img').css({'height':min_height+'px'});
+		});
+		$('#indicator').html(txt);
+		setTimeout(function(){new C_Scroll({container:'slide',content:'content',ct:'indicator',size:w_w,intervalTime:5000,lazyIMG:!!0});},20);
+	}
+	$('#scroller2').css('width',(90*$('#scroller2').find('li').length)+40+'px'); 
+	window['myScroll2'] = new IScroll('#wrapper2', {
+		scrollX: true,
+		scrollY: false,
+		click:true,
+		keyBindings: true
+	});
+	$('#iscrollto').click(function(){
+		window['myScroll2'].scrollBy(-100,0,500)
+	});
+})(jQuery);
+//document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+window.onload=function(){loaded_page();}
+</script>
+
+
+ <img src="./images/index.aspx" alt="" width="0" height="0"></body></html>

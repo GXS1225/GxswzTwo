@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0174)http://www.mh163k.com/kindeditor/upload_X4.aspx?UploadID=2aeaaa6f-24c4-40a1-a1f8-2867b9a0280c&action=5&type=0&number=&table_id=good_shop&state=0&filewidth=0&fileheight=0&id=0 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Simple Upload Sample</title>
+		<style type="text/css"> 
+		body
+		{
+			margin-top:0px;
+			margin-left:0px;
+			font-size:9pt;
+			font-family:"微软雅黑";
+		}
+		form { margin:0; padding:0; vertical-align:top;}
+		input { vertical-align:middle;font-family:"微软雅黑";}
+		#progresscontent
+		{
+			margin:5px 0px 5px 0px;
+		}
+		#progressBar 
+		{
+			width: 200px;
+			height: 14px;
+			text-algin: center;
+			float:left;
+			overflow:hidden;
+		} 
+		#progressInfo
+		{
+			width: 200px;
+			height: 14px;
+			border:#8AB3DB 1px solid;
+			overflow: hidden;
+			
+			position: absolute;
+			text-algin: center;
+		} 
+		#progress
+		{
+			overflow: hidden;
+			width: 0%;
+			height:14px;
+			background-color: #5fff3f;
+			text-algin: center;
+		}
+		#progressFile
+		{
+			padding: 5px;
+		}
+		
+		
+		.global_file { width:150px;}
+		.sys_form_ipt { border:1px solid #ccc; padding:7px; line-height:16px; box-shadow:0 1px 1px rgba(0,0,0,.1) inset; color:#333; border-radius:3px; width:220px;}
+		.sys_form_ipt:focus {outline:0;box-shadow:0 0 5px rgba(105,142,191,.4);border:1px solid #b0c4dd;position:relative}
+		
+
+.sys_btn_blue,.sys_btn_white { text-decoration:none; outline:0; display:inline-block; _display:inline!important; vertical-align:middle; padding:6px 15px; border-radius:3px; cursor:pointer; white-space:nowrap; box-sizing:border-box; font-size:14px; line-height:1.7;}
+.sys_btn_blue { color:#fff; text-shadow:0 -1px 0 rgba(0,0,0,.5); border:1px solid #0D6EB8; box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 1px 0 rgba(0,0,0,.2); background:#1472CF; background-color:#1575d5; background-image:-moz-linear-gradient(top,#1d7fe2,#0865c2); background-image:-ms-linear-gradient(top,#1d7fe2,#0865c2); background-image:-webkit-gradient(linear,0 0,0 100%,from(#1d7fe2),to(#0865c2)); background-image:-webkit-linear-gradient(top,#1d7fe2,#0865c2); background-image:-o-linear-gradient(top,#1d7fe2,#0865c2); background-image:linear-gradient(top,#1d7fe2,#0865c2); background-repeat:repeat-x; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1d7fe2', endColorstr='#0865c2', GradientType=0);}
+.sys_btn_white { color:#666; text-shadow:0 1px 0 #fff; border:1px solid #bbb; box-shadow:0 1px 0 #fff inset,0 1px 0 rgba(0,0,0,.1); background:#f8f8f9; background-color:#f1f1f2; background-image:-moz-linear-gradient(top,#f8f8f9,#e6e6e8); background-image:-ms-linear-gradient(top,#f8f8f9,#e6e6e8); background-image:-webkit-gradient(linear,0 0,0 100%,from(#f8f8f9),to(#e6e6e8)); background-image:-webkit-linear-gradient(top,#f8f8f9,#e6e6e8); background-image:-o-linear-gradient(top,#f8f8f9,#e6e6e8); background-image:linear-gradient(top,#f8f8f9,#e6e6e8); background-repeat:repeat-x; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f9', endColorstr='#e6e6e8', GradientType=0);}
+
+
+.sys_btn_white:hover { text-decoration:none; color:#666;}
+.sys_btn_blue:hover { text-decoration:none; color:#fff;}
+		
+		</style>
+		<script language="javascript" type="text/javascript" src="./xmlLib.js"></script>
+		<script language="javascript" type="text/javascript">
+		   var isLogin = "1";
+		   var r = "传输: {0}K 还未完成";
+		    var s = "您的文件已经上传完成";
+		    var t = "上传失败";
+		    function progressBar() {
+				
+		        this.totalSize = 100;
+		        this.sizeCompleted = 0;
+		        this.percentDone = "0%";
+		        this.setSize = function (totalSize, size) {
+					
+		            var oProgressInfo = document.getElementById("progressInfo");
+		            var oProgress = document.getElementById("progress");
+		            if (oProgress == null || oProgressInfo == null)
+		                return;
+
+		            if (totalSize <= 0)
+		                return;
+
+		            this.totalSize = totalSize;
+		            this.sizeCompleted = size;
+		            if (size < 0)
+		                this.sizeCompleted = 0;
+		            else if (size > this.totalSize)
+		                this.sizeCompleted = this.totalSize;
+
+		            var sizeLeft = 0;
+		            var progressInfoText = "";
+		            sizeLeft = this.totalSize - this.sizeCompleted;
+
+		            this.percentDone = Math.round(size / this.totalSize * 100) + "%";
+		            oProgress.style.width = this.percentDone;
+
+		            if (sizeLeft > 0)
+		                progressInfoText = r.replace("{0}", sizeLeft);
+		            else
+		                progressInfoText = s;
+
+		            oProgressInfo.innerHTML = progressInfoText;
+					document.getElementById("progresscontent").style.display = 'block';
+		        }
+		        this.UploadError = function () {
+		            
+					var oProgressInfo = document.getElementById("progressInfo");
+		            var oProgress = document.getElementById("progress");
+					alert(t);
+		            if (oProgressInfo != null)
+		                oProgressInfo.innerHTML = t;
+		            if (oProgress != null)
+		                oProgress.style.width = "0";
+		        }
+		        this.UploadComplete = function () {
+		            //document.getElementById("progresscontent").style.display = 'block';
+					var oProgressInfo = document.getElementById("progressInfo");
+		            var oProgress = document.getElementById("progress");
+					if (oProgressInfo != null)
+		                oProgressInfo.innerHTML = s;
+		            if (oProgress != null)
+		                oProgress.style.width = "100%";
+		        }
+		    }
+		    var iTimerID = null;
+		    var xmlHttp = XmlHttpPool.pick();
+		    var url = "progress.aspx?UploadID=2aeaaa6f-24c4-40a1-a1f8-2867b9a0280c"
+		var pb = new progressBar();
+		function LoadProgressInfo() {
+		    try {
+		        xmlHttp.open("GET", url + "&t=" + Math.random(), true);
+		        xmlHttp.send(null);
+		        xmlHttp.onreadystatechange = function () {
+		            LoadData(xmlHttp);
+		        }
+		    }
+		    catch (e) {
+		        alert(e)
+		    }
+		}
+
+		function LoadData(xmlhttp) {
+		    if (xmlhttp.readyState == 4) {
+		        //iTimerID = window.setTimeout("LoadProgressInfo()", 500);
+		        try {
+		            eval(xmlhttp.responseText);
+		        }
+		        catch (e) {
+		            alert(e)
+		        }
+		    }
+		}
+
+		function ClearTimer() {
+		    if (!!iTimerID) {
+		        clearTimeout(iTimerID);
+		        iTimerID = null;
+		    }
+		}
+
+		function UploadCancel() {
+		    location.href = location.href;
+		}
+
+		function checksubmit() {
+		    if (uploadFile.value == "") {
+		        alert("请选择上传文件!");
+		        return false;
+		    }
+		    else {
+				if(isLogin !=='1'){alert('对不起，请登录后再上传图片！'); return false;}
+				iTimerID = window.setTimeout('LoadProgressInfo()', 500);
+		        return true;
+		    }
+		}
+
+		function setvalue(val) {
+			var aa = parent.document.all.name0;
+		    if (aa) {
+		        if (aa.value == "")
+		            aa.value = base_name(val);
+		    }
+		}
+
+		function base_name(pFilePath) {
+		    var temp_win = pFilePath.lastIndexOf("\\");
+		    var temp_unix = pFilePath.lastIndexOf("/");
+		    if (temp_win > 0) {
+		        temp = temp_win;
+		    }
+		    else if (temp_unix > 0) {
+		        temp = temp_unix;
+		    }
+		    else {
+		        temp = -1;
+		    }
+		    file_name = pFilePath.substr(temp + 1);
+		    return (file_name);
+		}
+		</script>	
+	
+	</head>
+	<body>
+		<form method="post" action="http://www.mh163k.com/kindeditor/upload_X4.aspx?UploadID=2aeaaa6f-24c4-40a1-a1f8-2867b9a0280c&amp;action=5&amp;type=0&amp;number=&amp;table_id=good_shop&amp;state=0&amp;filewidth=0&amp;fileheight=0&amp;id=0" id="Form1" target="uploadData" onsubmit="return checksubmit();" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTIwNTQwNDk3NzIPZBYCZg8WAh4HZW5jdHlwZQUTbXVsdGlwYXJ0L2Zvcm0tZGF0YWRkMSbWi9ku7FiJEN5Oyc4uagpA1wsy87dIuQLXlmhFtdc=">
+</div>
+
+			<div style="text-align:left;float:left;">
+			<input name="uploadFile" type="file" id="uploadFile" class="sys_form_ipt" onchange="setvalue(this.value)">
+			<input type="submit" name="upload" value="上传" class="sys_btn_blue">
+			<input type="hidden" name="table_id" id="" value="good_shop">
+               
+			</div>
+			<div id="progresscontent" style="float:left; display:none; margin-left:15px;">
+				<div id="progressBar">
+					<div id="progressInfo">&nbsp;</div>
+					<div id="progress"></div>
+				</div>
+				<div id="progressFile"><iframe name="uploadData" id="uploadData" frameborder="0" width="0" height="18" scrolling="no" src="./saved_resource(1).html" "=""></iframe></div>
+			</div>
+
+			
+		</form>
+	
+
+
+</body></html>

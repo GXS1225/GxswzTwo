@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)#/live/fabu.html?id=117 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>发信息-商业服务</title>
+<link href="./css/member-mb.css" rel="stylesheet" type="text/css">
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+
+<body>
+<div class="top_gg po_re" id="top_gg" style="display:none;">{$Mh163k_wap_首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="javascript:void(0);" onclick="return window.history.go(-1);" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">发布信息</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+
+<script>
+var siteUrl = '#/';
+window['ipageTitleTxt'] = '发布信息';
+function checkaddlivefast(o){
+	if($("#url0").val()==""){
+		var fmIMG = jQuery('.my_prop_imgitem').eq(0).find('img');
+		if(fmIMG.length > 0){
+			$("#url0").val(fmIMG.attr('src'))
+		}
+	}
+	setStatenum('#onestatenum');
+}
+var isFabuKill="1";
+if(isFabuKill === '0'){
+	MSGwindowShow('shopping','1','对不起，您需要登录后才能发布信息！',siteUrl+'member/login.html?from=#/live/fabu.html','');
+}
+</script>
+<div class="o_main">
+<form name="form1" method="post" action="#/live/fabu.html?action=save" onsubmit="return checkaddlivefast(this);" enctype="multipart/form-data">
+	<input type="hidden" name="categoryid" id="categoryid" value="117">
+ <!--<div class="b_pic">
+  <img src="temp/background_pic.jpg" alt="" />
+  <div class="pictures"><a href="#"><i></i>拍个照片</a></div>
+  <div class="mobile_photo"><a href="#"><i></i>手机相册</a></div>
+ </div>-->
+ <!--填写信息-->
+ <div class="inp_Itembox">
+  <dl class="clearfix">
+   <dt>类别</dt>
+   <dd>商业服务-公司注册/年检 <a href="#/live/fabu.html" class="blue">重选</a></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>标题</dt>
+   <dd><input type="text" name="chrtitle" placeholder="输入标题，仅限40字"></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>区域</dt>
+   <dd><select name="areaid" id="areaid"> <option value="">::请选择区域/地段分类::</option><option value="1">朝阳区</option><option value="2">海淀区</option><option value="11">丰台区</option><option value="12">西城区</option><option value="13">通州区</option><option value="77">东城区</option><option value="78">昌平区</option><option value="79">宣武区</option><option value="80">崇文区</option><option value="82">其他区县</option></select></dd>
+   <div class="menu">
+    <i></i>
+    <i></i>
+    <i></i>
+   </div>
+  </dl>
+  <dl class="clearfix">
+   <dt>地段</dt>
+   <dd><select name="quyuid" id="qu_classid"><option value="" selected="">::选择地段::</option></select></dd>
+   <div class="menu">
+    <i></i>
+    <i></i>
+    <i></i>
+   </div>
+  </dl>
+ </div>
+ 
+ <div class="inp_Itembox">
+  <dl class="clearfix sel_radio_form" data-name="s_leixing">
+   <dt>类型</dt>
+   <dd>
+   <span class="display0"><input type="radio" name="s_leixing" value="1" checked="">
+   <input type="radio" name="s_leixing" value="0" {$s_leixing1}=""></span>
+   
+    <span class="gx_radio" data-val="0">提供</span>
+    <span class="gx_radio current" data-val="1">需求</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="inp_Itembox">
+      
+ </div>
+ <div class="inp_Itembox">
+  <dl class="clearfix">
+   <dt>联系人</dt>
+   <dd><input type="text" placeholder="输入联系人" name="chrname" value=""></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>手机</dt>
+   <dd><input type="text" placeholder="请输入手机号码" name="chrmobile" value=""></dd>
+  </dl>
+  <dl class="clearfix">
+   <dt>QQ</dt>
+   <dd><input type="text" placeholder="请输入QQ号码" name="chrqq" value=""></dd>
+  </dl>
+ </div>
+ <div class="inp_Itembox">
+  <div class="my_prop_img">
+	<input name="url0" id="url0" type="hidden" value="">
+	<input name="filewidth" type="hidden" value="200">
+	<input name="fileheight" type="hidden" value="150">	
+	<input type="hidden" value="1237661325912345" name="state" id="state2">
+			
+			<!--<iframe name="ifm_upload" frameborder="0" width="100%" height="40" scrolling="no" src="/kindeditor/upload_one.aspx?table_id=live_file&type=0"></iframe>-->
+			<div id="xiangce" class="my_prop_imgitem_node clearfix">
+					<div class="upimgFileBtnNode"><div id="pageLoaderNode"><span id="pageLoader">loadding</span></div><img src="./images/upimg.png" id="upimgFileBtn" class="upimgFileBtn imgview" alt="" style="height: 79px;"></div>
+				</div>
+		</div>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ <div class="inp_Itembox">
+  <textarea class="txt" name="chrmark" placeholder="输入描述文字，仅限1000个字"></textarea>
+  
+	
+ </div>
+ <input type="hidden" id="onestatenum" name="onestatenum" value="303172853597453">
+ <button type="submit" class="fb">发 布</button>
+ </form>
+	<div class="foot_link" id="foot_link">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+</div>
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="javascript:;" class="back close">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#/';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','1118');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<form enctype="multipart/form-data" method="post" id="fileForm">
+	<input id="table_id" name="table_id" type="hidden" value="live_file">
+	<input id="id" name="id" type="hidden" value="">
+	<input id="dir" name="dir" type="hidden" value="">
+	<input id="state" name="state" type="hidden" value="1237661325912345">
+	<input id="filewidth" name="filewidth" type="hidden" value="900">
+	<input id="fileheight" name="fileheight" type="hidden" value="0">	
+	<input id="smallfilewidth" name="smallfilewidth" type="hidden" value="200">
+	<input id="smallfileheight" name="smallfileheight" type="hidden" value="150">
+	<input type="file" style="display:none;" id="imgFile" name="imgFile">
+</form>
+
+<script src="./js/jquery.form.js"></script>
+<script src="./js/upLoadImg2015_one.js"></script>
+<script>
+var table_id = 'live_file';
+var mathState = Math.round(Math.random()*1E16);
+$('#state,#state2').val(mathState);
+$(document).ready(function(){
+	setStatenum('#onestatenum');
+	upLoad_init();
+	$('#areaid').change(function(){
+		showloupancategory($(this).val());
+	});
+	$("#vadimg").attr("src","../image.aspx?action=fabu&"+(new Date().getTime()));
+	$('.sel_radio_form').radioForm();
+});
+function saveMyImage(o){
+	var txt='',node = jQuery('#xiangce');
+	txt='<div class="my_prop_imgitem">'+
+			'<div class="imgviewNode"><img src="'+o["smallurl"]+'" class="imgview" /></div>'+
+			'<a href="javascript:" onclick="delfile(this,\''+o["id"]+'\',\'5\')" class="del">删除</a>'+
+			'<a href="#" onclick="return set_FM(this,\''+o["url"]+'\');" class="set_FM">封面</a>'+
+			'<a href="#" onclick="return move_PrevNext(this,0,0,\''+o["id"]+'\',\'setfile\',\''+table_id+'&state='+mathState+'\',8);" class="move_prev">前移</a>'+
+			'<a href="#" onclick="return move_PrevNext(this,1,0,\''+o["id"]+'\',\'setfile\',\''+table_id+'&state='+mathState+'\',8);" class="move_next">后移</a>'+
+			'</div>';
+	node.append(jQuery(txt));
+	showMyImageHeight();
+	reset_moveBtn();
+}
+
+function delfile(o,sid){
+	var url = '/request.ashx?action=delpic&id='+sid+'&state='+mathState+'&table_id='+table_id;
+	var Digital=new Date();
+	Digital=Digital+40000;
+	url=url+"&k="+encodeURIComponent(Digital);
+	jQuery.ajax({url:url,success:function(data){
+		if(data.islogin == '1'){
+			jQuery(o).parent().remove();
+		}else{
+			alert(data['error']);
+		}
+	}});
+}
+function showloupancategory(str,nowcc){ 
+	if (str.length > 0){ 
+		var url="../request.aspx?action=quyu&id="+str;
+		var  Digital=new  Date();
+		Digital=Digital+40000;
+		url=url+"&k="+(Digital);
+		$.get(url,function(data){
+			var sel=document.getElementById("qu_classid");
+			var val="选择地段";
+			var str =data;
+			sel.options.length=0;
+			var arrstr = new Array();
+			arrstr = str.split(",");
+			sel.options.add(new Option( val,"")); 
+			if(str.length>0){
+				for(var i=0;i<arrstr.length-1;i++){
+					var subarrstr=new Array
+					subarrstr=arrstr[i].split("|")
+					sel.options.add(new Option(subarrstr[1],subarrstr[0])); 
+					if(nowcc==subarrstr[0]){
+						sel.options[i+1].selected=true;
+					}
+				}
+			}
+		});
+	} 
+} 
+</script>
+
+
+ </body></html>

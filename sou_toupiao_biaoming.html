@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)#/member/myvote.aspx?action=add&id=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>首页-投票-投票报名</title>
+<link href="./css/member-mb.css" rel="stylesheet" type="text/css">
+<script>var siteUrl = '#/';</script>
+<script>
+window['ipageTitleTxt'] = '投票报名';
+function checkform(o){
+	if(o.voteid.value==""){
+		MSGwindowShow('vote','0',"对不起,请选择关联活动!",'','');
+		return false;
+	}
+	if(o.chrname.value==""){
+		MSGwindowShow('vote','0',"对不起,请填写选手姓名!",'','');
+		return false;
+	}
+	if(o.url0.value==""){
+		MSGwindowShow('vote','0',"对不起,请上传选手照片!",'','');
+		return false;
+	}
+	if(o.Chrcontent.value==""){
+		MSGwindowShow('vote','0',"对不起,请填写参赛文宣!",'','');
+		return false;
+	}
+	setStatenum('#onestatenum');
+}
+</script>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+<body>
+<div class="top_gg po_re" id="top_gg" style="display:none;">{$Mh163k_wap_首页_顶部广告}<span class="close po_ab">关闭</span></div>
+<div class="header">
+	<a href="javascript:void(0);" onclick="return window.history.go(-1);" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">投票报名</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+
+<div class="o_main">
+	<form name="form1" method="post" action="#/member/myvote.aspx?action=addSave" onsubmit="return checkform(this)" enctype="multipart/form-data">
+	<div class="inp_Itembox">
+		<dl class="clearfix">
+			<dt>活动</dt>
+			<dd><select name="voteid" id="voteid" onchange="javascript:showvotetishi(this.value);"> <option value="">::请选择::</option><option value="1">2014快乐宝宝选秀大赛</option></select></dd>
+			<div class="menu"><i></i><i></i><i></i></div>
+		</dl>
+     </div>
+     <div class="inp_Itembox">
+		<dl class="clearfix">
+			<dt>姓名</dt>
+			<dd><input type="text" name="chrname" placeholder="输入选手姓名"></dd>
+		</dl>
+		<dl class="clearfix">
+			<dt>年龄</dt>
+			<dd><input type="text" name="chrage" placeholder="输入选手年龄"><span class="yuan">岁</span></dd>
+		</dl>
+      </div>
+      <div class="inp_Itembox">  
+		<dl class="clearfix">
+			<dt>身高</dt>
+			<dd><input type="text" name="shenggao" placeholder="输入选手身高"><span class="yuan">cm</span></dd>
+		</dl>
+        <dl class="clearfix">
+			<dt>体重</dt>
+			<dd><input type="text" name="tizhong" placeholder="输入选手体重"><span class="yuan">kg</span></dd>
+		</dl>
+       </div> 
+       <div class="inp_Itembox">  
+		<dl class="clearfix">
+			<dt>来自</dt>
+			<dd><input type="text" name="laizhi" placeholder="某地区；某学校；某单位等"></dd>
+		</dl>
+		<dl class="clearfix">
+			<dt>兴趣</dt>
+			<dd><input type="text" name="aihao" placeholder="输入选手兴趣爱好"></dd>
+		</dl>
+       </div>
+       <div class="inp_Itembox">   
+		<dl class="clearfix">
+			<dt>电话</dt>
+			<dd><input type="text" name="chrtel" placeholder="输入选手联系电话"></dd>
+		</dl>
+	</div>
+	<div class="inp_Itembox">
+		<div class="my_prop_img">
+					
+					
+					<input name="state" type="hidden" id="ipt_state" value="4536369965377660">
+					<input name="url0" type="hidden" id="url0">
+					<input name="filewidth" type="hidden" value="400" data-txt="控制代表图的宽度">
+					<input name="fileheight" type="hidden" value="300" data-txt="控制代表图的高度">
+				<div id="J_imageView" class="my_prop_imgitem_node clearfix">
+					<div class="upimgFileBtnNode"><div id="pageLoaderNode"><span id="pageLoader">loadding</span></div><img src="./images/upimg.png" id="upimgFileBtn" class="upimgFileBtn imgview" alt="" style="height: 79px;"></div>
+				</div>
+		</div>
+	</div>
+	<div class="inp_Itembox">
+		<textarea class="txt" name="Chrcontent" placeholder="输入参赛文宣，仅限1000个字"></textarea>
+	</div>
+	<input type="hidden" id="onestatenum" name="onestatenum" value="520844035973717">
+	<button type="submit" class="fb">提 交</button>
+</form>
+	<div class="foot_link" id="foot_link">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+</div>
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="javascript:;" class="back close">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#/';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','20');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<form enctype="multipart/form-data" method="post" id="fileForm">
+	<input id="table_id" name="table_id" type="hidden" value="xuanshou_file">
+	<input id="dir" name="dir" type="hidden" value="">
+	<input id="state" name="state" type="hidden" value="4536369965377660">
+	<input id="filewidth" name="filewidth" type="hidden" value="900">
+	<input id="fileheight" name="fileheight" type="hidden" value="0">	
+	<input id="smallfilewidth" name="smallfilewidth" type="hidden" value="400">
+	<input id="smallfileheight" name="smallfileheight" type="hidden" value="300">
+	<input type="file" style="display:none;" id="imgFile" name="imgFile">
+</form>
+<script src="./js/jquery.form.js"></script>
+<script src="./js/upLoadImg2015.js"></script>
+<script>
+var table_id = 'xuanshou_file';
+var mathState = Math.round(Math.random()*1E16);
+$('#state').val(mathState);
+$('#ipt_state').val(mathState);
+
+function saveMyImage(o){//ajax提交
+	if($('#url0').val() === ''){
+		$('#url0').val(o['url']);
+	}
+	if($('#listEmpty')[0]){$('#listEmpty').hide();}
+	var txt='',node = jQuery('#J_imageView');
+	txt='<div class="my_prop_imgitem">'+
+		'<div class="imgviewNode"><img src="'+o['url']+'" class="imgview" /></div>'+
+		'<a href="javascript:" onclick="delfile(this,\''+o['id']+'\')" class="del">删除</a>'+
+		'<a href="#" onclick="return set_FM(this,\''+o['url']+'\');" class="set_FM">封面</a>'+
+		'<a href="#" onclick="return move_PrevNext(this,0,0,\''+o['id']+'\');" class="move_prev">前移</a>'+
+		'<a href="#" onclick="return move_PrevNext(this,1,0,\''+o['id']+'\');" class="move_next">后移</a>'+
+		'</div>';
+	node.append(jQuery(txt));
+	showMyImageHeight();
+	reset_moveBtn();
+}
+$(document).ready(function(){
+	setStatenum('#onestatenum');
+	upLoad_init();
+});
+function showvotetishi(){}
+</script>
+
+ </body></html>

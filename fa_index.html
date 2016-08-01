@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>发消息-首页</title>
+<link href="./css/member-mb.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.foot_link { display:none!important;}
+</style>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-base.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-index.css">
+<link rel="stylesheet" rev="stylesheet" href="./css/mb-common.css">
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script src="./js/wap_common_2015.js"></script>
+<!--必须在现有的script外-->
+<script>
+var isapp ="0";//在现有的js内:是否app平台
+</script>
+</head>
+
+<body>
+<div class="header">
+	<a href="javascript:void(0);" onclick="return window.history.go(-1);" class="back">返回</a>
+	<div class="search" id="search_ico" onclick="showNewPage(&#39;搜索&#39;,searchHtml,newPageSearch);" style="display:none;">搜索</div>
+	<a href="#/member/" class="my ico_ok" id="login_ico">我的</a>
+	<div class="type" id="nav_ico">导航</div>
+	<span id="ipageTitle" style="">选择分类</span>
+	<div class="nav_APP" id="nav_APP"><ul class="clearfix"><li><a href="index.html">首页<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031026514893905.png);"></s></a></li><li><a href="sou_shichang.html">市场<s class="s" style="background-color:#fb389f; background-image:url(./images/201603031030143985071.png);"></s></a></li><li><a href="sou_zixun.html">资讯<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031028335841178.png);"></s></a></li><li><a href="sou_shengla.html">商品<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031031173057056.png);"></s></a></li><li><a href="sou_zhaopin.html">人才<s class="s" style="background-color:#ff5f45; background-image:url(./images/201603031032450876840.png);"></s></a></li><li><a href="sou_fangchan.html">房产<s class="s" style="background-color:#ff8630; background-image:url(./images/201603031033241981478.png);"></s></a></li><li><a href="sou_shangjia.html">商家<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031034313862707.png);"></s></a></li><li><a href="sou_kuaidian.html">外卖<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031035348719045.png);"></s></a></li><li><a href="sou_huangye.html">黄页<s class="s" style="background-color:#87d140; background-image:url(./images/201603031036361226034.png);"></s></a></li><li><a href="sou_huodong.html">活动<s class="s" style="background-color:#ffce3a; background-image:url(./images/201603031037240297217.png);"></s></a></li><li><a href="sou_toupiao.html">投票<s class="s" style="background-color:#fd934a; background-image:url(./images/201603031038320461517.png);"></s></a></li><li><a href="sou_lipin.html">礼品<s class="s" style="background-color:#1bca4c; background-image:url(./images/201603031039252658301.png);"></s></a></li><li><a href="sou_shipin.html">视频<s class="s" style="background-color:#30cfd9; background-image:url(./images/201603031040254852431.png);"></s></a></li><li><a href="sou_tieba.html">贴吧<s class="s" style="background-color:#34aef4; background-image:url(./images/201603031041224861590.png);"></s></a></li><li><a href="sou_gouwuche.html">购物车<s class="s" style="background-color:#87d140; background-image:url(./images/201603031042017361588.png);"></s></a></li><li><a href="sou_dianping.html">订单<s class="s" style="background-color:#ffc230; background-image:url(./images/201603031042530651808.png);"></s></a></li></ul><span class="arrow-up"></span></div>
+</div>
+<div class="login_inner" id="login_inner"><p>您好，欢迎来到xxx网站系统！<br><a href="#">[登录]</a>　　　<a href="#">[注册]</a><input value="0" id="isLogin" type="hidden"><input value="" id="user_jibie" type="hidden"></p>
+</div>
+
+<script>
+window['ipageTitleTxt'] = '选择分类';
+var siteUrl = '#/';
+var isFabuKill="1";
+if(isFabuKill === '0'){
+	MSGwindowShow('shopping','1','对不起，您需要登录后才能发布信息！',siteUrl+'member/login.html?from=#/live/fabu.html','');
+}
+</script>
+<div class="o_main">
+ <div class="post_category" id="post_category">
+   <div class="item">
+	<dl>
+		<s class="s" style="background-color:#4db0fd; background-image:url(./images/201508171734132284023.png);"></s>
+		<dt data-categoryid="1">跳蚤市场</dt>
+		<dd></dd>
+	</dl>
+	<ul class="clearfix"><li><a href="fa_tiaozao.html">手台式电脑</a></li>
+	<li><a href="fa_tiaozao.html">二手笔记本</a></li><li><a href="fa_tiaozao.html">手机/通讯相关</a></li>
+	<li><a href="fa_tiaozao.html">二手数码/摄录</a></li><li><a href="fa_tiaozao.html">二手家电</a></li><li>
+	<a href="fa_tiaozao.html">二手回收</a></li><li><a href="fa_tiaozao.html">音响/乐器/影音</a></li><li><a href="fa_tiaozao.html">软件/图书/音像</a></li><li><a href="fa_tiaozao.html">艺术/工艺/收藏品</a></li><li><a href="fa_tiaozao.html">母婴/儿童用品</a></li><li><a href="fa_tiaozao.html">服饰/箱包/鞋帽</a></li><li><a href="fa_tiaozao.html">化妆品/保健品</a></li></ul>
+</div><div class="item">
+	<dl>
+		<s class="s" style="background-color:#FF6600; background-image:url(./images/201508171750191816540.png);"></s>
+		<dt data-categoryid="2">房屋信息</dt>
+		<dd></dd>
+	</dl>
+	<ul class="clearfix"><li><a href="fa_fangwu.html">出租房</a></li><li><a href="fa_fangwu.html">二手房出售</a></li><li><a href="fa_fangwu.html">合租房</a></li><li><a href="fa_fangwu.html">日租房/短期租房</a></li><li><a href="fa_fangwu.html">求租房</a></li><li><a href="fa_fangwu.html">二手房求购</a></li><li><a href="fa_fangwu.html">商铺出租/求租</a></li><li><a href="fa_fangwu.html">商铺出售/求购</a></li><li><a href="fa_fangwu.html">写字楼出租/求租</a></li></ul>
+</div><div class="item">
+	<dl>
+		<s class="s" style="background-color:#5adcc8; background-image:url(./images/201508171751400727597.png);"></s>
+		<dt data-categoryid="3">同城活动</dt>
+		<dd></dd>
+	</dl>
+	<ul class="clearfix"><li><a href="fa_tongcheng.html">团购/打折</a></li><li><a href="fa_tongcheng.html">结伴出游</a></li><li><a href="fa_tongcheng.html">相约运动</a></li><li><a href="fa_tongcheng.html">公益活动/志愿者</a></li><li><a href="fa_tongcheng.html">讲座/研讨会/招聘会</a></li><li><a href="fa_tongcheng.html">演出/展览</a></li></ul>
+</div><div class="item">
+	<dl>
+		<s class="s" style="background-color:#73c257; background-image:url(./images/201508171753361345719.png);"></s>
+		<dt data-categoryid="4">生活服务</dt>
+		<dd></dd>
+	</dl>
+	<ul class="clearfix"><li><a href="fa_shenghuo.html">家政保洁</a></li><li><a href="fa_shenghuo.html">搬家/旅游</a></li><li><a href="fa_shenghuo.html">装修/装饰</a></li><li><a href="fa_shenghuo.html">管道疏通/打孔</a></li><li><a href="fa_shenghuo.html">电脑维修</a></li><li><a href="fa_shenghuo.html">家电维修</a></li><li><a href="fa_shenghuo.html">家居维修</a></li><li><a href="fa_shenghuo.html">婚礼庆典</a></li><li><a href="fa_shenghuo.html">写真/婚纱摄影</a></li><li><a href="fa_shenghuo.html">美容美体</a></li><li><a href="fa_shenghuo.html">养生保健</a></li><li><a href="fa_shenghuo.html">订票/特价机票</a></li></ul>
+</div><div class="item">
+	<dl>
+		<s class="s" style="background-color:#ff645a; background-image:url(./images/201508171752201508789.png);"></s>
+		<dt data-categoryid="5">交友征婚</dt>
+		<dd></dd>
+	</dl>
+	<ul class="clearfix"><li><a href="fa_jiaoyou.html">帅哥美女</a></li><li><a href="fa_jiaoyou.html">男士征婚</a></li><li><a href="fa_jiaoyou.html">女士征婚</a></li><li><a href="fa_jiaoyou.html">同性交友</a></li><li><a href="fa_jiaoyou.html">同乡会</a></li><li><a href="fa_jiaoyou.html">兴趣交友</a></li><li><a href="fa_jiaoyou.html">真情告白/祝福</a></li><li><a href="fa_jiaoyou.html">寻人寻友</a></li><li><a href="fa_jiaoyou.html">技能交换</a></li></ul>
+</div><div class="item">
+	<dl>
+		<s class="s" style="background-color:#7778b5; background-image:url(./images/201508171755196972686.png);"></s>
+		<dt data-categoryid="6">商业服务</dt>
+		<dd></dd>
+	</dl>
+	<ul class="clearfix"><li><a href="fa_shangye.html">公司注册/年检</a></li><li><a href="fa_shangye.html">会计/审计/评估</a></li><li><a href="fa_shangye.html">印刷</a></li><li><a href="fa_shangye.html">喷绘招牌/制卡</a></li><li><a href="fa_shangye.html">设计策划</a></li><li><a href="fa_shangye.html">网站建设</a></li><li><a href="fa_shangye.html">二手回收</a></li><li><a href="fa_shangye.html">物流/货运</a></li><li><a href="fa_shangye.html">设备租赁维修</a></li><li><a href="fa_shangye.html">金融/担保贷款</a></li><li><a href="fa_shangye.html">清欠/商务调查</a></li><li><a href="fa_shangye.html">招商加盟</a></li><li><a href="fa_shangye.html">展览/展示</a></li><li><a href="fa_shangye.html">礼品定制</a></li></ul>
+</div><div class="item">
+	<dl>
+		<s class="s" style="background-color:#4db0fd; background-image:url(./images/201508171756282596009.png);"></s>
+		<dt data-categoryid="7">车辆服务</dt>
+		<dd></dd>
+	</dl>
+	<ul class="clearfix"><li><a href="fa_cheliang.html">宠物狗猫</a></li><li><a href="fa_cheliang.html">花鸟鱼虫</a></li><li><a href="fa_cheliang.html">宠物用品/食品</a></li><li><a href="fa_cheliang.html">宠物服务</a></li><li><a href="fa_cheliang.html">二手转让</a></li></ul>
+</div><div class="item">
+	<dl>
+		<s class="s" style="background-color:#ff9933; background-image:url(./images/201508171757021659044.png);"></s>
+		<dt data-categoryid="8">自定义类2</dt>
+		<dd></dd>
+	</dl>
+	<ul class="clearfix"><li><a href="#/live/fabu.html?id=135">兼职翻译</a></li><li><a href="#/live/fabu.html?id=136">导游 兼职会计</a></li><li><a href="#/live/fabu.html?id=137">兼职编辑 钟点工</a></li><li><a href="#/live/fabu.html?id=138">打字录入 兼职设计</a></li><li><a href="#/live/fabu.html?id=139">网站制作 带车求职</a></li></ul>
+</div><div class="item">
+	<dl>
+		<s class="s" style="background-color:; background-image:url();"></s>
+		<dt data-categoryid="9">自定义类3</dt>
+		<dd></dd>
+	</dl>
+	<ul class="clearfix"><li><a href="#/live/fabu.html?id=140">电脑培训</a></li><li><a href="#/live/fabu.html?id=141">外语培训 学历教育</a></li><li><a href="#/live/fabu.html?id=142">留学移民</a></li><li><a href="#/live/fabu.html?id=143">技能培训 动画培训</a></li><li><a href="#/live/fabu.html?id=144">驾校陪练</a></li></ul>
+</div><div class="item">
+	<dl>
+		<s class="s" style="background-color:; background-image:url();"></s>
+		<dt data-categoryid="10">自定义类4</dt>
+		<dd></dd>
+	</dl>
+	<ul class="clearfix"><li><a href="#/live/fabu.html?id=145">手机维修</a></li><li><a href="#/live/fabu.html?id=146">空调维修 家电维修</a></li><li><a href="#/live/fabu.html?id=147">电脑维修</a></li></ul>
+</div><div class="item">
+	<dl>
+		<s class="s" style="background-color:; background-image:url();"></s>
+		<dt data-categoryid="11">自定义类5</dt>
+		<dd></dd>
+	</dl>
+	<ul class="clearfix"><li><a href="#/live/fabu.html?id=148">鲜花速递</a></li><li><a href="#/live/fabu.html?id=149">快餐外卖 酒店预订</a></li><li><a href="#/live/fabu.html?id=150">旅行社 设计策划</a></li><li><a href="#/live/fabu.html?id=151">礼仪庆典</a></li></ul>
+</div>
+ </div>
+	<div class="foot_link" id="foot_link">
+		<p class="link"><a href="#/">首页</a>|<a href="#/request.ashx?action=iswap&amp;iswap=0">电脑版</a>|<a href="http://app.163k.com/download.aspx?id=12299" data-img="UploadFile/index/2015/9-7/201509071154513472674.png">客户端</a>|<a href="#/service/">反馈留言</a>|<a href="#/member/userindex_s.aspx" id="shangjia_btn">商家管理</a></p>
+		<!--163k地方门户网站系统：<a href="#/">mh163k.com</a>　京ICP备06006761号-->Copyright @ 2003-2016 mh163k.com
+	</div>
+	<p style="display:none;"></p>
+</div>
+<div class="windowIframe" id="windowIframe">
+	<div class="header"><a href="javascript:;" class="back close">返回</a><span id="windowIframeTitle"></span></div>
+	<div class="body" id="windowIframeBody"></div>
+</div>
+<div id="l-map" style="display:none;"></div>
+<script src="./js/wap_common.js"></script>
+<script>
+var YDB;
+if(isapp === '1'){
+	YDB = new YDBOBJ();YDB.SetDragRefresh(0);
+}
+window['siteUrl'] = '#/';
+document.addEventListener('DOMContentLoaded',function(){
+	$('#nav_ico').click(function(e){
+		e.preventDefault();
+		$('#nav_APP').fadeToggle('fast');
+	});
+	$('#shangjia_btn').click(function(e){
+		var user_jibie = $('#user_jibie').val(),isLogin = $('#isLogin').val();
+		if(isLogin === '0'){
+			e.preventDefault();
+			MSGwindowShow('user','1','对不起，您还没有登录企业会员！',window['siteUrl']+"member/login.html?from="+(encodeURIComponent(window.location.href)),'');
+			return false;
+		}
+		if($('#user_jibie').val()==='0'){
+			e.preventDefault();
+			MSGwindowShow('user','0','对不起，您还不是企业会员！','','');
+			return false;
+		}
+	})
+	IDC2.isLogin('#/','163k地方门户网站系统','1118');
+	if(!window['ipageTitle']){
+		$('#ipageTitle').show();
+	}else{
+		$('#ipageTitle').html(window['ipageTitleTxt']).show();
+	}
+},false);
+</script>
+<script>
+(function($){
+	var node = $('#post_category');
+	var list = node.find('.item');
+	list.each(function(){
+		var tit = $(this).find('dl');
+		var conts = $(this).find('ul');
+		tit.click(function(){
+			conts.toggle();
+			tit.toggleClass('current');
+		});
+	});
+})(jQuery);
+</script>
+
+
+ </body></html>
